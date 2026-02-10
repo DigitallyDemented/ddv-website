@@ -14,6 +14,12 @@
   <meta property="og:type" content="website">
   <meta property="og:image" content="https://digitallydemented.com/images/ddv-logo-square.png">
 
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Connected Intelligence — Learn to Work WITH AI">
+  <meta name="twitter:description" content="A course that teaches you to work WITH AI, not just use AI tools. The thinking behind the tech.">
+  <meta name="twitter:image" content="https://digitallydemented.com/images/ddv-logo-square.png">
+
   <!-- Favicon -->
   <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
   <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
@@ -25,6 +31,63 @@
 
   <!-- Styles -->
   <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Course",
+    "@id": "https://digitallydemented.com/courses#connected-intelligence",
+    "name": "Connected Intelligence",
+    "description": "A course that teaches you to work WITH AI, not just use AI tools. The thinking behind the tech — so you build systems that fit your actual work. Three tiers: Foundations, Systems, and Architecture.",
+    "url": "https://digitallydemented.com/courses",
+    "provider": {
+      "@type": "Organization",
+      "@id": "https://digitallydemented.com/#organization",
+      "name": "Digitally Demented Ventures LLC",
+      "url": "https://digitallydemented.com"
+    },
+    "instructor": {
+      "@type": "Person",
+      "@id": "https://digitallydemented.com/about#person",
+      "name": "Daniel Walters"
+    },
+    "educationalLevel": "Beginner to Intermediate",
+    "courseMode": "Online",
+    "inLanguage": "en",
+    "image": "https://digitallydemented.com/images/ddv-logo-square.png",
+    "hasCourseInstance": [
+      {
+        "@type": "CourseInstance",
+        "name": "Connected Intelligence — Foundations (Tier 1)",
+        "description": "Build the mental models for working with AI. Understand how AI thinks, how to communicate with it effectively, and how to design workflows around your actual needs. 6 self-paced modules with community access on Skool.",
+        "courseMode": "Online",
+        "courseWorkload": "6 modules"
+      },
+      {
+        "@type": "CourseInstance",
+        "name": "Connected Intelligence — Systems (Tier 2)",
+        "description": "Go beyond individual prompts. Learn to build multi-step AI workflows, create persistent context systems, and design agent architectures that match your work. Guided cohort with hands-on projects.",
+        "courseMode": "Online",
+        "courseWorkload": "6 modules"
+      },
+      {
+        "@type": "CourseInstance",
+        "name": "Connected Intelligence — Architecture (Tier 3)",
+        "description": "Design AI-native operating systems for yourself or your team. Multi-agent coordination, governance frameworks, knowledge management, and organizational design. Small cohort with direct access to Daniel.",
+        "courseMode": "Online",
+        "courseWorkload": "6 modules"
+      }
+    ],
+    "about": [
+      "AI Workflow Design",
+      "Agent Architecture",
+      "AI Operating Systems",
+      "Multi-Agent Systems",
+      "Knowledge Management"
+    ]
+  }
+  </script>
 </head>
 <body>
 
@@ -329,7 +392,7 @@
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand-area">
-          <img src="images/ddv-logo-footer.png" alt="DDV Logo" class="footer-logo">
+          <img src="images/ddv-logo-footer.png" alt="DDV Logo" class="footer-logo" loading="lazy">
           <p>Operational consulting, AI workflow design, and training.</p>
           <p>Birmingham, AL</p>
           <p style="margin-top:0.5rem;">daniel@digitallydemented.com</p>
@@ -366,6 +429,6 @@
     </div>
   </footer>
 
-  <script src="js/main.js"></script>
+  <script src="js/main.js" defer></script>
 </body>
 </html>

@@ -14,6 +14,12 @@
   <meta property="og:type" content="website">
   <meta property="og:image" content="https://digitallydemented.com/images/ddv-logo-square.png">
 
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="About Daniel Walters — Digitally Demented Ventures">
+  <meta name="twitter:description" content="15+ years in MarTech. I built an AI operating system because my brain needed it — turns out it works for everyone.">
+  <meta name="twitter:image" content="https://digitallydemented.com/images/ddv-logo-square.png">
+
   <!-- Favicon -->
   <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
   <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
@@ -25,6 +31,44 @@
 
   <!-- Styles -->
   <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "@id": "https://digitallydemented.com/about#person",
+    "name": "Daniel Walters",
+    "jobTitle": "MarTech Consultant & AI Workflow Designer",
+    "description": "15+ years in MarTech. I help businesses understand how their people, processes, and technology connect — then build the frameworks that make it intentional.",
+    "url": "https://digitallydemented.com/about",
+    "image": "https://digitallydemented.com/images/daniel-portrait-bw.jpg",
+    "worksFor": {
+      "@type": "Organization",
+      "@id": "https://digitallydemented.com/#organization",
+      "name": "Digitally Demented Ventures LLC",
+      "url": "https://digitallydemented.com"
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Birmingham",
+      "addressRegion": "AL",
+      "addressCountry": "US"
+    },
+    "knowsAbout": [
+      "Marketing Technology",
+      "AI Workflow Design",
+      "Operational Consulting",
+      "Agent Architecture",
+      "AI Operating Systems",
+      "Multi-Agent Systems"
+    ],
+    "sameAs": [
+      "https://www.linkedin.com/in/danielwalters/",
+      "https://www.youtube.com/@digitallydemented"
+    ]
+  }
+  </script>
 </head>
 <body>
 
@@ -180,7 +224,7 @@
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand-area">
-          <img src="images/ddv-logo-footer.png" alt="DDV Logo" class="footer-logo">
+          <img src="images/ddv-logo-footer.png" alt="DDV Logo" class="footer-logo" loading="lazy">
           <p>Operational consulting, AI workflow design, and training.</p>
           <p>Birmingham, AL</p>
           <p style="margin-top:0.5rem;">daniel@digitallydemented.com</p>
@@ -217,6 +261,6 @@
     </div>
   </footer>
 
-  <script src="js/main.js"></script>
+  <script src="js/main.js" defer></script>
 </body>
 </html>

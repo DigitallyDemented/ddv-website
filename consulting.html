@@ -14,6 +14,12 @@
   <meta property="og:type" content="website">
   <meta property="og:image" content="https://digitallydemented.com/images/ddv-logo-square.png">
 
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Consulting — Digitally Demented Ventures">
+  <meta name="twitter:description" content="Operational consulting and AI workflow design. Diagnose how your people, processes, and technology connect — then build the frameworks that make it intentional.">
+  <meta name="twitter:image" content="https://digitallydemented.com/images/ddv-logo-square.png">
+
   <!-- Favicon -->
   <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
   <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
@@ -25,6 +31,135 @@
 
   <!-- Styles -->
   <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Service",
+        "@id": "https://digitallydemented.com/consulting#ai-workflow-audit",
+        "name": "AI Workflow Audit",
+        "description": "A focused assessment of where AI fits in your business — and where it doesn't. Includes stakeholder interviews, current workflow documentation, AI opportunity map, prioritized recommendations, and executive presentation with ROI projections.",
+        "provider": {
+          "@type": "Organization",
+          "@id": "https://digitallydemented.com/#organization",
+          "name": "Digitally Demented Ventures LLC"
+        },
+        "serviceType": "AI Consulting",
+        "areaServed": [
+          {
+            "@type": "City",
+            "name": "Birmingham",
+            "containedInPlace": {
+              "@type": "State",
+              "name": "Alabama"
+            }
+          },
+          {
+            "@type": "Country",
+            "name": "United States"
+          }
+        ],
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "AI Workflow Audit",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "AI Workflow Audit",
+                "description": "2-3 week engagement including stakeholder interviews, workflow documentation, AI opportunity map, and prioritized recommendations."
+              }
+            }
+          ]
+        }
+      },
+      {
+        "@type": "Service",
+        "@id": "https://digitallydemented.com/consulting#custom-agent-build",
+        "name": "Custom Agent Build",
+        "description": "Custom AI agents tailored to your actual workflows — not generic chatbots, but infrastructure that knows your business. Includes 1-3 custom AI agents, documentation, team training, knowledge base setup, and 30-day support.",
+        "provider": {
+          "@type": "Organization",
+          "@id": "https://digitallydemented.com/#organization",
+          "name": "Digitally Demented Ventures LLC"
+        },
+        "serviceType": "AI Development",
+        "areaServed": [
+          {
+            "@type": "City",
+            "name": "Birmingham",
+            "containedInPlace": {
+              "@type": "State",
+              "name": "Alabama"
+            }
+          },
+          {
+            "@type": "Country",
+            "name": "United States"
+          }
+        ],
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Custom Agent Build",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Custom Agent Build",
+                "description": "4-6 week engagement including 1-3 custom AI agents, agent documentation, team training session, knowledge base setup, and 30-day support window."
+              }
+            }
+          ]
+        }
+      },
+      {
+        "@type": "Service",
+        "@id": "https://digitallydemented.com/consulting#ai-team-architecture",
+        "name": "AI Team Architecture",
+        "description": "Full system design from audit through implementation to ongoing advisory. Become an AI-native company without losing what makes you human. Includes full workflow audit, multi-agent system design, integration architecture, governance framework, team training, and 3 months advisory.",
+        "provider": {
+          "@type": "Organization",
+          "@id": "https://digitallydemented.com/#organization",
+          "name": "Digitally Demented Ventures LLC"
+        },
+        "serviceType": "AI Architecture Consulting",
+        "areaServed": [
+          {
+            "@type": "City",
+            "name": "Birmingham",
+            "containedInPlace": {
+              "@type": "State",
+              "name": "Alabama"
+            }
+          },
+          {
+            "@type": "Country",
+            "name": "United States"
+          }
+        ],
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "AI Team Architecture",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "AI Team Architecture",
+                "description": "8-12 week engagement including full workflow audit, multi-agent system design (5-10 agents), integration architecture, governance framework, team training program, and 3 months ongoing advisory."
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
 
@@ -178,7 +313,7 @@
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand-area">
-          <img src="images/ddv-logo-footer.png" alt="DDV Logo" class="footer-logo">
+          <img src="images/ddv-logo-footer.png" alt="DDV Logo" class="footer-logo" loading="lazy">
           <p>Operational consulting, AI workflow design, and training.</p>
           <p>Birmingham, AL</p>
           <p style="margin-top:0.5rem;">daniel@digitallydemented.com</p>
@@ -215,6 +350,6 @@
     </div>
   </footer>
 
-  <script src="js/main.js"></script>
+  <script src="js/main.js" defer></script>
 </body>
 </html>
