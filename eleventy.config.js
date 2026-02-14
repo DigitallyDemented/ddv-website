@@ -33,11 +33,13 @@ module.exports = function(eleventyConfig) {
   });
 
   eleventyConfig.addFilter("dateToISO", (dateObj) => {
-    return new Date(dateObj).toISOString();
+    const d = dateObj ? new Date(dateObj) : new Date();
+    return d.toISOString();
   });
 
   eleventyConfig.addFilter("shortDate", (dateObj) => {
-    return new Date(dateObj).toISOString().split("T")[0];
+    const d = dateObj ? new Date(dateObj) : new Date();
+    return d.toISOString().split("T")[0];
   });
 
   eleventyConfig.addFilter("currentYear", () => {

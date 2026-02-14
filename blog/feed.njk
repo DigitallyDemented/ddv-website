@@ -1,5 +1,6 @@
 ---json
 {
+  "layout": false,
   "permalink": "/blog/feed.xml",
   "eleventyExcludeFromCollections": true,
   "eleventyImport": {
@@ -14,7 +15,7 @@
   <link href="https://digitallydemented.com/blog/feed.xml" rel="self"/>
   <link href="https://digitallydemented.com/blog/"/>
   {% set lastPost = collections.posts | last %}
-  <updated>{{ lastPost.date | dateToISO }}</updated>
+  <updated>{% if lastPost %}{{ lastPost.date | dateToISO }}{% else %}{{ null | dateToISO }}{% endif %}</updated>
   <id>https://digitallydemented.com/blog/</id>
   <author>
     <name>Daniel Walters</name>
