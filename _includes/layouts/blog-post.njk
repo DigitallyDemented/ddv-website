@@ -57,7 +57,7 @@
   <main class="blog-content">
     <article class="blog-post">
       <div class="post-meta">
-        <time datetime="{{ date | date: '%Y-%m-%d' }}">{{ date | readableDate }}</time>
+        <time datetime="{{ date | shortDate }}">{{ date | readableDate }}</time>
         {% if tags %}
         <div class="post-tags">
           {% for tag in tags %}{% if tag != "post" %}<span class="tag">{{ tag }}</span>{% endif %}{% endfor %}
@@ -78,7 +78,7 @@
   </main>
 
   <footer class="blog-footer">
-    <p>&copy; {{ "now" | date: "%Y" }} Digitally Demented Ventures LLC</p>
+    <p>&copy; {{ "now" | currentYear }} Digitally Demented Ventures LLC</p>
   </footer>
 </body>
 </html>

@@ -23,13 +23,25 @@ module.exports = function(eleventyConfig) {
     return collectionApi.getFilteredByTag("post").sort((a, b) => b.date - a.date);
   });
 
-  // Date formatting filter
+  // Date formatting filters
   eleventyConfig.addFilter("readableDate", (dateObj) => {
     return new Date(dateObj).toLocaleDateString("en-US", {
       year: "numeric",
       month: "long",
       day: "numeric"
     });
+  });
+
+  eleventyConfig.addFilter("dateToISO", (dateObj) => {
+    return new Date(dateObj).toISOString();
+  });
+
+  eleventyConfig.addFilter("shortDate", (dateObj) => {
+    return new Date(dateObj).toISOString().split("T")[0];
+  });
+
+  eleventyConfig.addFilter("currentYear", () => {
+    return new Date().getFullYear();
   });
 
   // Excerpt filter — first 160 chars of content
