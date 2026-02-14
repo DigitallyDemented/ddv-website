@@ -1,0 +1,25 @@
+---
+layout: layouts/blog-index.njk
+permalink: /blog/index.html
+tags: []
+---
+
+<div class="post-list">
+  {% for post in collections.posts %}
+  <article class="post-card">
+    <a href="{{ post.url }}">
+      <h2>{{ post.data.title }}</h2>
+      <time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | readableDate }}</time>
+      {% if post.data.description %}
+      <p>{{ post.data.description }}</p>
+      {% else %}
+      <p>{{ post.content | excerpt }}</p>
+      {% endif %}
+    </a>
+  </article>
+  {% endfor %}
+
+  {% if collections.posts.length == 0 %}
+  <p>No posts yet. Check back soon.</p>
+  {% endif %}
+</div>

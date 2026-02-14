@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ title }} — DDV Blog</title>
+  <meta name="description" content="{{ description or title }}">
+  <link rel="canonical" href="https://digitallydemented.com{{ page.url }}">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="{{ title }}">
+  <meta property="og:description" content="{{ description or title }}">
+  <meta property="og:url" content="https://digitallydemented.com{{ page.url }}">
+  <meta property="og:type" content="article">
+  <meta property="og:image" content="https://digitallydemented.com/images/ddv-logo-square.png">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ title }}">
+  <meta name="twitter:description" content="{{ description or title }}">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+  <!-- Fonts (same as main site) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Main site styles + blog styles -->
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="/css/blog.css">
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-LNDZRGMG0D"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-LNDZRGMG0D');
+  </script>
+</head>
+<body>
+  <header class="blog-header">
+    <nav class="blog-nav">
+      <a href="/" class="blog-logo">
+        <img src="/images/ddv-logo-bug-nav.png" alt="DDV" width="40" height="40">
+      </a>
+      <a href="/blog/">Blog</a>
+      <a href="/about.html">About</a>
+      <a href="/consulting.html">Consulting</a>
+      <a href="/contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="blog-content">
+    <article class="blog-post">
+      <div class="post-meta">
+        <time datetime="{{ date | date: '%Y-%m-%d' }}">{{ date | readableDate }}</time>
+        {% if tags %}
+        <div class="post-tags">
+          {% for tag in tags %}{% if tag != "post" %}<span class="tag">{{ tag }}</span>{% endif %}{% endfor %}
+        </div>
+        {% endif %}
+      </div>
+
+      <h1>{{ title }}</h1>
+
+      <div class="post-body">
+        {{ content | safe }}
+      </div>
+    </article>
+
+    <div class="post-footer">
+      <a href="/blog/">&larr; Back to all posts</a>
+    </div>
+  </main>
+
+  <footer class="blog-footer">
+    <p>&copy; {{ "now" | date: "%Y" }} Digitally Demented Ventures LLC</p>
+  </footer>
+</body>
+</html>

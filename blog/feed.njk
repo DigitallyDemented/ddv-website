@@ -1,0 +1,27 @@
+---json
+{
+  "permalink": "/blog/feed.xml",
+  "eleventyExcludeFromCollections": true
+}
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>DDV Blog</title>
+  <subtitle>Thoughts on AI workflows, operations, and how people and systems actually work.</subtitle>
+  <link href="https://digitallydemented.com/blog/feed.xml" rel="self"/>
+  <link href="https://digitallydemented.com/blog/"/>
+  <updated>{{ collections.posts | last | date: "%Y-%m-%dT%H:%M:%SZ" }}</updated>
+  <id>https://digitallydemented.com/blog/</id>
+  <author>
+    <name>Daniel Walters</name>
+  </author>
+  {% for post in collections.posts | reverse %}
+  <entry>
+    <title>{{ post.data.title }}</title>
+    <link href="https://digitallydemented.com{{ post.url }}"/>
+    <updated>{{ post.date | date: "%Y-%m-%dT%H:%M:%SZ" }}</updated>
+    <id>https://digitallydemented.com{{ post.url }}</id>
+    <content type="html">{{ post.content | safe }}</content>
+  </entry>
+  {% endfor %}
+</feed>

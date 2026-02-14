@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog — Digitally Demented Ventures</title>
+  <meta name="description" content="Thoughts on AI workflows, operations, and how people and systems actually work. By Daniel Walters.">
+  <link rel="canonical" href="https://digitallydemented.com/blog/">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Blog — Digitally Demented Ventures">
+  <meta property="og:description" content="Thoughts on AI workflows, operations, and how people and systems actually work.">
+  <meta property="og:url" content="https://digitallydemented.com/blog/">
+  <meta property="og:type" content="website">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="/css/blog.css">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="DDV Blog" href="/blog/feed.xml">
+
+  <!-- Google tag -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-LNDZRGMG0D"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-LNDZRGMG0D');
+  </script>
+</head>
+<body>
+  <header class="blog-header">
+    <nav class="blog-nav">
+      <a href="/" class="blog-logo">
+        <img src="/images/ddv-logo-bug-nav.png" alt="DDV" width="40" height="40">
+      </a>
+      <a href="/blog/" class="active">Blog</a>
+      <a href="/about.html">About</a>
+      <a href="/consulting.html">Consulting</a>
+      <a href="/contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="blog-content">
+    <h1>Blog</h1>
+
+    {{ content | safe }}
+  </main>
+
+  <footer class="blog-footer">
+    <p>&copy; {{ "now" | date: "%Y" }} Digitally Demented Ventures LLC</p>
+  </footer>
+</body>
+</html>
