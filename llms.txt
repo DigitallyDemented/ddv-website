@@ -1,0 +1,30 @@
+# Digitally Demented Ventures (DDV)
+
+> AI workflow design, operational consulting, and training for professionals and teams. Founded by Daniel Walters. Based in Birmingham, AL.
+
+## About
+
+Daniel Walters helps businesses and professionals build AI into how they actually work — not just use AI tools, but design cognitive architectures around their thinking, decisions, and workflows. 15+ years in marketing technology, 50+ teams served, 100+ operational systems designed. Late-diagnosed AuDHD — built a cognitive architecture because his brain demanded it, then discovered it works for everyone.
+
+## Pages
+
+- [Home](https://digitallydemented.com/): AI workflow design and MarTech consulting. Two paths: learn it yourself (course) or build it with me (consulting).
+- [About Daniel Walters](https://digitallydemented.com/about): 15+ years in MarTech, AuDHD-driven systems thinking, DDV values (accountability, transparency, sincerity, craft, curiosity).
+- [Connected Intelligence Course](https://digitallydemented.com/courses): Three-tier AI course. Tier 1 (Foundations): build mental models for working with AI, 5 self-paced modules, $297 founding / $497 standard. Tier 2 (Systems): multi-step AI workflows, cohort-based. Tier 3 (Architecture): AI-native operating systems, small group.
+- [Consulting Services](https://digitallydemented.com/consulting): Operational consulting, MarTech strategy, and AI workflow design. Three engagement options. Workflow Audit (2-3 weeks), Custom Build (4-6 weeks, AI agents or workflow/MarTech builds), Full Architecture (8-12 weeks, end-to-end system design with 5-10 agents).
+- [What Is Cognitive Architecture for AI?](https://digitallydemented.com/cognitive-architecture): Cognitive architecture for AI is the deliberate design of how you think, decide, and work alongside AI. Term originated in AI research (Allen Newell, 1990). Daniel applies it in the opposite direction — designing how your mind interfaces with AI, not software that mimics a mind. Four layers: Know, Enforce, Evolve, Direct.
+- [Tools I Use](https://digitallydemented.com/tools): The actual platforms and tools that run DDV — Claude, Claude Code, ChatGPT, HubSpot, Skool, Google Workspace, QuickBooks, GitHub, and more.
+- [Contact](https://digitallydemented.com/contact): Get in touch or book a discovery call.
+
+## Key Concepts
+
+- **Cognitive Architecture**: A deliberate system for how you think, decide, and work alongside AI — borrowed from 40 years of AI research (Newell, 1990) and applied to personal and professional AI workflow design.
+- **Connected Intelligence**: Daniel's course teaching professionals to build cognitive architectures for AI, moving from "AI as tool" to "AI as thinking partner."
+- **The Thinking Revolution**: The shift from doing work to directing work — AI changed what "productive" means, and the value is now in the thinking, not the execution.
+
+## Contact
+
+- Email: support@digitallydemented.com
+- LinkedIn: https://www.linkedin.com/in/danielwalters/
+- YouTube: https://www.youtube.com/@digitallydemented
+- Community: https://www.skool.com/ddv-8001
