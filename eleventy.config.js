@@ -5,8 +5,9 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("js");
   eleventyConfig.addPassthroughCopy("images");
   eleventyConfig.addPassthroughCopy("robots.txt");
-  eleventyConfig.addPassthroughCopy("sitemap.xml");
+  eleventyConfig.addPassthroughCopy("CNAME");
   eleventyConfig.addPassthroughCopy("CNAME.bak");
+  eleventyConfig.addPassthroughCopy(".nojekyll");
 
   // Pass through existing HTML pages (not processed by Eleventy)
   eleventyConfig.addPassthroughCopy("index.html");
@@ -17,6 +18,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("privacy.html");
   eleventyConfig.addPassthroughCopy("tools.html");
   eleventyConfig.addPassthroughCopy("card.html");
+  eleventyConfig.addPassthroughCopy("cognitive-architecture.html");
 
   // Blog collection: all posts tagged "post"
   eleventyConfig.addCollection("posts", function(collectionApi) {

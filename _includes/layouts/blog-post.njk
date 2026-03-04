@@ -50,6 +50,38 @@
     gtag('js', new Date());
     gtag('config', 'G-LNDZRGMG0D');
   </script>
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "{{ title }}",
+    "description": "{{ description or title }}",
+    "datePublished": "{{ date | shortDate }}",
+    "dateModified": "{{ date | shortDate }}",
+    "author": {
+      "@type": "Person",
+      "name": "Daniel Walters",
+      "url": "https://digitallydemented.com/about"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Digitally Demented Ventures",
+      "url": "https://digitallydemented.com",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://digitallydemented.com/images/ddv-logo-square.png"
+      }
+    },
+    "url": "https://digitallydemented.com{{ page.url }}",
+    "image": "https://digitallydemented.com/images/og-social-card.png",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://digitallydemented.com{{ page.url }}"
+    }
+  }
+  </script>
 </head>
 <body>
   <header class="blog-header">
@@ -57,10 +89,12 @@
       <a href="/" class="blog-logo">
         <img src="/images/ddv-logo-bug-nav.png" alt="DDV" width="40" height="40">
       </a>
+      <a href="/about">About Me</a>
+      <a href="/courses">Course</a>
+      <a href="/consulting">Consulting</a>
+      <a href="/tools">Tools I Use</a>
       <a href="/blog/">Blog</a>
-      <a href="/about.html">About</a>
-      <a href="/consulting.html">Consulting</a>
-      <a href="/contact.html">Contact</a>
+      <a href="/contact">Contact</a>
     </nav>
   </header>
 

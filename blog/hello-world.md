@@ -2,6 +2,8 @@
 title: "The Doing Isn't the Work Anymore"
 description: "Why the shift from execution to thinking changes everything about how we approach AI in business."
 date: 2026-02-14
+eleventyExcludeFromCollections: true
+draft: true
 tags:
   - ai
   - operations
