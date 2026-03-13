@@ -25,12 +25,14 @@ module.exports = function(eleventyConfig) {
     return collectionApi.getFilteredByTag("post").sort((a, b) => b.date - a.date);
   });
 
-  // Date formatting filters
+  // Date formatting filters (use UTC to avoid timezone shift)
   eleventyConfig.addFilter("readableDate", (dateObj) => {
-    return new Date(dateObj).toLocaleDateString("en-US", {
+    const d = new Date(dateObj);
+    return d.toLocaleDateString("en-US", {
       year: "numeric",
       month: "long",
-      day: "numeric"
+      day: "numeric",
+      timeZone: "UTC"
     });
   });
 

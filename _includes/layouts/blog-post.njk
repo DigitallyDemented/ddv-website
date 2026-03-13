@@ -102,11 +102,6 @@
     <article class="blog-post">
       <div class="post-meta">
         <time datetime="{{ date | shortDate }}">{{ date | readableDate }}</time>
-        {% if tags %}
-        <div class="post-tags">
-          {% for tag in tags %}{% if tag != "post" %}<span class="tag">{{ tag }}</span>{% endif %}{% endfor %}
-        </div>
-        {% endif %}
       </div>
 
       <h1>{{ title }}</h1>
