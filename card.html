@@ -341,23 +341,7 @@
       <h2>Want to stay connected?</h2>
       <p>Drop your info and I'll follow up.</p>
 
-      <!--
-        ==========================================================
-        HUBSPOT FORM EMBED
-        ==========================================================
-        Option A (Recommended): Replace this entire form block with
-        your HubSpot embedded form code. Steps:
-        1. Log into HubSpot > Marketing > Forms > Create Form
-        2. Add fields: First Name, Email, Company (optional)
-        3. Get embed code and paste here
-        4. Add css: '' to the embed options to disable HubSpot
-           default styles, then style with the classes below
-
-        Option B (Fallback): This HTML form works standalone.
-        Connect it to HubSpot via their collected forms feature
-        (requires HubSpot tracking code below to be installed).
-        ==========================================================
-      -->
+      <!-- Submits to HubSpot Forms API (see script below). Auto-creates CRM contacts. -->
       <form class="connect-form" id="connectForm" onsubmit="handleFormSubmit(event)">
         <input type="text" name="name" placeholder="Your name" required>
         <input type="email" name="email" placeholder="Email" required>
@@ -409,8 +393,8 @@
   <!-- Form Handler — submits to HubSpot Forms API -->
   <script>
     var HUBSPOT_PORTAL_ID = '243773350';
-    // TODO: Create a form in HubSpot (Marketing > Forms) with fields:
-    //   firstname, email, company. Copy the Form GUID and paste below.
+    // Form: "Business Card Contact Form" in HubSpot (Marketing > Forms)
+    // Fields: firstname, email. Company accepted via API (standard property).
     var HUBSPOT_FORM_GUID = 'c3cd0c17-07b6-4960-a27d-81a5ab3b4370';
 
     function handleFormSubmit(e) {
@@ -447,6 +431,7 @@
           }
         })
       }).then(function(res) {
+        if (!res.ok) console.error('HubSpot submission error:', res.status);
         form.style.display = 'none';
         success.style.display = 'block';
       }).catch(function(err) {
