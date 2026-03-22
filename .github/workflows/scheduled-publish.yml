@@ -1,6 +1,7 @@
 name: Scheduled Blog Publish
 
-# Rebuild daily at 6:00 AM CT (11:00 UTC) so future-dated posts go live on schedule
+# Rebuild daily at 11:00 UTC (~6 AM Central) so future-dated posts go live on schedule
+# Note: Exact local time shifts with DST (5 AM CST / 6 AM CDT)
 on:
   schedule:
     - cron: '0 11 * * *'

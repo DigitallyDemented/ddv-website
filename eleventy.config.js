@@ -32,7 +32,7 @@ module.exports = function(eleventyConfig) {
   // Prevent future-dated posts from being rendered at all (no HTML output)
   eleventyConfig.addGlobalData("eleventyComputed", {
     permalink: function(data) {
-      if (data.tags && data.tags.includes("post") && data.date > now) {
+      if (data.tags?.includes("post") && data.date > now) {
         return false;
       }
       return data.permalink;
