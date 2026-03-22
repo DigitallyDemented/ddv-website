@@ -9,6 +9,7 @@ tags:
   - values-architecture
   - virtue-ethics
   - cognitive-architecture
+ogImage: /images/og/what-bad-code-teaches-about-ai-systems-og.png
 ---
 
 

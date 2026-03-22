@@ -10,6 +10,7 @@ tags:
   - multi-agent-ai
   - solopreneur
   - ai-executive-team
+ogImage: /images/og/one-person-five-ai-executives-og.png
 ---
 
 

@@ -10,6 +10,7 @@ tags:
   - extended-mind
   - knowledge-work
   - neurodivergent
+ogImage: /images/og/three-eras-of-cognitive-freedom-og.png
 ---
 
 

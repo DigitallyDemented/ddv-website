@@ -13,6 +13,7 @@ tags:
   - ai-self-management
 series: ai-executives
 seriesOrder: 6
+ogImage: /images/og/ai-that-manages-me-og.png
 ---
 
 

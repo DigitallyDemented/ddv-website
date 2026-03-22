@@ -10,6 +10,7 @@ tags:
   - individual-ai-implementation
   - solopreneur
   - ai-transformation
+ogImage: /images/og/enterprise-takes-18-months-og.png
 ---
 
 

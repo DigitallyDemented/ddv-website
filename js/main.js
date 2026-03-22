@@ -152,4 +152,45 @@
       });
     });
   }
+  // GA4 custom event tracking
+  // Tracks CTA clicks and outbound links for conversion measurement
+  document.addEventListener('click', function (e) {
+    var link = e.target.closest('a[href]');
+    if (!link) return;
+
+    var href = link.getAttribute('href') || '';
+    var text = (link.textContent || '').trim().toLowerCase();
+
+    // Discovery call / consulting CTAs
+    if (href.indexOf('meetings.hubspot.com') !== -1 || text.indexOf('book a discovery') !== -1 || text.indexOf('schedule a call') !== -1) {
+      gtag('event', 'cta_click_discovery_call', {
+        link_text: link.textContent.trim(),
+        link_url: href,
+        page_path: window.location.pathname
+      });
+    }
+    // Skool CTAs
+    else if (href.indexOf('skool.com') !== -1) {
+      gtag('event', 'cta_click_skool', {
+        link_text: link.textContent.trim(),
+        link_url: href,
+        page_path: window.location.pathname
+      });
+    }
+    // Course CTAs
+    else if ((href === '/courses' || href.indexOf('/courses') === 0) && link.classList.contains('btn')) {
+      gtag('event', 'cta_click_course', {
+        link_text: link.textContent.trim(),
+        page_path: window.location.pathname
+      });
+    }
+    // Outbound links (any link leaving the site)
+    else if (href.indexOf('http') === 0 && href.indexOf('digitallydemented.com') === -1) {
+      gtag('event', 'outbound_click', {
+        link_text: link.textContent.trim(),
+        link_url: href,
+        page_path: window.location.pathname
+      });
+    }
+  });
 })();

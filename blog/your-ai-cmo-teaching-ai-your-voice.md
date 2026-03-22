@@ -12,6 +12,7 @@ tags:
   - train-ai-voice
 series: ai-executives
 seriesOrder: 3
+ogImage: /images/og/your-ai-cmo-teaching-ai-your-voice-og.png
 ---
 
 

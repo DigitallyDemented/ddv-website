@@ -9,6 +9,7 @@ tags:
   - cognitive-architecture
   - ai-agents
   - agent-coordination
+ogImage: /images/og/everyone-building-agents-nobody-building-system-og.png
 ---
 
 

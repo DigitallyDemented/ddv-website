@@ -53,19 +53,28 @@
   </script>
 </head>
 <body>
-  <header class="blog-header">
-    <nav class="blog-nav">
-      <a href="/" class="blog-logo">
-        <img src="/images/ddv-logo-bug-nav.png" alt="DDV" width="40" height="40">
+  <nav class="nav">
+    <div class="container">
+      <a href="/" class="nav-brand">
+        <img src="/images/ddv-logo-bug-nav.png" alt="DDV Logo">
+        <span>Digitally Demented</span>
       </a>
-      <a href="/about">About Me</a>
-      <a href="/courses">Course</a>
-      <a href="/consulting">Consulting</a>
-      <a href="/tools">Tools I Use</a>
-      <a href="/blog/" class="active">Blog</a>
-      <a href="/contact">Contact</a>
-    </nav>
-  </header>
+      <div class="nav-links">
+        <a href="/about">About Me</a>
+        <a href="/courses">Course</a>
+        <a href="/consulting">Consulting</a>
+        <a href="/tools">Tools I Use</a>
+        <a href="/blog/" class="active">Blog</a>
+        <a href="/contact">Contact</a>
+        <a href="/courses" class="btn btn-primary btn-sm nav-cta">Start Here</a>
+      </div>
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
 
   <main class="blog-content">
     <h1>Blog</h1>
@@ -73,8 +82,32 @@
     {{ content | safe }}
   </main>
 
-  <footer class="blog-footer">
-    <p>&copy; {{ "now" | currentYear }} Digitally Demented Ventures LLC</p>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <img src="/images/ddv-logo-bug-nav.png" alt="DDV" width="40" height="40">
+          <p>&copy; {{ "now" | currentYear }} Digitally Demented Ventures LLC</p>
+        </div>
+        <div class="footer-col">
+          <strong>Navigate</strong>
+          <a href="/about">About</a>
+          <a href="/courses">Course</a>
+          <a href="/cognitive-architecture">Cognitive Architecture</a>
+          <a href="/consulting">Consulting</a>
+          <a href="/blog/">Blog</a>
+        </div>
+        <div class="footer-col">
+          <strong>Connect</strong>
+          <a href="/contact">Contact</a>
+          <a href="/card">Digital Card</a>
+          <a href="/blog/feed.xml">RSS Feed</a>
+        </div>
+      </div>
+    </div>
   </footer>
+
+  <!-- HubSpot Tracking -->
+  <script type="text/javascript" id="hs-script-loader" async defer src="https://js-na2.hs-scripts.com/243773350.js"></script>
 </body>
 </html>

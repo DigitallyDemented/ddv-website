@@ -10,6 +10,7 @@ tags:
   - claude-md
   - ai-memory
   - persistent-context
+ogImage: /images/og/the-stranger-loop-og.png
 ---
 
 

@@ -10,6 +10,7 @@ tags:
   - ai-context-problem
   - ai-adoption
   - persistent-context
+ogImage: /images/og/your-ai-is-a-well-intentioned-stranger-og.png
 ---
 
 

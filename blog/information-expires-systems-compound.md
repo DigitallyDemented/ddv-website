@@ -9,6 +9,7 @@ tags:
   - ai-systems
   - compounding
   - information-vs-systems
+ogImage: /images/og/information-expires-systems-compound-og.png
 ---
 
 

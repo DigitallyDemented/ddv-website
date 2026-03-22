@@ -10,6 +10,7 @@ tags:
   - managing-ai-agents
   - ai-leadership
   - delegation-framework
+ogImage: /images/og/the-delegation-mindset-shift-og.png
 ---
 
 

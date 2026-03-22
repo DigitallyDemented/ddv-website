@@ -9,6 +9,7 @@ tags:
   - persistent-memory
   - ai-systems-that-learn
   - knowledge-management
+ogImage: /images/og/my-ai-caught-broken-files-og.png
 ---
 
 

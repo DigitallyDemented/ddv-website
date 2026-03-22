@@ -12,9 +12,10 @@
   <meta property="og:description" content="{{ description or title }}">
   <meta property="og:url" content="https://digitallydemented.com{{ page.url }}">
   <meta property="og:type" content="article">
-  <meta property="og:image" content="https://digitallydemented.com/images/og-social-card.png">
+  <meta property="og:image" content="https://digitallydemented.com{{ ogImage or '/images/og-social-card.png' }}">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
+  {% if ogImage %}<meta property="og:image:alt" content="{{ title }}">{% endif %}
   <meta property="og:site_name" content="Digitally Demented Ventures">
   <meta property="og:locale" content="en_US">
   <meta name="author" content="Daniel Walters">
@@ -27,7 +28,7 @@
   <meta name="twitter:creator" content="@DigitalDemented">
   <meta name="twitter:title" content="{{ title }}">
   <meta name="twitter:description" content="{{ description or title }}">
-  <meta name="twitter:image" content="https://digitallydemented.com/images/og-social-card.png">
+  <meta name="twitter:image" content="https://digitallydemented.com{{ ogImage or '/images/og-social-card.png' }}">
 
   <!-- Favicon -->
   <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32.png">
@@ -78,7 +79,7 @@
       }
     },
     "url": "https://digitallydemented.com{{ page.url }}",
-    "image": "https://digitallydemented.com/images/og-social-card.png",
+    "image": "https://digitallydemented.com{{ ogImage or '/images/og-social-card.png' }}",
     "mainEntityOfPage": {
       "@type": "WebPage",
       "@id": "https://digitallydemented.com{{ page.url }}"
@@ -87,19 +88,28 @@
   </script>
 </head>
 <body>
-  <header class="blog-header">
-    <nav class="blog-nav">
-      <a href="/" class="blog-logo">
-        <img src="/images/ddv-logo-bug-nav.png" alt="DDV" width="40" height="40">
+  <nav class="nav">
+    <div class="container">
+      <a href="/" class="nav-brand">
+        <img src="/images/ddv-logo-bug-nav.png" alt="DDV Logo">
+        <span>Digitally Demented</span>
       </a>
-      <a href="/about">About Me</a>
-      <a href="/courses">Course</a>
-      <a href="/consulting">Consulting</a>
-      <a href="/tools">Tools I Use</a>
-      <a href="/blog/">Blog</a>
-      <a href="/contact">Contact</a>
-    </nav>
-  </header>
+      <div class="nav-links">
+        <a href="/about">About Me</a>
+        <a href="/courses">Course</a>
+        <a href="/consulting">Consulting</a>
+        <a href="/tools">Tools I Use</a>
+        <a href="/blog/" class="active">Blog</a>
+        <a href="/contact">Contact</a>
+        <a href="/courses" class="btn btn-primary btn-sm nav-cta">Start Here</a>
+      </div>
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
 
   <main class="blog-content">
     <article class="blog-post">
@@ -113,6 +123,15 @@
         {{ content | safe }}
       </div>
     </article>
+
+    <div class="author-card">
+      <img src="/images/daniel-hero.jpg" alt="Daniel Walters" class="author-photo">
+      <div class="author-info">
+        <strong>Daniel Walters</strong>
+        <p>Operations &amp; MarTech consultant. I teach professionals to build cognitive architectures for AI.</p>
+        <a href="/about">About me</a>
+      </div>
+    </div>
 
     <div class="post-cta">
       <div class="post-cta-inner">
@@ -142,6 +161,7 @@
           <strong>Navigate</strong>
           <a href="/about">About</a>
           <a href="/courses">Course</a>
+          <a href="/cognitive-architecture">Cognitive Architecture</a>
           <a href="/consulting">Consulting</a>
           <a href="/blog/">Blog</a>
         </div>

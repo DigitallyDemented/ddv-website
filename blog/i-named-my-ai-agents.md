@@ -10,6 +10,7 @@ tags:
   - ai-personality
   - multi-agent-systems
   - naming-conventions
+ogImage: /images/og/i-named-my-ai-agents-og.png
 ---
 
 

@@ -9,6 +9,7 @@ tags:
   - personal-productivity
   - ai-systems
   - connected-intelligence
+ogImage: /images/og/what-is-cognitive-architecture-og.png
 ---
 
 

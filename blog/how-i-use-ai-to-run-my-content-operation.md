@@ -10,6 +10,7 @@ tags:
   - content-operations
   - solopreneur
   - cognitive-architecture
+ogImage: /images/og/how-i-use-ai-to-run-my-content-operation-og.png
 ---
 
 

@@ -181,6 +181,51 @@
   background: #f9fafb;
 }
 
+/* Author card */
+.author-card {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  margin-top: 3rem;
+  padding: 1.5rem;
+  background: #f9fafb;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+}
+
+.author-photo {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.author-info strong {
+  font-family: 'Manrope', sans-serif;
+  font-size: 1rem;
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+.author-info p {
+  font-size: 0.85rem;
+  color: #4b5563;
+  margin-bottom: 0.25rem;
+  line-height: 1.4;
+}
+
+.author-info a {
+  font-size: 0.85rem;
+  color: #4338ca;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.author-info a:hover {
+  text-decoration: underline;
+}
+
 /* Post footer */
 .post-footer {
   margin-top: 3rem;

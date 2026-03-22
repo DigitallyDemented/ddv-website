@@ -9,6 +9,7 @@ tags:
   - ai-fluency
   - anthropic
   - connected-intelligence
+ogImage: /images/og/anthropic-is-teaching-what-i-teach-og.png
 ---
 
 

@@ -9,6 +9,7 @@ tags:
   - context-vs-content
   - ai-systems
   - connected-intelligence
+ogImage: /images/og/content-is-no-longer-king-context-is-king-og.png
 ---
 
 

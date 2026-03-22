@@ -9,6 +9,7 @@ tags:
   - personal-ai-system
   - multi-agent-ai
   - solopreneur
+ogImage: /images/og/why-i-built-an-ai-executive-team-og.png
 ---
 
 

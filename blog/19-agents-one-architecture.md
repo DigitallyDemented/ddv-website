@@ -10,6 +10,7 @@ tags:
   - ai-operations
   - solopreneur
   - running-multiple-ai-agents
+ogImage: /images/og/19-agents-one-architecture-og.png
 ---
 
 

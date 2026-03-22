@@ -10,6 +10,7 @@ tags:
   - divergent-thinking
   - convergent-thinking
   - connected-intelligence
+ogImage: /images/og/the-synthesis-problem-og.png
 ---
 
 

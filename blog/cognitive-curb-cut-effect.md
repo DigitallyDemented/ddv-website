@@ -10,6 +10,7 @@ tags:
   - cognitive-architecture
   - ai
   - lead-user-innovation
+ogImage: /images/og/cognitive-curb-cut-effect-og.png
 ---
 
 

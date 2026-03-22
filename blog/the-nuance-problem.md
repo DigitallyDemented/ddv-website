@@ -9,6 +9,7 @@ tags:
   - cognitive-architecture
   - decision-making
   - ai-adoption
+ogImage: /images/og/the-nuance-problem-og.png
 ---
 
 

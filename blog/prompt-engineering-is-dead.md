@@ -9,6 +9,7 @@ tags:
   - cognitive-architecture
   - ai-strategy
   - ai-systems
+ogImage: /images/og/prompt-engineering-is-dead-og.png
 ---
 
 

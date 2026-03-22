@@ -9,6 +9,7 @@ tags:
   - ai-adoption
   - ai-201
   - connected-intelligence
+ogImage: /images/og/the-201-gap-og.png
 ---
 
 

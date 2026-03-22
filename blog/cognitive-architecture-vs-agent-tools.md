@@ -9,6 +9,7 @@ tags:
   - ai-tools
   - multi-agent-ai
   - connected-intelligence
+ogImage: /images/og/cognitive-architecture-vs-agent-tools-og.png
 ---
 
 

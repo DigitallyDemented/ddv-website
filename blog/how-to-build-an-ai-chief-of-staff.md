@@ -12,6 +12,7 @@ tags:
   - ai-workflow
 series: ai-executives
 seriesOrder: 2
+ogImage: /images/og/how-to-build-an-ai-chief-of-staff-og.png
 ---
 
 

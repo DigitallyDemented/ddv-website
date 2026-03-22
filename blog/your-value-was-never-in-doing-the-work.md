@@ -9,6 +9,7 @@ tags:
   - cognitive-architecture
   - human-value
   - ai-transformation
+ogImage: /images/og/your-value-was-never-in-doing-the-work-og.png
 ---
 
 

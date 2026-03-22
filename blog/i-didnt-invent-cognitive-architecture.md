@@ -10,6 +10,7 @@ tags:
   - soar
   - act-r
   - connected-intelligence
+ogImage: /images/og/i-didnt-invent-cognitive-architecture-og.png
 ---
 
 

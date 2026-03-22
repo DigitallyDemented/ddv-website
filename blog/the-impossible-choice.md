@@ -9,6 +9,7 @@ tags:
   - ai-decision-making
   - ai-trade-offs
   - strategic-thinking
+ogImage: /images/og/the-impossible-choice-og.png
 ---
 
 

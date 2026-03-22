@@ -10,6 +10,7 @@ tags:
   - maintaining-ai-agents
   - ai-operations
   - knowledge-management
+ogImage: /images/og/patch-notes-for-your-business-og.png
 ---
 
 
