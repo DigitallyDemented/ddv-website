@@ -29,13 +29,15 @@ module.exports = function(eleventyConfig) {
       .sort((a, b) => b.date - a.date);
   });
 
-  // Prevent future-dated posts from being rendered at all (no HTML output)
+  // Future-dated posts: redirect to /blog/ instead of showing content
+  // When the post's date arrives and the daily rebuild runs, the redirect
+  // is automatically replaced by the real post (date is no longer future)
   eleventyConfig.addGlobalData("eleventyComputed", {
-    permalink: function(data) {
+    layout: function(data) {
       if (data.tags?.includes("post") && data.date > now) {
-        return false;
+        return "layouts/blog-redirect.njk";
       }
-      return data.permalink;
+      return data.layout;
     }
   });
 
