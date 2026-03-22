@@ -116,7 +116,7 @@ I'd be lying if I said this runs perfectly. It doesn't. Here's what goes wrong.
 
 **Self-assessment blind spots.** My agents write their own tests. Those tests encode the implementer's mental model — same blind spots as the implementation. A self-written test confirms assumptions; it doesn't challenge them. I now use independent verification protocols for significant changes.
 
-These aren't theoretical risks. They're things that actually happened, that I logged, and that I built corrections for. That's the maintenance work. [LINK: Post 20 — Patch Notes for Your Business]
+These aren't theoretical risks. They're things that actually happened, that I logged, and that I built corrections for. That's the maintenance work. See [Patch Notes for Your Business](/blog/patch-notes-for-your-business/).
 
 ## What It Costs
 
@@ -162,7 +162,11 @@ No. Start with one. Give it persistent memory, clear instructions, and a defined
 
 ### What's the most valuable agent in the system?
 
-Lennier (Chief of Staff), by a wide margin. If I could only keep one, it would be him. He coordinates everything else. Without the coordination layer, the other agents are just disconnected tools. With it, they're a team. [LINK: Post 2 — AI Chief of Staff]
+Lennier (Chief of Staff), by a wide margin. If I could only keep one, it would be him. He coordinates everything else. Without the coordination layer, the other agents are just disconnected tools. With it, they're a team. See [How to Build an AI Chief of Staff](/blog/how-to-build-an-ai-chief-of-staff/).
+
+---
+
+**Read next:** [One Person, Five AI Executives](/blog/one-person-five-ai-executives/) -- the architecture overview that explains how all 19 agents coordinate under five executive roles.
 
 ---
 

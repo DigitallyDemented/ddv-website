@@ -24,7 +24,7 @@ I have AuDHD — ADHD and autism together. My brain is exceptional at deep focus
 
 So I built an AI whose job is to watch for the pattern before I repeat it.
 
-This is post 6 in my [AI Executives series][LINK: Post 7 — The Architecture]. It's the most personal one. It's also the one I think matters most — because the system I built for my neurodivergent brain turns out to work for everyone.
+This is post 6 in my [AI Executives series](/blog/one-person-five-ai-executives/). It's the most personal one. It's also the one I think matters most — because the system I built for my neurodivergent brain turns out to work for everyone.
 
 ---
 
@@ -65,7 +65,7 @@ Executive function is the brain's management system. It handles:
 
 Here's the insight that changed my approach: AI is almost perfectly suited to supplement executive function. Not the *thinking* parts of cognition — those are still irreducibly human. But the *management* parts? The remembering, the tracking, the flagging, the coordinating? AI handles those at near-zero cognitive cost.
 
-My [AI Chief of Staff][LINK: Post 2 — AI Chief of Staff] holds my working memory between sessions. My handoff system handles prospective memory — when one agent finishes work, it writes notes for the next one, so nothing gets lost between my hyperfocus sessions. My daily briefing solves task initiation by giving me a clear starting point every morning.
+My [AI Chief of Staff](/blog/how-to-build-an-ai-chief-of-staff/) holds my working memory between sessions. My handoff system handles prospective memory — when one agent finishes work, it writes notes for the next one, so nothing gets lost between my hyperfocus sessions. My daily briefing solves task initiation by giving me a clear starting point every morning.
 
 But the most valuable executive function I outsourced? Self-monitoring.
 
@@ -186,7 +186,7 @@ You don't need a neurodivergent diagnosis to build this. You need self-awareness
 
 **Step 5: Review and calibrate monthly.** Your patterns evolve. New triggers emerge. Old ones fade. A guardrail system that doesn't update becomes a permission slip, not a safety net.
 
-The full architecture of how all these agents connect — Chief of Staff, CMO, CFO, CTO, and this self-management layer — is in [LINK: Post 7 — The Architecture]. Start with one agent. The guardrail agent might be the highest-ROI first choice, depending on your patterns.
+The full architecture of how all these agents connect — Chief of Staff, CMO, CFO, CTO, and this self-management layer — is in [One Person, Five AI Executives](/blog/one-person-five-ai-executives/). Start with one agent. The guardrail agent might be the highest-ROI first choice, depending on your patterns.
 
 ---
 
@@ -214,6 +214,6 @@ ChatGPT's memory is a step in the right direction, but it's passive — it remem
 
 ---
 
-*This is post 6 in the [AI Executives series][LINK: Post 7 — The Architecture]. The final post covers how all five executives connect into one system — and how to build yours starting with just one.*
+*This is post 6 in the [AI Executives series](/blog/one-person-five-ai-executives/). The final post covers how all five executives connect into one system — and how to build yours starting with just one.*
 
 *If this resonated — especially the neurodivergent angle — [Connected Intelligence](https://digitallydemented.com/courses) goes deep on building AI systems that work with your brain, not against it. The course was designed by someone whose brain needed it first.*

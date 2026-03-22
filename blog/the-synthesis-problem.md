@@ -101,7 +101,7 @@ Here's what synthesis actually requires:
 
 My system handles this architecturally. When my CMO agent Kennedy generates positioning options, my values framework automatically filters against brand alignment. When my Chief of Staff surfaces three possible priorities, the 90-day plan provides the evaluation criteria. The architecture synthesizes *for* me — not by choosing (that's still my job) but by structuring the choice so my working memory isn't the bottleneck.
 
-That's what cognitive architecture does for synthesis. It externalizes the evaluation structure so your brain does the deciding, not the holding. [LINK: Post 7 — The Architecture]
+That's what cognitive architecture does for synthesis. It externalizes the evaluation structure so your brain does the deciding, not the holding. See [the full architecture](/blog/one-person-five-ai-executives/).
 
 ## The Two Failure Modes
 
@@ -131,13 +131,13 @@ The fix isn't "get better at synthesizing." That's like telling someone to "just
 
 Cognitive architecture addresses the Synthesis Problem at three levels:
 
-**Level 1: Pre-filtered generation.** My agents don't generate options from zero. They generate within constraints — my values, my current priorities, my brand voice, my 90-day goals. The context layer pre-filters the divergent output so I'm choosing between 5 relevant options, not 30 random ones. [LINK: Post 14 — Context Is King]
+**Level 1: Pre-filtered generation.** My agents don't generate options from zero. They generate within constraints — my values, my current priorities, my brand voice, my 90-day goals. The context layer pre-filters the divergent output so I'm choosing between 5 relevant options, not 30 random ones. See [Content Is No Longer King](/blog/content-is-no-longer-king-context-is-king/).
 
 **Level 2: Built-in evaluation criteria.** My system has explicit evaluation frameworks for different decision types. Content gets reviewed against a 6-lens content gate. Communications get reviewed against a 5-lens communication gate. Financial decisions get evaluated against runway and values alignment. The criteria exist before the options do.
 
 **Level 3: Role-separated perspectives.** When a strategic decision needs synthesis, I can convene multiple agents with different viewpoints. My CMO evaluates the marketing angle. My CFO evaluates the financial angle. My CPO challenges whether we should do it at all. The architecture provides structured disagreement — which is what real synthesis requires.
 
-The doing isn't the work anymore. The thinking is the work. And the hardest kind of thinking — synthesis — is the piece that cognitive architecture is specifically designed to support. [LINK: Post 5 — What Is Cognitive Architecture?]
+The doing isn't the work anymore. The thinking is the work. And the hardest kind of thinking — synthesis — is the piece that [cognitive architecture](/blog/what-is-cognitive-architecture/) is specifically designed to support.
 
 ## What This Means for How You Use AI
 
@@ -167,7 +167,7 @@ Partially. AI can compare options against stated criteria, build decision matric
 
 ### What's "structure-limiting" versus time-limiting or source-limiting?
 
-Time-limiting means "stop evaluating after 20 minutes." Source-limiting means "only generate 3 options." Structure-limiting means "define evaluation criteria before generating, so any number of options gets filtered through the same framework." Structure-limiting scales. The other two don't. [LINK: Post 7 — The Architecture]
+Time-limiting means "stop evaluating after 20 minutes." Source-limiting means "only generate 3 options." Structure-limiting means "define evaluation criteria before generating, so any number of options gets filtered through the same framework." Structure-limiting scales. The other two don't. See [the full architecture](/blog/one-person-five-ai-executives/).
 
 ### Does the Synthesis Problem affect everyone equally?
 
@@ -175,7 +175,7 @@ No. People with strong existing decision frameworks — consultants, strategists
 
 ### How does the Synthesis Problem connect to cognitive architecture?
 
-Cognitive architecture is the structural solution to the Synthesis Problem. By building evaluation criteria, values gates, and role-separated perspectives into the system itself, the architecture handles the structural part of synthesis — organizing, filtering, comparing — so the human can focus on the irreducibly human part: deciding. [LINK: Post 5 — What Is Cognitive Architecture?]
+Cognitive architecture is the structural solution to the Synthesis Problem. By building evaluation criteria, values gates, and role-separated perspectives into the system itself, the architecture handles the structural part of synthesis — organizing, filtering, comparing — so the human can focus on the irreducibly human part: deciding. See [What Is Cognitive Architecture?](/blog/what-is-cognitive-architecture/)
 
 ---
 

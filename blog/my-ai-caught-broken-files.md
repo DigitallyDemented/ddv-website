@@ -109,7 +109,7 @@ Your value was never in running the grep. AI just made that obvious.
 
 The question isn't whether your AI can catch broken files. It's whether your system is designed to learn from what it catches — and apply that learning next time, without you remembering to tell it.
 
-That's the difference between a tool and an architecture. [LINK: Post 7 — The Architecture] breaks down the full system. [LINK: Post 2 — AI Chief of Staff] explains why persistent memory changes everything about how your AI operates.
+That's the difference between a tool and an architecture. [One Person, Five AI Executives](/blog/one-person-five-ai-executives/) breaks down the full system. [How to Build an AI Chief of Staff](/blog/how-to-build-an-ai-chief-of-staff/) explains why persistent memory changes everything about how your AI operates.
 
 ---
 
@@ -125,7 +125,7 @@ Some consumer tools have memory features, but they're typically unstructured and
 
 ### What happens when persistent memory gets too large?
 
-You prune it. My system runs periodic memory reviews — checking for lessons that are outdated, superseded, or no longer relevant. Information expires. The memory layer only compounds if you maintain it. That's part of the maintenance work nobody talks about. [LINK: Post 20 — Patch Notes for Your Business]
+You prune it. My system runs periodic memory reviews — checking for lessons that are outdated, superseded, or no longer relevant. Information expires. The memory layer only compounds if you maintain it. That's part of the maintenance work nobody talks about. See [Patch Notes for Your Business](/blog/patch-notes-for-your-business/).
 
 ### Isn't a 33% miss rate still bad?
 

@@ -131,7 +131,7 @@ The doing isn't the work anymore. The thinking is the work.
 
 And the hardest thinking isn't choosing which AI tool to use. It's designing a decision framework that handles the trade-offs so you don't have to make each one from scratch, every single time.
 
-That's what cognitive architecture does. It turns impossible choices into architectural decisions. [LINK: Post 7 — The Architecture] walks through the full system. [LINK: Post 5 — What Is Cognitive Architecture?] explains the concept from first principles.
+That's what cognitive architecture does. It turns impossible choices into architectural decisions. [One Person, Five AI Executives](/blog/one-person-five-ai-executives/) walks through the full system. [What Is Cognitive Architecture?](/blog/what-is-cognitive-architecture/) explains the concept from first principles.
 
 ---
 

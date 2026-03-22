@@ -45,12 +45,14 @@
 html {
   scroll-behavior: smooth;
   font-size: 16px;
+  overflow-x: hidden;
 }
 
 body {
   font-family: var(--font-body);
   color: var(--slate);
   line-height: 1.6;
+  overflow-x: hidden;
   background: var(--warm-white);
   -webkit-font-smoothing: antialiased;
 }

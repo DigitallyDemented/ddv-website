@@ -38,6 +38,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
 
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="DDV Blog" href="/blog/feed.xml">
+
   <!-- Main site styles + blog styles -->
   <link rel="stylesheet" href="/css/styles.css">
   <link rel="stylesheet" href="/css/blog.css">
@@ -111,13 +114,48 @@
       </div>
     </article>
 
+    <div class="post-cta">
+      <div class="post-cta-inner">
+        <h3>Build Your Own Cognitive Architecture</h3>
+        <p>This post is part of a larger system of thinking about AI. If you want to go deeper:</p>
+        <div class="post-cta-buttons">
+          <a href="/courses" class="btn btn-primary">Explore the Course</a>
+          <a href="/consulting" class="btn btn-outline">Work With Me</a>
+        </div>
+        <p class="post-cta-sub">Or start with <a href="/blog/one-person-five-ai-executives/">the full architecture walkthrough</a>.</p>
+      </div>
+    </div>
+
     <div class="post-footer">
       <a href="/blog/">&larr; Back to all posts</a>
     </div>
   </main>
 
-  <footer class="blog-footer">
-    <p>&copy; {{ "now" | currentYear }} Digitally Demented Ventures LLC</p>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <img src="/images/ddv-logo-bug-nav.png" alt="DDV" width="40" height="40">
+          <p>&copy; {{ "now" | currentYear }} Digitally Demented Ventures LLC</p>
+        </div>
+        <div class="footer-col">
+          <strong>Navigate</strong>
+          <a href="/about">About</a>
+          <a href="/courses">Course</a>
+          <a href="/consulting">Consulting</a>
+          <a href="/blog/">Blog</a>
+        </div>
+        <div class="footer-col">
+          <strong>Connect</strong>
+          <a href="/contact">Contact</a>
+          <a href="/card">Digital Card</a>
+          <a href="/blog/feed.xml">RSS Feed</a>
+        </div>
+      </div>
+    </div>
   </footer>
+
+  <!-- HubSpot Tracking -->
+  <script type="text/javascript" id="hs-script-loader" async defer src="https://js-na2.hs-scripts.com/243773350.js"></script>
 </body>
 </html>

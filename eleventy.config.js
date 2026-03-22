@@ -22,6 +22,9 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("cognitive-architecture.html");
   eleventyConfig.addPassthroughCopy("404.html");
 
+  // Exclude internal docs from the build
+  eleventyConfig.ignores.add("skool-optimization-plan.md");
+
   // Blog collection: all posts tagged "post", excluding future-dated posts
   const now = new Date();
   eleventyConfig.addCollection("posts", function(collectionApi) {

@@ -78,7 +78,7 @@ I didn't know I was doing virtue ethics. I just knew that compartmentalized valu
 
 Two people from completely different starting points — one from philosophy, one from operations — discovered the same structural truth. Askell designed it from theory. I stumbled into it from practice. The convergence isn't coincidence. It's a principle being discovered, not invented.
 
-*The doing isn't the work anymore. The thinking is the work.* And the values underneath the thinking? That's the architecture. [LINK: Post 7 — The Architecture]
+*The doing isn't the work anymore. The thinking is the work.* And the values underneath the thinking? That's [the architecture](/blog/one-person-five-ai-executives/).
 
 ## How to Build Values Into Your AI System (Not Bolt Them On)
 
@@ -92,7 +92,7 @@ If you're building any AI system — whether it's a single-agent workflow or a m
 
 **4. Test for value drift, not just output quality.** Most people evaluate AI output on accuracy or usefulness. Start evaluating whether your AI's behavior is *consistent with your values* across different domains. That's where the cracks show up first.
 
-**5. Treat character as architecture, not feature.** You don't add character to a system the way you add a feature. You design it into the foundation. My system's values layer isn't something I bolted on after the agents were built — it's what I built first. [LINK: Post 2 — AI Chief of Staff]
+**5. Treat character as architecture, not feature.** You don't add character to a system the way you add a feature. You design it into the foundation. My system's values layer isn't something I bolted on after the agents were built — it's what I built first. See [How to Build an AI Chief of Staff](/blog/how-to-build-an-ai-chief-of-staff/).
 
 The lesson from both the research and my practice: *information expires. Systems compound.* And the most important system isn't your automation pipeline or your prompt library. It's your values architecture.
 
@@ -108,7 +108,7 @@ No. My background is operations consulting, not software engineering. The values
 
 ### How is this different from just writing a good system prompt?
 
-A system prompt is a single instruction set for a single interaction. A values architecture is a persistent, unified layer that governs every interaction across every agent. The difference is between telling someone "be nice today" and building a culture where quality is the default. [LINK: Post 6 — AI That Manages ME]
+A system prompt is a single instruction set for a single interaction. A values architecture is a persistent, unified layer that governs every interaction across every agent. The difference is between telling someone "be nice today" and building a culture where quality is the default. See [AI That Manages Me](/blog/ai-that-manages-me/).
 
 ### What's the connection between virtue ethics and AI alignment research?
 

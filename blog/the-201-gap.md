@@ -60,7 +60,7 @@ Here's what most AI educators get wrong: they assume the problem is skill-based.
 
 No. The gap isn't skill. It's architecture.
 
-A person who's excellent at prompting ChatGPT still faces the same structural problem every time they open a new conversation: zero context. No memory of who they are, what they're building, what they tried yesterday, what worked. I've named this the Stranger Loop — and it's the specific mechanism that turns the 201 Gap from an abstract concept into a daily frustration. [LINK: Post 10 — The Stranger Loop]
+A person who's excellent at prompting ChatGPT still faces the same structural problem every time they open a new conversation: zero context. No memory of who they are, what they're building, what they tried yesterday, what worked. I've named this [the Stranger Loop](/blog/the-stranger-loop/) — and it's the specific mechanism that turns the 201 Gap from an abstract concept into a daily frustration.
 
 Better prompts don't fix this. Better prompts produce better individual outputs. But individual outputs don't compound. They're one-off transactions — value created, value consumed, context lost.
 
@@ -76,7 +76,7 @@ He's describing the 201 layer. And he's right that it's where success separates 
 
 So what's in the gap? What does someone need to learn after they've mastered basic AI tool use?
 
-**1. Persistent context design.** How to give your AI memory that carries across sessions. Not a prompt you paste. A system that loads automatically. My CLAUDE.md file contains my role, my goals, my values, my constraints, my working style, my current projects, even my personality type. Every session starts with context instead of from zero. [LINK: Post 10 — The Stranger Loop]
+**1. Persistent context design.** How to give your AI memory that carries across sessions. Not a prompt you paste. A system that loads automatically. My CLAUDE.md file contains my role, my goals, my values, my constraints, my working style, my current projects, even my personality type. Every session starts with context instead of from zero. See [The Stranger Loop](/blog/the-stranger-loop/).
 
 **2. Role separation.** One AI doing everything is like one employee handling sales, marketing, finance, operations, and strategy. It's possible but terrible. Separating roles — giving each agent a defined scope, specific expertise, and clear boundaries — produces dramatically better output. My content agent doesn't touch financial decisions. My financial agent doesn't write social posts.
 
@@ -84,7 +84,7 @@ So what's in the gap? What does someone need to learn after they've mastered bas
 
 **4. Values integration.** Your AI doesn't know what "good" means in your specific context unless you tell it. My agents operate under my vision, mission, and values — with explicit instructions to flag when a decision doesn't align. The values layer is the part most people skip. It's also the part that prevents the most expensive mistakes.
 
-**5. System thinking.** The meta-skill: looking at your work as a system rather than a series of tasks. Where do you lose context? Where do handoffs break? Where are you doing work an agent could handle? Where do you need a perspective you're not getting? [LINK: Post 7 — The Architecture]
+**5. System thinking.** The meta-skill: looking at your work as a system rather than a series of tasks. Where do you lose context? Where do handoffs break? Where are you doing work an agent could handle? Where do you need a perspective you're not getting? See [the full architecture](/blog/one-person-five-ai-executives/).
 
 The doing isn't the work anymore. The thinking is the work. And the 201 Gap is precisely the gap between doing things with AI and thinking about how AI fits into how you work.
 
@@ -108,7 +108,7 @@ The gap isn't going to close itself. Nobody's going to build a course that just 
 
 If you want to start crossing on your own, here's the sequence:
 
-**Step 1: Break the Stranger Loop.** Give your AI a persistent context file. Who you are, what you do, what you're working on, what your constraints are, what your values look like. Load it at the start of every session. This single change eliminates 90% of the "AI gives generic output" problem. [LINK: Post 10 — The Stranger Loop]
+**Step 1: Break the Stranger Loop.** Give your AI a persistent context file. Who you are, what you do, what you're working on, what your constraints are, what your values look like. Load it at the start of every session. This single change eliminates 90% of the "AI gives generic output" problem. See [The Stranger Loop](/blog/the-stranger-loop/).
 
 **Step 2: Separate one role.** Take the most repetitive cognitive task in your work — inbox processing, content drafting, research synthesis — and design a dedicated agent for it. Give it a defined scope. Tell it what it can and cannot do. Give it context about your standards.
 
@@ -126,7 +126,7 @@ Information expires. Systems compound. And the 201 Gap is the space between cons
 
 ### What exactly is AI 201?
 
-AI 201 is the structural layer of AI competence that comes after basic tool proficiency. It includes persistent context design, role separation, coordination protocols, values integration, and system thinking. It's the difference between knowing how to use AI and knowing how to build a system that makes AI useful long-term. [LINK: Post 5 — What Is Cognitive Architecture?]
+AI 201 is the structural layer of AI competence that comes after basic tool proficiency. It includes persistent context design, role separation, coordination protocols, values integration, and system thinking. It's the difference between knowing how to use AI and knowing how to build a system that makes AI useful long-term. See [What Is Cognitive Architecture?](/blog/what-is-cognitive-architecture/)
 
 ### Is the 201 Gap a skill problem or a knowledge problem?
 
@@ -142,7 +142,7 @@ The first meaningful shift — breaking the Stranger Loop with persistent contex
 
 ### Why should I trust someone who says they've crossed this gap?
 
-Don't trust the claim. Look at the system. I publish my architecture, my agent roster, my session counts, what broke and how I fixed it. Over 200 sessions in production, 19 agents, running my actual consulting business. The evidence isn't the essay. It's the system behind it. [LINK: Post 7 — The Architecture]
+Don't trust the claim. Look at the system. I publish my architecture, my agent roster, my session counts, what broke and how I fixed it. Over 200 sessions in production, 19 agents, running my actual consulting business. The evidence isn't the essay. It's the system behind it. See [the full architecture](/blog/one-person-five-ai-executives/).
 
 ---
 

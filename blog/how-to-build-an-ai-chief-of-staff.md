@@ -19,7 +19,7 @@ seriesOrder: 2
 
 I have an AI Chief of Staff. Not a chatbot I talk to sometimes. An actual Chief of Staff that shows up every morning with my briefing prepared, my conflicts flagged, and my priorities loaded — before I say a word.
 
-This is post 2 in my [AI Executives series][LINK: Post 7 — The Architecture], where I break down how I built a 19-agent AI system that runs my consulting practice. If you haven't read the full architecture overview, start there. But this post stands on its own.
+This is post 2 in my [AI Executives series](/blog/one-person-five-ai-executives/), where I break down how I built a 19-agent AI system that runs my consulting practice. If you haven't read the full architecture overview, start there. But this post stands on its own.
 
 Here's the short version: most people's AI experience quietly dies because they hit the same invisible wall every session. I'm going to show you how I broke through it.
 
@@ -156,7 +156,7 @@ Here's the minimum viable Chief of Staff:
 
 4. **Add memory between sessions.** Log what happened at the end of each session. Load it at the start of the next one. This is how you break the Stranger Loop.
 
-5. **Iterate for two weeks before adding complexity.** Resist the urge to build everything at once. Get the Chief of Staff solid, then consider adding a second agent. [LINK: Post 7 — The Architecture] covers how the full system connects.
+5. **Iterate for two weeks before adding complexity.** Resist the urge to build everything at once. Get the Chief of Staff solid, then consider adding a second agent. [One Person, Five AI Executives](/blog/one-person-five-ai-executives/) covers how the full system connects.
 
 The technology will keep changing. The models will get better. But the principle — **give AI persistent context about who you are and what matters to you** — is the foundational layer everything else builds on.
 
@@ -180,14 +180,14 @@ The first version took about two hours — mostly writing the context document. 
 
 ### Is this just a fancy prompt?
 
-In the same way that an operating system is "just code," sure. But a CLAUDE.md file that includes your values, your 90-day goals, your failure modes, your agent architecture, and your session history is qualitatively different from a prompt that says "you are a helpful assistant." The depth and specificity of the context is what creates the Chief of Staff behavior. [LINK: Post 7 — The Architecture] goes deeper into why architecture matters more than any individual prompt.
+In the same way that an operating system is "just code," sure. But a CLAUDE.md file that includes your values, your 90-day goals, your failure modes, your agent architecture, and your session history is qualitatively different from a prompt that says "you are a helpful assistant." The depth and specificity of the context is what creates the Chief of Staff behavior. [One Person, Five AI Executives](/blog/one-person-five-ai-executives/) goes deeper into why architecture matters more than any individual prompt.
 
 ### Does this actually save time, or is it just interesting?
 
-My morning orientation went from scattered and reactive to a 5-minute structured briefing. The Chief of Staff saves real time in context-switching costs alone — and that's before counting the decisions it helps me avoid (like the overextension pattern catches). The ROI isn't theoretical. It's my actual workday. [LINK: Post 3 — AI CMO] covers how the same persistent context principle applies to content creation.
+My morning orientation went from scattered and reactive to a 5-minute structured briefing. The Chief of Staff saves real time in context-switching costs alone — and that's before counting the decisions it helps me avoid (like the overextension pattern catches). The ROI isn't theoretical. It's my actual workday. [Your AI CMO](/blog/your-ai-cmo-teaching-ai-your-voice/) covers how the same persistent context principle applies to content creation.
 
 ---
 
-*This is post 2 in the [AI Executives series][LINK: Post 7 — The Architecture]. Next up: [how I built an AI CMO with a mentor council that knows my voice better than I do][LINK: Post 3 — AI CMO].*
+*This is post 2 in the [AI Executives series](/blog/one-person-five-ai-executives/). Next up: [how I built an AI CMO with a mentor council that knows my voice better than I do](/blog/your-ai-cmo-teaching-ai-your-voice/).*
 
 *Building your own AI executive team? [Connected Intelligence](https://digitallydemented.com/courses) teaches the full architecture — from your first context document to a coordinated multi-agent system.*

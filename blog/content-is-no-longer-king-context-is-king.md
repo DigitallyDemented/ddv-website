@@ -145,7 +145,7 @@ The second most common mistake: people add context about their *tasks* but not a
 
 Context isn't just information. It's perspective. And perspective is what separates a tool that follows orders from a partner that challenges your reasoning.
 
-We're only capped by our thinking, not by the tools. Context is how you encode your thinking into a system. [LINK: Post 5 — What Is Cognitive Architecture?]
+We're only capped by our thinking, not by the tools. Context is how you encode your thinking into a system. See [What Is Cognitive Architecture?](/blog/what-is-cognitive-architecture/)
 
 ## What "Context Is King" Means for Your AI Strategy
 
@@ -153,7 +153,7 @@ If you're still operating in the content era — trying to produce more output, 
 
 The context era rewards a different set of moves:
 
-1. **Invest in persistent context before investing in more tools.** A single AI with deep context about who you are will outperform five disconnected AI tools that start from zero every session. [LINK: Post 10 — The Stranger Loop]
+1. **Invest in persistent context before investing in more tools.** A single AI with deep context about who you are will outperform five disconnected AI tools that start from zero every session. See [The Stranger Loop](/blog/the-stranger-loop/).
 
 2. **Design your context layers deliberately.** Identity, operational, relational. Build them in that order. Each layer compounds the value of the layers below it.
 
@@ -161,7 +161,7 @@ The context era rewards a different set of moves:
 
 4. **Update context regularly.** A stale context file is only slightly better than no context file. Build the habit of evolving your persistent context as your work evolves.
 
-5. **Encode your values, not just your tasks.** Tasks change daily. Values don't. An AI that knows your values can evaluate novel situations. An AI that only knows your tasks can only execute what you've already defined. [LINK: Post 7 — The Architecture]
+5. **Encode your values, not just your tasks.** Tasks change daily. Values don't. An AI that knows your values can evaluate novel situations. An AI that only knows your tasks can only execute what you've already defined. See [the full architecture](/blog/one-person-five-ai-executives/).
 
 Content is no longer king. Context is king. And the people who figure this out earliest will have a compounding advantage that the content-volume crowd can never catch.
 
@@ -177,7 +177,7 @@ A better prompt improves one interaction. Better context improves every interact
 
 ### What's the minimum context I need to see a difference?
 
-A persistent context file with three things: who you are (role, experience, working style), what you're building (current projects, 90-day goals), and what good looks like (your values, your quality standards). That file, loaded at every session start, eliminates the Stranger Loop and immediately produces more specific output. [LINK: Post 10 — The Stranger Loop]
+A persistent context file with three things: who you are (role, experience, working style), what you're building (current projects, 90-day goals), and what good looks like (your values, your quality standards). That file, loaded at every session start, eliminates [the Stranger Loop](/blog/the-stranger-loop/) and immediately produces more specific output.
 
 ### Is this just about AI, or does "context is king" apply to human work too?
 
@@ -185,7 +185,7 @@ Both. The principle has always been true — a doctor who knows your medical his
 
 ### How does context relate to cognitive architecture?
 
-Context is the fuel. Cognitive architecture is the engine. Architecture determines how context gets stored, shared, updated, and applied across a system of agents. Without architecture, context is just a document. With architecture, context becomes a living system that compounds. [LINK: Post 5 — What Is Cognitive Architecture?]
+Context is the fuel. Cognitive architecture is the engine. Architecture determines how context gets stored, shared, updated, and applied across a system of agents. Without architecture, context is just a document. With architecture, context becomes a living system that compounds. See [What Is Cognitive Architecture?](/blog/what-is-cognitive-architecture/)
 
 ---
 

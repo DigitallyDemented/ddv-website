@@ -98,7 +98,7 @@ The pattern isn't coincidence. It's what happens when you build the system inste
 
 ## What the System Actually Looks Like
 
-For people who want specifics, here's the architecture: [LINK: Post 7 — The Architecture]
+For people who want specifics, here's [the architecture](/blog/one-person-five-ai-executives/).
 
 The short version:
 
@@ -125,7 +125,7 @@ So you build ten. And each one is individually useful. But collectively, they're
 
 *Building one agent is like buying one app. Building a cognitive architecture is like designing your operating system.*
 
-The app is useful on day one. The operating system is useful on day one *and* day one hundred — because it's the layer that makes every app work better together. [LINK: Post 17 — 19 Agents One Architecture]
+The app is useful on day one. The operating system is useful on day one *and* day one hundred — because it's the layer that makes every app work better together. See [19 Agents, One Architecture](/blog/19-agents-one-architecture/).
 
 Most people stop at the app. They build one agent, maybe three, and call it "using AI." That's like buying Slack, Notion, and Salesforce and calling it "having a tech stack." Without integration, without coordination, without architecture — you just have three tools that don't talk to each other.
 
@@ -137,7 +137,7 @@ You don't need 19 agents. You need to think about coordination *before* you need
 
 **2. When you add a second agent, define the handoff protocol.** How does Agent A pass context to Agent B? What information travels? What format? This forces you to think architecturally before the coordination problem gets unmanageable.
 
-**3. Write down your values and make them readable by every agent.** Not optional. Not nice-to-have. The values layer is what keeps a multi-agent system aligned. Without it, you have agents optimizing for their individual objectives with no shared compass. [LINK: Post 5 — What Is Cognitive Architecture?]
+**3. Write down your values and make them readable by every agent.** Not optional. Not nice-to-have. The values layer is what keeps a multi-agent system aligned. Without it, you have agents optimizing for their individual objectives with no shared compass. See [What Is Cognitive Architecture?](/blog/what-is-cognitive-architecture/)
 
 **4. Build the shared context directory before you need it.** A single location where every agent reads and writes. Handoffs, status, shared memory. The architecture is the directory structure and the protocols for using it — not the agents themselves.
 
@@ -165,7 +165,7 @@ Building agents before defining the coordination model. They start with "I need 
 
 ### How long did it take you to build 19 agents?
 
-The first agent took a day. The architecture decisions that make them coordinate took weeks. But every session along the way was immediately productive — the system pays for itself from session one. Over 200 sessions, the estimated leverage has been 5-9x average, with peaks hitting 20-50x. That's the compound effect of architecture. [LINK: Post 7 — The Architecture]
+The first agent took a day. The architecture decisions that make them coordinate took weeks. But every session along the way was immediately productive — the system pays for itself from session one. Over 200 sessions, the estimated leverage has been 5-9x average, with peaks hitting 20-50x. That's the compound effect of architecture. See [the full architecture](/blog/one-person-five-ai-executives/).
 
 ---
 

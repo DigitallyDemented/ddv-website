@@ -69,7 +69,7 @@ The difference wasn't talent or technical skill. I'm not a developer. The differ
 | **Political friction** | Department turf wars, budget competition | Zero |
 | **Time to first useful output** | 3-6 months | Same day |
 
-Nate B Jones describes a "201 gap" in AI education — the space between "I took a prompt engineering course" and "AI is genuinely integrated into how I work." Enterprise transformation programs spend 12-18 months crossing that gap for an organization. An individual can cross it in weeks because the gap is smaller and the iteration cycle is faster. [LINK: Post 13 — The 201 Gap]
+Nate B Jones describes a "201 gap" in AI education — the space between "I took a prompt engineering course" and "AI is genuinely integrated into how I work." Enterprise transformation programs spend 12-18 months crossing that gap for an organization. An individual can cross it in weeks because the gap is smaller and the iteration cycle is faster. See [The 201 Gap](/blog/the-201-gap/).
 
 ## The Speed Gap Isn't Cheating — It's the Point
 
@@ -132,7 +132,7 @@ I'm not going to pretend this is effortless. It took daily iteration, genuine th
 
 Here's the honest sequence:
 
-**Days 1-7: Build your first agent.** Pick the role that costs you the most mental energy. Give it persistent context. Use it daily. [LINK: Post 7 — The Architecture]
+**Days 1-7: Build your first agent.** Pick the role that costs you the most mental energy. Give it persistent context. Use it daily. See [the full architecture](/blog/one-person-five-ai-executives/).
 
 **Days 8-14: Add a second agent.** Only when the first is genuinely useful. Start building shared context — the architecture that lets agents coordinate.
 

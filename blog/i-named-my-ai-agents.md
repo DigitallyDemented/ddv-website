@@ -153,6 +153,8 @@ Naming scales because it makes a system legible to anyone who interacts with it.
 
 ---
 
+**Read next:** [One Person, Five AI Executives](/blog/one-person-five-ai-executives/) -- how the named agents connect into a coordinated architecture.
+
 *Naming isn't sentiment. It's the shortest path to architectural clarity. Each name carries scope, personality, constraints, and values — turning generic AI tools into specific, bounded, useful partners.*
 
 *[Connected Intelligence on Skool](https://digitallydemented.com/courses) teaches you to design agents with names, roles, values, and clear boundaries — the architecture that turns a collection of AI tools into a coordinated team.*

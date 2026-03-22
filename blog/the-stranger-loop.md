@@ -77,7 +77,7 @@ The result: I haven't re-explained who I am to my AI in months. Every session pi
 
 That's not a parlor trick. That's compound interest on context. Information expires. Systems compound. And a persistent context file is the smallest system that compounds the most.
 
-For the full architecture of how this scales to 19 agents sharing context across roles, see [LINK: Post 7 — The Architecture].
+For the full architecture of how this scales to 19 agents sharing context across roles, see [One Person, Five AI Executives](/blog/one-person-five-ai-executives/).
 
 ## From Stranger to Chief of Staff: The Progression
 
@@ -95,7 +95,7 @@ Most people are at Level 0 or Level 1. They're either re-explaining everything o
 
 Level 2 is where the Stranger Loop breaks. A single persistent context file — honestly written, regularly updated — transforms every AI interaction from a cold start to a warm handoff.
 
-Levels 3 and 4 are what I teach inside Connected Intelligence. That's where you go from "my AI knows me" to "my AI *works with me* across multiple domains, with coordination and judgment built in." See [LINK: Post 2 — AI Chief of Staff] for what the first step of that progression looks like in practice.
+Levels 3 and 4 are what I teach inside Connected Intelligence. That's where you go from "my AI knows me" to "my AI *works with me* across multiple domains, with coordination and judgment built in." See [How to Build an AI Chief of Staff](/blog/how-to-build-an-ai-chief-of-staff/) for what the first step of that progression looks like in practice.
 
 ## How to Break Your Stranger Loop Today
 

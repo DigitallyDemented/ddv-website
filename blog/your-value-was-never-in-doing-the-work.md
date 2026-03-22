@@ -86,7 +86,7 @@ Here's what *I* do:
 
 - **Relationship building.** I show up to calls. I remember that Tim's daughter plays soccer. I know when Nikki needs me to step away from work. AI can research and prep — it can't be present.
 
-- **Values alignment.** Every agent in my system reads my Vision, Mission, and Values before every session. But I'm the one who *defined* those values. And I'm the one who catches when an agent's recommendation conflicts with them. The values layer is mine. [LINK: Post 5 — What Is Cognitive Architecture?]
+- **Values alignment.** Every agent in my system reads my Vision, Mission, and Values before every session. But I'm the one who *defined* those values. And I'm the one who catches when an agent's recommendation conflicts with them. The values layer is mine. See [What Is Cognitive Architecture?](/blog/what-is-cognitive-architecture/)
 
 - **Judgment under uncertainty.** Should I launch the course now or wait three months? The agents can model scenarios. I make the call. Because the call involves risk tolerance, gut feel, relationship dynamics, and personal capacity — things that aren't modelable.
 
@@ -142,7 +142,7 @@ If you're reading this and feeling a knot in your stomach — good. That means y
 
 **3. Redesign your week around the high-value activities.** This is the hard part. It means saying "I don't do that anymore" about work that used to define you. It means letting go of the comfort of execution.
 
-**4. Build the architecture to support the shift.** [LINK: Post 7 — The Architecture] You don't need 19 agents. You need a system — even a simple one — that handles the doing so you can focus on the thinking.
+**4. Build the architecture to support the shift.** [One Person, Five AI Executives](/blog/one-person-five-ai-executives/) shows how. You don't need 19 agents. You need a system — even a simple one — that handles the doing so you can focus on the thinking.
 
 *We're only capped by our thinking, not by the tools.* The tools can handle the doing. The question is whether your thinking is worth freeing up.
 

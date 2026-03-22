@@ -80,7 +80,7 @@ The entire prompt engineering paradigm assumes isolated interactions. You talk t
 
 Architecture assumes *continuity*. The system remembers. The system learns. The system coordinates. The system holds you accountable to your own standards.
 
-That's a fundamentally different relationship with AI. And it's the one that actually compounds. [LINK: Post 5 — What Is Cognitive Architecture?]
+That's a fundamentally different relationship with AI. And it's the one that actually compounds. See [What Is Cognitive Architecture?](/blog/what-is-cognitive-architecture/)
 
 ## Why Better Models Make Architecture More Important, Not Less
 
@@ -90,7 +90,7 @@ Smarter models need less hand-holding on individual interactions. You don't need
 
 But smarter models also expose a bigger gap: the gap between what AI *can* do and what you're *asking* it to do. When the model was the bottleneck, you could blame poor output on poor prompting. When the model is brilliant and your output is still generic, the problem is you — your context, your structure, your architecture.
 
-Microsoft tracked 300,000 employees adopting AI tools. 80% quit within three weeks. Not because the tools were bad. Because there's a gap between knowing how to prompt (101-level) and knowing how to integrate AI into how you actually work (201-level). Nate B Jones calls this "the 201 gap" — and it's exactly where architecture lives. [LINK: Post 13 — The 201 Gap]
+Microsoft tracked 300,000 employees adopting AI tools. 80% quit within three weeks. Not because the tools were bad. Because there's a gap between knowing how to prompt (101-level) and knowing how to integrate AI into how you actually work (201-level). Nate B Jones calls this "the 201 gap" — and it's exactly where architecture lives. See [The 201 Gap](/blog/the-201-gap/).
 
 *Content is no longer king. Context is king.* The model has all the capability you need. What it doesn't have is your context — your values, your history, your judgment, your strategic priorities. Architecture is how you give it that context *once* and let it compound.
 
@@ -120,7 +120,7 @@ Yes — the way typing still matters. It's a prerequisite, not a differentiator.
 
 ### Is cognitive architecture only for technical people?
 
-No. Cognitive architecture is about *design decisions*, not code. My 19-agent system runs on markdown files, not software engineering. If you can organize your thinking — which is harder than coding, frankly — you can build architecture. [LINK: Post 5 — What Is Cognitive Architecture?]
+No. Cognitive architecture is about *design decisions*, not code. My 19-agent system runs on markdown files, not software engineering. If you can organize your thinking — which is harder than coding, frankly — you can build architecture. See [What Is Cognitive Architecture?](/blog/what-is-cognitive-architecture/)
 
 ### What about prompt engineering certifications? Are those worthless now?
 
@@ -128,7 +128,7 @@ They're not worthless — they teach real fundamentals. But they're the typing c
 
 ### How long does it take to build a cognitive architecture?
 
-Start small: a persistent context document takes an hour. A single specialized agent takes a day. A full multi-agent system took me months — but every session along the way was immediately more productive than the one before. The system pays for itself from day one. [LINK: Post 7 — The Architecture]
+Start small: a persistent context document takes an hour. A single specialized agent takes a day. A full multi-agent system took me months — but every session along the way was immediately more productive than the one before. The system pays for itself from day one. See [the full architecture](/blog/one-person-five-ai-executives/).
 
 ### Won't AI eventually get smart enough that no structure is needed?
 

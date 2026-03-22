@@ -217,7 +217,7 @@ That's it. Three habits. They take less than 10 minutes per week. And they're th
 
 The doing isn't the work anymore. The thinking is the work.
 
-And maintaining the system that holds your thinking? That's the work nobody talks about. It's the work that makes everything else possible. [LINK: Post 7 — The Architecture] shows the system that requires this maintenance. [LINK: Post 17 — 19 Agents One Architecture] shows what daily operations look like when the maintenance is working.
+And maintaining the system that holds your thinking? That's the work nobody talks about. It's the work that makes everything else possible. [One Person, Five AI Executives](/blog/one-person-five-ai-executives/) shows the system that requires this maintenance. [19 Agents, One Architecture](/blog/19-agents-one-architecture/) shows what daily operations look like when the maintenance is working.
 
 ---
 

@@ -21,7 +21,7 @@ My AI CMO can tell me when something I wrote doesn't sound like me. "Too corpora
 
 That sounds like magic. It's not. It's architecture.
 
-This is post 3 in my [AI Executives series][LINK: Post 7 — The Architecture]. The [previous post][LINK: Post 2 — AI Chief of Staff] covered how persistent context turns a basic AI assistant into a Chief of Staff. This post takes the same principle and applies it to content — how I built an AI that doesn't just write for me, but writes *like* me.
+This is post 3 in my [AI Executives series](/blog/one-person-five-ai-executives/). The [previous post](/blog/how-to-build-an-ai-chief-of-staff/) covered how persistent context turns a basic AI assistant into a Chief of Staff. This post takes the same principle and applies it to content — how I built an AI that doesn't just write for me, but writes *like* me.
 
 ---
 
@@ -131,7 +131,7 @@ The investment is a few hours upfront and a few minutes per month maintaining. T
 
 ### Doesn't using AI for content make it less authentic?
 
-It depends entirely on how you use it. If you hand AI a topic and publish whatever it generates, yes — that's not authentic. But using AI as an editor that catches when you're off-voice, suggests angles you hadn't considered, and pressure-tests your reasoning through a mentor council? That's more rigorous than what most people do without AI. My CMO doesn't make my content less authentic. It makes me more consistent with my *best* authentic voice. [LINK: Post 7 — The Architecture] explains how the full system keeps authenticity at the center.
+It depends entirely on how you use it. If you hand AI a topic and publish whatever it generates, yes — that's not authentic. But using AI as an editor that catches when you're off-voice, suggests angles you hadn't considered, and pressure-tests your reasoning through a mentor council? That's more rigorous than what most people do without AI. My CMO doesn't make my content less authentic. It makes me more consistent with my *best* authentic voice. [One Person, Five AI Executives](/blog/one-person-five-ai-executives/) explains how the full system keeps authenticity at the center.
 
 ### How is a "mentor council" different from just role-playing?
 
@@ -147,6 +147,6 @@ Start with the mentor council approach first. Pick 2-3 creators whose communicat
 
 ---
 
-*This is post 3 in the [AI Executives series][LINK: Post 7 — The Architecture]. Next up: the AI CFO — why money decisions are never just math, and how I built an AI that understands the psychology of pricing.*
+*This is post 3 in the [AI Executives series](/blog/one-person-five-ai-executives/). Next up: the AI CFO — why money decisions are never just math, and how I built an AI that understands the psychology of pricing.*
 
 *Want to build your own AI CMO with a mentor council? [Connected Intelligence](https://digitallydemented.com/courses) walks through the full setup — from voice documentation to multi-agent coordination.*

@@ -108,11 +108,11 @@ I'm AuDHD — late-diagnosed, which means I spent decades building compensatory 
 
 When I started building my 19-agent AI system, I wasn't thinking about innovation frameworks or lead-user theory. I was solving an immediate problem: my brain drops context between sessions. My executive function depletes. I overcommit because I can't hold the full picture of my commitments in working memory. I need external systems to do what other people's brains do automatically.
 
-So I built persistent memory. I built values documents that load at session start. I built accountability triggers that flag when I'm drifting. I built review gates that catch quality issues before they ship. [LINK: Post 7 — The Architecture]
+So I built persistent memory. I built values documents that load at session start. I built accountability triggers that flag when I'm drifting. I built review gates that catch quality issues before they ship. See [the full architecture](/blog/one-person-five-ai-executives/).
 
 Then something happened that I didn't predict: other people — neurotypical people — started asking how my system worked. Not because they're neurodivergent. Because they're overwhelmed. Because AI is expanding what's possible faster than their default cognitive infrastructure can handle. Because they're hitting the same walls I've been hitting for 40 years.
 
-*The doing isn't the work anymore. The thinking is the work.* Who was forced to make that transition first? The people whose brains couldn't rely on doing. [LINK: Post 6 — AI That Manages ME]
+*The doing isn't the work anymore. The thinking is the work.* Who was forced to make that transition first? The people whose brains couldn't rely on doing. See [AI That Manages Me](/blog/ai-that-manages-me/).
 
 I built this because I had no choice. The fact that everyone else needs it too isn't coincidence. That's how lead-user innovation works.
 

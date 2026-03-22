@@ -88,14 +88,14 @@ Then I say "draft a LinkedIn post on delegation." Pixel doesn't ask me 15 clarif
 
 That's delegation. I'm not writing instructions. I'm reviewing output from an agent that understands its role.
 
-For the full architecture of how 19 agents coordinate — shared context, handoff protocols, values gating — see [LINK: Post 7 — The Architecture].
+For the full architecture of how 19 agents coordinate — shared context, handoff protocols, values gating — see [One Person, Five AI Executives](/blog/one-person-five-ai-executives/).
 
 ## The Delegation Framework: Four Components
 
 Effective delegation to AI requires four things. Skip any one and you're back in task mode.
 
 **1. Scope Definition**
-What is this agent responsible for? And equally important — what is it NOT responsible for? Pixel handles content. It doesn't handle finances (that's Housel), client communication (that's Marcus), or security monitoring (that's Sentinel). The boundary is the constraint that creates quality. [LINK: Post 1 — Why I Built an AI Executive Team]
+What is this agent responsible for? And equally important — what is it NOT responsible for? Pixel handles content. It doesn't handle finances (that's Housel), client communication (that's Marcus), or security monitoring (that's Sentinel). The boundary is the constraint that creates quality. See [Why I Built an AI Executive Team](/blog/why-i-built-an-ai-executive-team/).
 
 **2. Context Provision**
 Not task-level context ("write about this topic"). Role-level context. The agent needs to know your business, your values, your audience, your current priorities, and your working constraints. This is the persistent context that turns a stranger into a colleague. The more complete the context, the less you need to manage the output.

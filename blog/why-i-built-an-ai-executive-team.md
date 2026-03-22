@@ -70,7 +70,7 @@ The distinction isn't academic. It changes what's possible.
 
 Microsoft's own data tells the story. When they rolled out Copilot across the enterprise, adoption stalled around 20%. The CEO admitted the integrations "don't really work." Not because the tools were bad — because assistants without context, coordination, and judgment don't stick.
 
-As Nate B Jones frames it, there's a "201 gap" between basic prompting and actually integrating AI into how you work. That gap is exactly where cognitive architecture lives — the deliberate design of how you think, decide, and operate with AI as substrate. [LINK: Post 5 — What Is Cognitive Architecture?]
+As Nate B Jones frames it, there's a "201 gap" between basic prompting and actually integrating AI into how you work. That gap is exactly where cognitive architecture lives — the deliberate design of how you think, decide, and operate with AI as substrate. See [What Is Cognitive Architecture?](/blog/what-is-cognitive-architecture/)
 
 ## The Five Executive Roles (And Why They're Not Chatbots)
 
@@ -106,7 +106,7 @@ Here's the sequence that worked for me:
 
 5. **Connect them.** The magic isn't in individual agents — it's in the architecture that lets them share context. When my Chief of Staff hands something to my CMO, the context travels with it.
 
-For a deeper walkthrough of the full architecture — how 19 agents share context, the handoff system, and the values layer that gates everything — see [LINK: Post 7 — The Architecture].
+For a deeper walkthrough of the full architecture — how 19 agents share context, the handoff system, and the values layer that gates everything — see [One Person, Five AI Executives](/blog/one-person-five-ai-executives/).
 
 ## FAQ
 
@@ -127,7 +127,7 @@ The specific roles map to my consulting practice, but the pattern works for anyo
 
 ---
 
-*Ready to go deeper? [LINK: Post 7 — The Architecture] walks through the full system — how 19 agents share context without breaking, the start-with-one roadmap, and what "cognitive architecture" means when you're not a computer scientist.*
+*Ready to go deeper? [One Person, Five AI Executives](/blog/one-person-five-ai-executives/) walks through the full system — how 19 agents share context without breaking, the start-with-one roadmap, and what "cognitive architecture" means when you're not a computer scientist.*
 
 *Building your own? I'm teaching this inside [Digitally Demented on Skool](https://digitallydemented.com/courses) — the course on how to architect AI as a thinking partner, not just a tool.*
 

@@ -121,7 +121,7 @@ The practitioners' contribution is the messy part. What happens when an agent ha
 
 That's the data the researchers don't have. And it's the data that matters most for building AI systems that actually work in professional practice.
 
-I didn't invent cognitive architecture. But I might be generating the field data that the next generation of the concept needs. [LINK: Post 5 — What Is Cognitive Architecture?]
+I didn't invent cognitive architecture. But I might be generating the field data that the next generation of the concept needs. See [What Is Cognitive Architecture?](/blog/what-is-cognitive-architecture/)
 
 ## FAQ
 
@@ -131,7 +131,7 @@ No. The academic frameworks provide useful mental models — especially goal dec
 
 ### Is Daniel using the term "cognitive architecture" correctly?
 
-Both the academic usage and Daniel's usage describe the structural design of how an intelligent system processes information, maintains memory, and makes decisions. The difference is direction: academics model human cognition computationally; Daniel extends human cognition using AI. Same structural principles, different application vector. [LINK: Post 5 — What Is Cognitive Architecture?]
+Both the academic usage and Daniel's usage describe the structural design of how an intelligent system processes information, maintains memory, and makes decisions. The difference is direction: academics model human cognition computationally; Daniel extends human cognition using AI. Same structural principles, different application vector. See [What Is Cognitive Architecture?](/blog/what-is-cognitive-architecture/)
 
 ### What's the relationship between SOAR and modern AI agents?
 
@@ -143,7 +143,7 @@ Because it proves the structural principles work. Goal decomposition, memory sep
 
 ### How is what Daniel does different from what the researchers do?
 
-The researchers build *down* — from cognitive theory to computational implementation. Daniel builds *up* — from real professional needs to system architecture. The researchers' output is academic papers and software models. Daniel's output is a living system that runs his consulting business daily. Same structural concepts, radically different contexts. [LINK: Post 7 — The Architecture]
+The researchers build *down* — from cognitive theory to computational implementation. Daniel builds *up* — from real professional needs to system architecture. The researchers' output is academic papers and software models. Daniel's output is a living system that runs his consulting business daily. Same structural concepts, radically different contexts. See [the full architecture](/blog/one-person-five-ai-executives/).
 
 ---
 

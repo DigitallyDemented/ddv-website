@@ -99,6 +99,8 @@ If this resonates, I'd love to hear from you. I'm building a course around this 
 
 The doing isn't the work anymore. The thinking is the work.
 
+**Read next:** [One Person, Five AI Executives](/blog/one-person-five-ai-executives/) -- the production system where these 18 psychological concepts operate daily.
+
 ---
 
 *Daniel Walters is an Operations and MarTech consultant at [Digitally Demented Ventures](https://digitallydemented.com) in Birmingham, AL. He builds cognitive architectures for knowledge workers and teaches the methodology through Connected Intelligence. He's also one of those people who texts himself links at 2am and calls it a "processing inbox."*

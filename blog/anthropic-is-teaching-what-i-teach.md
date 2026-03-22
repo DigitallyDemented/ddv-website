@@ -96,9 +96,9 @@ That's not a prompt. That's not a 4D Framework exercise. That's a cognitive envi
 
 The doing isn't the work anymore. The thinking is the work. And the thinking I'm describing isn't "how do I prompt Claude better?" It's "how do I architect a system where Claude already knows what I need before I ask?"
 
-For the full breakdown of how the architecture works — 19 agents, shared context, handoff protocols, and the values layer — see [LINK: Post 7 — The Architecture].
+For the full breakdown of how the architecture works — 19 agents, shared context, handoff protocols, and the values layer — see [One Person, Five AI Executives](/blog/one-person-five-ai-executives/).
 
-For how the Chief of Staff role specifically breaks the "starting from zero" problem, see [LINK: Post 2 — AI Chief of Staff].
+For how the Chief of Staff role specifically breaks the "starting from zero" problem, see [How to Build an AI Chief of Staff](/blog/how-to-build-an-ai-chief-of-staff/).
 
 ## The Real Positioning
 

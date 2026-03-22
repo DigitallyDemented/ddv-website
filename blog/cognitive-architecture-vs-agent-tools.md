@@ -57,7 +57,7 @@ The failure mode isn't technical. It's architectural. People build agents withou
 4. **No governance.** When two agents contradict each other, there's no tiebreaker.
 5. **No identity.** Every agent sounds the same because none of them have defined personality, constraints, or scope.
 
-My system solves all five. Each agent has a CLAUDE.md file defining who it is, what it can and cannot do, what values it operates under, and how it hands off to other agents. A shared context directory lets agents pass information. Session logs maintain memory. A governance protocol convenes the executive team when cross-domain decisions need resolution. [LINK: Post 7 — The Architecture]
+My system solves all five. Each agent has a CLAUDE.md file defining who it is, what it can and cannot do, what values it operates under, and how it hands off to other agents. A shared context directory lets agents pass information. Session logs maintain memory. A governance protocol convenes the executive team when cross-domain decisions need resolution. See [the full architecture](/blog/one-person-five-ai-executives/).
 
 ## The Operating System Analogy (And Why It's Not Just a Metaphor)
 
@@ -77,7 +77,7 @@ A cognitive architecture IS the operating system. It provides:
 
 > As AIBarcelona.org's 2026 analysis put it: "A moderately capable model embedded in a well-designed cognitive system can outperform a stronger model used as a standalone tool."
 
-That's not theoretical for me. I've watched my 19 agents — all running the same Claude model — produce wildly different outputs because each one operates within different architectural constraints. Same engine. Different context. Different results. [LINK: Post 14 — Context Is King]
+That's not theoretical for me. I've watched my 19 agents — all running the same Claude model — produce wildly different outputs because each one operates within different architectural constraints. Same engine. Different context. Different results. See [Content Is No Longer King](/blog/content-is-no-longer-king-context-is-king/).
 
 ## What Nobody Tells You About Building Multi-Agent AI Systems
 
@@ -91,7 +91,7 @@ The hard part is everything else:
 
 **Memory architecture matters more than model choice.** Choosing between GPT-4 and Claude is a Tuesday afternoon decision. Designing how your agents maintain and share context is a month-long architectural project. The memory layer determines whether your system compounds or decays.
 
-**Values aren't decorative.** When I added my vision, mission, and values to every agent's instructions, the quality of output changed fundamentally. Not because the model got smarter. Because it had criteria for what "good" means in my specific context. An AI system without a values layer is a system optimizing for nothing. [LINK: Post 5 — What Is Cognitive Architecture?]
+**Values aren't decorative.** When I added my vision, mission, and values to every agent's instructions, the quality of output changed fundamentally. Not because the model got smarter. Because it had criteria for what "good" means in my specific context. An AI system without a values layer is a system optimizing for nothing. See [What Is Cognitive Architecture?](/blog/what-is-cognitive-architecture/)
 
 **You can't buy architecture.** No tool, no platform, no course gives you a cognitive architecture out of the box. You build it. Based on how you actually think, decide, and operate. That's the work most people aren't willing to do — and it's exactly why the ones who do it have an insurmountable advantage.
 
@@ -119,7 +119,7 @@ The doing isn't the work anymore. The thinking is the work. And the first thing 
 
 ### What's the difference between cognitive architecture and a prompt library?
 
-A prompt library is a collection of inputs. Cognitive architecture is the structure that determines which inputs go where, what context accompanies them, how outputs get evaluated, and how the system learns over time. A prompt library is a recipe box. Cognitive architecture is the kitchen. [LINK: Post 5 — What Is Cognitive Architecture?]
+A prompt library is a collection of inputs. Cognitive architecture is the structure that determines which inputs go where, what context accompanies them, how outputs get evaluated, and how the system learns over time. A prompt library is a recipe box. Cognitive architecture is the kitchen. See [What Is Cognitive Architecture?](/blog/what-is-cognitive-architecture/)
 
 ### Can I build cognitive architecture with ChatGPT or do I need Claude?
 
@@ -127,7 +127,7 @@ The concept is model-agnostic. Cognitive architecture is about structure, not ab
 
 ### How many agents do I need to start?
 
-One. Start with a single agent that has persistent context — your role, your priorities, your constraints, your values. When you hit a gap where that agent can't help, that's when you build the second one. I started with a Chief of Staff. It took months before I had five. The architecture scales as your needs do. [LINK: Post 2 — AI Chief of Staff]
+One. Start with a single agent that has persistent context — your role, your priorities, your constraints, your values. When you hit a gap where that agent can't help, that's when you build the second one. I started with a Chief of Staff. It took months before I had five. The architecture scales as your needs do. See [How to Build an AI Chief of Staff](/blog/how-to-build-an-ai-chief-of-staff/).
 
 ### Isn't this just over-engineering AI usage?
 

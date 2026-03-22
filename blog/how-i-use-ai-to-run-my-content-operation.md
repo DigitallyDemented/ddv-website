@@ -184,7 +184,7 @@ The factory only works because it's connected to the rest of the system. Lennier
 
 One person. One system. Five content channels.
 
-Not because AI is magic. Because the architecture handles the coordination that would otherwise require a team. [LINK: Post 1 — Why I Built an AI Executive Team] explains why the team structure matters. [LINK: Post 7 — The Architecture] shows how the agents connect.
+Not because AI is magic. Because the architecture handles the coordination that would otherwise require a team. [Why I Built an AI Executive Team](/blog/why-i-built-an-ai-executive-team/) explains why the team structure matters. [One Person, Five AI Executives](/blog/one-person-five-ai-executives/) shows how the agents connect.
 
 ---
 

@@ -84,7 +84,7 @@ Most people's AI workflow is divergent: ask AI to generate options. AI produces 
 
 The missing step is convergent: take the many perspectives AI surfaced, hold them simultaneously, find the patterns, resolve the tensions, and arrive at a decision that honors the complexity.
 
-That convergent step is the hardest cognitive task in the AI era. It's also the most valuable. And almost nobody is teaching it. [LINK: Post 15 — The Synthesis Problem]
+That convergent step is the hardest cognitive task in the AI era. It's also the most valuable. And almost nobody is teaching it. See [The Synthesis Problem](/blog/the-synthesis-problem/).
 
 | Cognitive Step | What Happens | Who's Teaching It |
 |---------------|-------------|-------------------|
@@ -109,7 +109,7 @@ The information excuse is gone. You can't say "we didn't have time to consider t
 
 ## How to Build Nuance Tolerance
 
-Nuance tolerance is a skill, not a personality trait. You can build it. Here's how I've built it into my own cognitive architecture: [LINK: Post 5 — What Is Cognitive Architecture?]
+Nuance tolerance is a skill, not a personality trait. You can build it. Here's how I've built it into my own [cognitive architecture](/blog/what-is-cognitive-architecture/):
 
 **1. Ask AI for conditions, not conclusions.** Instead of "should I do X?" ask "under what conditions would X be the right move, and under what conditions would it be wrong?" Forces you to hold multiple frames simultaneously.
 
@@ -149,10 +149,12 @@ No. Plenty of decisions are genuinely binary and low-stakes. What to eat for lun
 
 ### How does this connect to cognitive architecture?
 
-Cognitive architecture *structures* nuance tolerance. My agent system doesn't just tolerate competing perspectives — it generates them systematically. Kennedy pushes for growth, Housel checks the finances, Seneca challenges the premise. The architecture makes nuance the default, not the exception. [LINK: Post 5 — What Is Cognitive Architecture?]
+Cognitive architecture *structures* nuance tolerance. My agent system doesn't just tolerate competing perspectives — it generates them systematically. Kennedy pushes for growth, Housel checks the finances, Seneca challenges the premise. The architecture makes nuance the default, not the exception. See [What Is Cognitive Architecture?](/blog/what-is-cognitive-architecture/)
 
 ---
 
 *Last updated: March 2026*
+
+**Read next:** [One Person, Five AI Executives](/blog/one-person-five-ai-executives/) -- the architecture that generates structured disagreement by design.
 
 **The thinking is the work now. Are you building the frameworks to handle it?** [Connected Intelligence on Skool](https://skool.com/connected-intelligence) teaches cognitive architecture — the system that makes nuanced thinking your default operating mode, not a special effort.

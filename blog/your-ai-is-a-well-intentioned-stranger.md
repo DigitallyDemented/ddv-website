@@ -31,7 +31,7 @@ I named this pattern because I lived it for months before I understood what was 
 
 The math doesn't work. If you spend 30% of every AI session rebuilding context, your effective leverage drops from "transformative" to "marginally better than doing it yourself." And that's exactly where most people's AI experience dies — not with a dramatic failure, but with a quiet shrug and a closed tab.
 
-For a deeper dive into the mechanics of the Stranger Loop and the progression from Level 0 (stranger) to Level 4 (full architecture), see [LINK: Post 10 — The Stranger Loop]. This post focuses on the solution side — what breaking the loop actually looks like in practice.
+For a deeper dive into the mechanics of the Stranger Loop and the progression from Level 0 (stranger) to Level 4 (full architecture), see [The Stranger Loop](/blog/the-stranger-loop/). This post focuses on the solution side — what breaking the loop actually looks like in practice.
 
 ## The Data: Why People Quietly Stop Using AI
 
@@ -111,7 +111,7 @@ I open a session. I explain that I'm working on my content calendar. I describe 
 **After (Persistent Context):**
 I say "briefing." Pixel — my content agent — already knows my brand voice, my content calendar, my publishing cadence, my active content series, what performed well last week, and what's queued. The briefing surfaces what's due, what's blocked, and what opportunities I'm missing. I spend 30 minutes on high-leverage creative decisions instead of context-setting. Net value: 5-9x my time investment.
 
-That 5-9x isn't hypothetical. I've been tracking my leverage ratios. Peak sessions hit 20-50x when the context is deep and the task is high-alignment. [LINK: Post 2 — AI Chief of Staff]
+That 5-9x isn't hypothetical. I've been tracking my leverage ratios. Peak sessions hit 20-50x when the context is deep and the task is high-alignment. See [How to Build an AI Chief of Staff](/blog/how-to-build-an-ai-chief-of-staff/).
 
 The compound effect is the part most people never experience. Each session builds on the last. Lessons learned get logged. Patterns get recognized. The system gets better at anticipating what I need — not because the model improved, but because the context deepened.
 
@@ -155,7 +155,7 @@ You don't need 19 agents. You don't need a month. You need an honest document an
 
 4. **Update and iterate.** Add what's missing. Remove what's stale. A living context file compounds. A static one still beats nothing.
 
-5. **When it works, add a second agent.** The Stranger Loop breaks for one agent at a time. Once your primary AI has persistent context, you can extend the architecture. [LINK: Post 7 — The Architecture]
+5. **When it works, add a second agent.** The Stranger Loop breaks for one agent at a time. Once your primary AI has persistent context, you can extend the architecture. See [the full architecture](/blog/one-person-five-ai-executives/).
 
 The first time your AI references something from last week's session without being reminded — that's the moment the Stranger Loop breaks. Everything after that compounds.
 

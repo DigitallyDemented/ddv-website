@@ -135,7 +135,7 @@ A prompt library is about the model. "Use this format for GPT-4" is a model-spec
 
 A cognitive architecture is about the human. "Here are my values, my priorities, my communication style, my quality standards" is a human-specific document. When the model changes, the document stays the same — and the new model reads it just as well. Usually better.
 
-*Content is no longer king. Context is king.* And context — your context, your architecture — is the thing that compounds. [LINK: Post 16 — My AI Caught 5 Broken Files]
+*Content is no longer king. Context is king.* And context — your context, your architecture — is the thing that compounds. See [My AI Caught Broken Files](/blog/my-ai-caught-broken-files/).
 
 ## The Manifesto
 
@@ -153,7 +153,7 @@ Information expires. Systems compound. The AI education market will keep selling
 
 Or you can build something that lasts. Something that gets better with every session. Something that remembers, learns, coordinates, and holds you accountable to your own standards.
 
-That's cognitive architecture. That's the compound bet. And from 200+ sessions deep, I can tell you — the compound effect is real. [LINK: Post 7 — The Architecture]
+That's cognitive architecture. That's the compound bet. And from 200+ sessions deep, I can tell you — the compound effect is real. See [the full architecture](/blog/one-person-five-ai-executives/).
 
 ---
 
@@ -177,7 +177,7 @@ Workflows are part of it — but architecture is broader. Workflows define seque
 
 ### What's the single best place to start?
 
-Write a persistent context document — what I call a Master Prompt — that tells AI who you are, what you value, how you communicate, and what you're working on. Load it into every conversation. That single document transforms every AI interaction you have, on any platform, with any model. It's the first piece of architecture, and it compounds immediately. [LINK: Post 5 — What Is Cognitive Architecture?]
+Write a persistent context document — what I call a Master Prompt — that tells AI who you are, what you value, how you communicate, and what you're working on. Load it into every conversation. That single document transforms every AI interaction you have, on any platform, with any model. It's the first piece of architecture, and it compounds immediately. See [What Is Cognitive Architecture?](/blog/what-is-cognitive-architecture/)
 
 ---
 

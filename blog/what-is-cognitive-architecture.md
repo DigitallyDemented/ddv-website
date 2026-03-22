@@ -64,7 +64,7 @@ Here's what every AI course gets wrong:
 
 **1. They teach tools, not thinking.** "Here's how to use ChatGPT for email." "Here's how to use Midjourney for images." Each tool is taught in isolation. No framework for how they connect. No architecture for how you decide which tool handles which cognitive task.
 
-**2. They optimize for speed, not leverage.** "Write emails 10x faster." Speed is the least interesting benefit of AI. The real leverage is structural — eliminating coordination costs, extending working memory, externalizing executive function. You can't access that leverage with tool tutorials. [LINK: Post 7 — The Architecture]
+**2. They optimize for speed, not leverage.** "Write emails 10x faster." Speed is the least interesting benefit of AI. The real leverage is structural — eliminating coordination costs, extending working memory, externalizing executive function. You can't access that leverage with tool tutorials. See [the full architecture](/blog/one-person-five-ai-executives/).
 
 **3. They skip the values layer entirely.** As the emergent misalignment research proved, values aren't optional in AI systems — they're architectural. An AI system without a values layer is a system waiting to drift. Every AI course that teaches you to build agents without teaching you to define values is teaching you to build unstable systems.
 
@@ -84,7 +84,7 @@ My cognitive architecture includes:
 - **Persistent memory systems** that survive between conversations (living memory, session archives, intellectual journals)
 - **Specialized agents** with clear domains and handoff protocols (19 agents, each with defined responsibilities)
 - **Review gates** that enforce quality before anything ships (communication review, content review, system review)
-- **An accountability structure** that catches me when I'm drifting from my own standards [LINK: Post 6 — AI That Manages ME]
+- **An accountability structure** that [catches me when I'm drifting](/blog/ai-that-manages-me/) from my own standards
 
 None of those are tools. They're architecture. Remove any one of them and the system degrades. Together, they compound.
 
@@ -94,7 +94,7 @@ None of those are tools. They're architecture. Remove any one of them and the sy
 
 You don't need 19 agents. You don't need a complex system. You need to answer four questions:
 
-**1. What do I value?** Not in the abstract. Specifically. What does "good work" look like? What does "integrity" mean in your daily practice? Write it down in language an AI can operationalize. [LINK: Post 2 — AI Chief of Staff]
+**1. What do I value?** Not in the abstract. Specifically. What does "good work" look like? What does "integrity" mean in your daily practice? Write it down in language an AI can operationalize. See [How to Build an AI Chief of Staff](/blog/how-to-build-an-ai-chief-of-staff/).
 
 **2. What do I need to remember?** Your brain drops context between sessions. AI drops context between conversations. What needs to persist? Build the memory layer — even if it's just a single document that carries forward.
 

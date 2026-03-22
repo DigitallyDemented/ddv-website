@@ -82,7 +82,7 @@ That's cognitive freedom. The same kind of freedom that writing gave to memory a
 
 The doing isn't the work anymore. The thinking is the work. Era 3 made that literal.
 
-For the full story of how AI externalized my executive function, see [LINK: Post 6 — Cognitive Curb Cut Effect].
+For the full story of how AI externalized my executive function, see [The Cognitive Curb Cut Effect](/blog/cognitive-curb-cut-effect/).
 
 ## Why the Transition Is Harder Than It Looks
 
@@ -94,7 +94,7 @@ The result is what Harvard Business Review's Berkeley Haas researchers found in 
 
 Cognitive freedom without cognitive architecture is just a faster treadmill.
 
-That's why architecture comes before tools. That's what I teach in Connected Intelligence — not which AI to use, but how to design the system that makes any AI useful. [LINK: Post 5 — What Is Cognitive Architecture?]
+That's why architecture comes before tools. That's what I teach in Connected Intelligence — not which AI to use, but how to design the system that makes any AI useful. See [What Is Cognitive Architecture?](/blog/what-is-cognitive-architecture/)
 
 ## How to Access Era 3 Cognitive Freedom
 
@@ -102,7 +102,7 @@ You don't need 19 agents. You need to stop treating AI like a faster version of 
 
 1. **Identify your executive function taxes.** What cognitive tasks consume your capacity without creating value? Tracking. Remembering. Coordinating. Following up. Context-switching. These are the candidates for externalization.
 
-2. **Build persistent context.** Give your AI the information it needs to hold threads between sessions. This is the minimum viable architecture — a document that carries forward who you are, what you're working on, and what matters. [LINK: Post 10 — The Stranger Loop]
+2. **Build persistent context.** Give your AI the information it needs to hold threads between sessions. This is the minimum viable architecture — a document that carries forward who you are, what you're working on, and what matters. See [The Stranger Loop](/blog/the-stranger-loop/).
 
 3. **Redirect the freed capacity deliberately.** This is where most people fail. They free up executive function and immediately fill it with more tasks. Instead, direct it toward judgment, creative synthesis, and strategic thinking — the work that actually compounds.
 
@@ -119,12 +119,14 @@ Productivity means doing more work in less time. Cognitive freedom means being a
 It's influential and widely discussed but still debated. Clark's original 1998 paper with David Chalmers ("The Extended Mind") is one of the most cited papers in philosophy of mind. The practical implication — that your tools are part of your cognitive process — is increasingly accepted even by researchers who debate the philosophical details.
 
 **Do I need to be neurodivergent to benefit from cognitive freedom?**
-No. Executive function taxes apply to everyone. The neurodivergent experience just makes them more visible and more urgent. If you've ever forgotten a follow-up, lost a thread between meetings, or felt overwhelmed by coordination overhead — your executive function was taxed. AI architecture addresses that regardless of neurotype. See [LINK: Post 6 — Cognitive Curb Cut Effect] for why building for the brain that hits the wall first benefits every brain.
+No. Executive function taxes apply to everyone. The neurodivergent experience just makes them more visible and more urgent. If you've ever forgotten a follow-up, lost a thread between meetings, or felt overwhelmed by coordination overhead — your executive function was taxed. AI architecture addresses that regardless of neurotype. See [The Cognitive Curb Cut Effect](/blog/cognitive-curb-cut-effect/) for why building for the brain that hits the wall first benefits every brain.
 
 **How do I know if I'm stuck in Era 2 thinking?**
 Ask yourself: "Am I using AI to do the same work faster, or to do different work entirely?" If your AI use is "write this email" and "summarize this document," that's Era 2. If your AI use is "hold my context, flag my drift, coordinate my workstreams, and push back when I'm wrong," that's Era 3.
 
 ---
+
+**Read next:** [One Person, Five AI Executives](/blog/one-person-five-ai-executives/) -- the Era 3 architecture in production.
 
 *Each era created a new cognitive freedom by externalizing what used to consume human capacity. Era 3 is here — and the people who design their architecture first will access it first.*
 
