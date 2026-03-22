@@ -21,9 +21,22 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("card.html");
   eleventyConfig.addPassthroughCopy("cognitive-architecture.html");
 
-  // Blog collection: all posts tagged "post"
+  // Blog collection: all posts tagged "post", excluding future-dated posts
+  const now = new Date();
   eleventyConfig.addCollection("posts", function(collectionApi) {
-    return collectionApi.getFilteredByTag("post").sort((a, b) => b.date - a.date);
+    return collectionApi.getFilteredByTag("post")
+      .filter(post => post.date <= now)
+      .sort((a, b) => b.date - a.date);
+  });
+
+  // Prevent future-dated posts from being rendered at all (no HTML output)
+  eleventyConfig.addGlobalData("eleventyComputed", {
+    permalink: function(data) {
+      if (data.tags && data.tags.includes("post") && data.date > now) {
+        return false;
+      }
+      return data.permalink;
+    }
   });
 
   // Date formatting filters (use UTC to avoid timezone shift)
