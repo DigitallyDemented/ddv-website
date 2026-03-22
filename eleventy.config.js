@@ -20,6 +20,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("tools.html");
   eleventyConfig.addPassthroughCopy("card.html");
   eleventyConfig.addPassthroughCopy("cognitive-architecture.html");
+  eleventyConfig.addPassthroughCopy("404.html");
 
   // Blog collection: all posts tagged "post", excluding future-dated posts
   const now = new Date();
