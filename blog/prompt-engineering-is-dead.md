@@ -1,7 +1,7 @@
 ---
 title: "Prompt Engineering Is Dead. Here's What Replaced It."
 description: "Prompt engineering was the 101 course for AI. But optimizing individual prompts is tactics, not strategy. Cognitive architecture is what replaced it."
-date: 2026-03-25
+date: 2026-03-24
 tags:
   - post
   - ai

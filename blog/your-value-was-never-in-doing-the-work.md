@@ -1,7 +1,7 @@
 ---
 title: "Your Value Was Never in Doing the Work. AI Just Made That Obvious."
 description: "The 'AI will take my job' panic misses the point. If AI can replace you, your value was never in the doing. Here's what your actual value is — and how to own it."
-date: 2026-03-28
+date: 2026-03-26
 tags:
   - post
   - ai
