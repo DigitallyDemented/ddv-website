@@ -1,6 +1,6 @@
 ---
 title: "How to Build an AI Chief of Staff That Actually Knows You"
-description: "Stop re-explaining yourself to AI every session. Learn how to turn a basic AI assistant into an executive assistant — then graduate it into a Chief of Staff that runs your morning briefing."
+description: "Stop re-explaining yourself to AI every session. Learn how persistent context, CLAUDE.md memory, and a daily briefing system turn a basic AI assistant into an AI chief of staff."
 date: 2026-02-21
 tags:
   - post
@@ -16,7 +16,7 @@ ogImage: /images/og/how-to-build-an-ai-chief-of-staff-og.png
 ---
 
 
-*Last updated: March 23, 2026*
+*Last updated: March 10, 2026*
 
 I have an AI Chief of Staff. Not a chatbot I talk to sometimes. An actual Chief of Staff that shows up every morning with my briefing prepared, my conflicts flagged, and my priorities loaded — before I say a word.
 
@@ -34,7 +34,7 @@ The distinction matters. An AI assistant waits to be told what to do. An AI Chie
 
 Think about what a human Chief of Staff does in a large organization. They don't just take notes and schedule meetings. They synthesize information across departments, flag conflicts before they become crises, and make sure the CEO's time aligns with what actually matters that quarter. They hold the context so the leader can hold the vision.
 
-That's what I built — except it runs on an AI command-line tool and a text file instead of a six-figure salary.
+That's what I built — except it runs on Claude Code and a markdown file instead of a six-figure salary.
 
 Here's what my AI Chief of Staff handles every morning:
 
@@ -76,21 +76,20 @@ I needed a system that held the context my brain couldn't.
 
 ## How Persistent Context Changes Everything
 
-The fix is surprisingly simple in concept: **just tell it who you are and what you need.**
+The fix is surprisingly simple in concept: give your AI a memory file it reads before every conversation.
 
-Not in a configuration file. Not in a developer console. In plain English, the same way you'd brief a new hire on their first day.
+In Claude Code, this is called a **CLAUDE.md file**. It's a markdown document that sits in your project directory and gets loaded automatically at the start of every session. No copy-pasting. No "here's my background" prompts. The AI just... knows.
 
-Here's what I told mine:
+Here's what my CLAUDE.md includes:
 
 1. **Who I am** — my role, my business, my personality type, my working style
 2. **What I'm building toward** — my 90-day sprint goals, tier priorities, specific metrics
 3. **My values** — not aspirational poster values, actual decision-making values with specific behavioral definitions
 4. **My constraints** — AuDHD working patterns, context-switching costs, known blind spots
-5. **My patterns to watch for** — specifically the overextension pattern where I take on too much
+5. **My agents** — who does what, how they hand off work, what each one can and can't access
+6. **My patterns to watch for** — specifically the overextension pattern where I take on too much
 
 That last one is critical. I didn't just give my AI my resume. I gave it my failure modes.
-
-The tools handle the persistence behind the scenes. AI CLI tools like Claude Code, OpenAI Codex, and Gemini CLI save this context automatically so it's there every session. Web-based tools like ChatGPT and Claude Projects have their own versions of persistent memory. The mechanism doesn't matter — what matters is that you actually sit down and think about what your AI needs to know about you to be useful.
 
 The result: my Chief of Staff doesn't just know what's on my calendar. It knows *why certain calendar items matter more than others given what I said matters this quarter.*
 
@@ -146,35 +145,21 @@ The doing isn't the work anymore. The thinking is the work.
 
 ## How to Start Building Your Own AI Chief of Staff
 
-You don't need 19 agents to get started. You don't even need to understand the technology underneath. You just need to start talking to it like a person you're onboarding.
+You don't need 19 agents to get started. You don't even need Claude Code specifically. The principle works across tools.
 
-Here's the path I recommend — and the one I've walked several people through now:
+Here's the minimum viable Chief of Staff:
 
-**Phase 1: Start with an Executive Assistant (Days 1-3)**
+1. **Write your context document.** Start with who you are, what you're working on, and what your priorities are this quarter. Even 500 words makes a dramatic difference versus starting cold.
 
-Open your AI CLI tool — Claude Code, Codex, Gemini CLI, whatever you're using — and say something like:
+2. **Add your failure modes.** What patterns do you fall into? What should the AI watch for? This is what turns an assistant into a guardrail.
 
-*"I want you to be my executive assistant. I'm a [your role] and I need help staying on top of [your biggest pain point]. Here's what my typical week looks like..."*
+3. **Build a startup routine.** Define what "check in" means — calendar, tasks, urgent items. Make it repeatable.
 
-That's it. No files to create, no configuration, no technical setup. Just tell it what you need and start working with it. Ask it to check your priorities. Have it draft emails. Let it help you think through decisions. When it gets something wrong, correct it — "No, that's not how I'd say it" or "Actually, that client is higher priority because..."
+4. **Add memory between sessions.** Log what happened at the end of each session. Load it at the start of the next one. This is how you break the Stranger Loop.
 
-Every correction makes it sharper. You're training it by using it.
+5. **Iterate for two weeks before adding complexity.** Resist the urge to build everything at once. Get the Chief of Staff solid, then consider adding a second agent. [One Person, Five AI Executives](/blog/one-person-five-ai-executives/) covers how the full system connects.
 
-**Phase 2: Graduate to Chief of Staff (Week 1-2)**
-
-Within a few days, something shifts. The AI starts anticipating what you need instead of just responding. It remembers that you hate morning meetings, that Q2 planning is your real priority even when inbox fires feel urgent, that your writing voice is direct and conversational — not corporate.
-
-This is where most people stop. They have a really good assistant. That's valuable, but it's not the unlock.
-
-The graduation happens when you push it from reactive to proactive. Instead of asking questions, tell it to start your day:
-
-*"Every time we start a session, I want you to brief me. Check my priorities, flag anything that's slipped, tell me what I should focus on today — and push back if I'm about to overcommit."*
-
-Now it's not waiting for instructions. It's managing your context, protecting your time, and holding you accountable to what you said matters. That's a Chief of Staff.
-
-Most people I've walked through this process get there within a week. Two weeks at the outside. The key insight: **you don't build an AI Chief of Staff. You grow one.** Start with an assistant. Correct it. Push it. And one day you realize it's running your morning briefing better than you could run it yourself.
-
-[One Person, Five AI Executives](/blog/one-person-five-ai-executives/) covers how the full system connects once you're ready to go beyond a single agent.
+The technology will keep changing. The models will get better. But the principle — **give AI persistent context about who you are and what matters to you** — is the foundational layer everything else builds on.
 
 Information expires. Systems compound.
 
@@ -184,26 +169,26 @@ Information expires. Systems compound.
 
 ### Do I need to be technical to build an AI Chief of Staff?
 
-No. I'm not a developer. Everything I described in this post started with me talking to Claude in plain English — "I want you to be my Chief of Staff, here's what I need." The thinking is harder than the technology. You need to actually define your priorities, your constraints, and your patterns clearly enough for the AI to act on them. But if you can brief a new hire on their first day, you can do this.
+No. I'm not a developer. My CLAUDE.md file is written in plain English with markdown formatting. If you can write a detailed email, you can write a context document. The thinking is harder than the technology — you need to actually define your priorities, your constraints, and your patterns clearly enough for the AI to act on them.
 
 ### What tools do I use for this?
 
-I use Claude Code, which is Anthropic's AI CLI tool — it runs in the terminal, not a browser. But there's a whole category of these now: OpenAI's Codex, Google's Gemini CLI, and more coming. The CLI matters because it lives where your files live — it can read your projects, remember context between sessions, and take action on your behalf. That said, the principles in this post apply to any AI tool that supports persistent context. The tool matters less than the context you give it and how consistently you work with the same system.
+I use Claude Code (Anthropic's CLI tool) with a CLAUDE.md file for persistent context. But the principle works with any AI tool that supports system prompts or custom instructions — ChatGPT's custom instructions, Claude Projects, or even a text file you paste at the start of each session. The tool matters less than the context architecture.
 
 ### How long did it take to build?
 
-The executive assistant version took one conversation. I told Claude what I needed and started working with it. Getting it to the Chief of Staff level — proactive briefings, pattern detection, pushing back on my bad habits — took about a week of daily use. Each session I'd correct something or ask for more, and it got sharper. Most people I've coached through this make the jump within a week or two. It's not a build-it-and-done thing. It's a relationship that compounds.
+The first version took about two hours — mostly writing the context document. Getting it to the Chief of Staff level (proactive briefings, cross-agent coordination, pattern detection) took about two weeks of daily iteration. Each session I'd notice something missing or miscalibrated and adjust. It's a living document, not a one-time setup.
 
 ### Is this just a fancy prompt?
 
-Is a human Chief of Staff "just an employee"? The depth of context is what creates the behavior. An AI that knows your values, your 90-day goals, your failure modes, and your working patterns is qualitatively different from one that just knows "you are a helpful assistant." You don't get there by writing a better prompt — you get there by working with it long enough that it actually knows you. [One Person, Five AI Executives](/blog/one-person-five-ai-executives/) goes deeper into why architecture matters more than any individual prompt.
+In the same way that an operating system is "just code," sure. But a CLAUDE.md file that includes your values, your 90-day goals, your failure modes, your agent architecture, and your session history is qualitatively different from a prompt that says "you are a helpful assistant." The depth and specificity of the context is what creates the Chief of Staff behavior. [One Person, Five AI Executives](/blog/one-person-five-ai-executives/) goes deeper into why architecture matters more than any individual prompt.
 
 ### Does this actually save time, or is it just interesting?
 
-My morning orientation went from scattered and reactive to a 5-minute structured briefing. The Chief of Staff saves real time in context-switching costs alone — and that's before counting the decisions it helps me avoid (like catching my overextension pattern before I commit to something I shouldn't). The ROI isn't theoretical. It's my actual workday. [Your AI CMO](/blog/your-ai-cmo-teaching-ai-your-voice/) covers how the same persistent context principle applies to content creation.
+My morning orientation went from scattered and reactive to a 5-minute structured briefing. The Chief of Staff saves real time in context-switching costs alone — and that's before counting the decisions it helps me avoid (like the overextension pattern catches). The ROI isn't theoretical. It's my actual workday. [Your AI CMO](/blog/your-ai-cmo-teaching-ai-your-voice/) covers how the same persistent context principle applies to content creation.
 
 ---
 
 *This is post 2 in the [AI Executives series](/blog/one-person-five-ai-executives/). Next up: [how I built an AI CMO with a mentor council that knows my voice better than I do](/blog/your-ai-cmo-teaching-ai-your-voice/).*
 
-*Building your own AI executive team? [Connected Intelligence](https://digitallydemented.com/courses) teaches the full architecture — from your first executive assistant to a coordinated multi-agent system.*
+*Building your own AI executive team? [Connected Intelligence](https://digitallydemented.com/courses) teaches the full architecture — from your first context document to a coordinated multi-agent system.*
