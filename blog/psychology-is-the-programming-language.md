@@ -13,7 +13,7 @@ tags:
   - connected-intelligence
 ---
 
-I built a multi-agent (19) AI system that runs my consulting practice. Not as a side project. Not as a demo. As the actual operating infrastructure for my business — every day, for over 300 sessions.
+I built a multi-agent AI system that runs my consulting practice. Not as a side project. Not as a demo. As the actual operating infrastructure for my business — every day, for over 300 sessions.
 
 Every architectural decision in that system traces back to psychology. Not one traces to software engineering.
 
@@ -47,9 +47,9 @@ Eighteen psychological concepts. Five layers. Zero software engineering patterns
 
 I didn't plan it that way. I'm not a developer. I'm an operations consultant with late-diagnosed autism and ADHD who spent his whole life building external structure to compensate for how his brain works. When AI got good enough to think WITH — not just think ABOUT — that lifelong habit of externalizing my cognition became the foundation for an entire architecture.
 
-The system has 19 specialized agents. They coordinate through shared context. They're governed by my values — literally, my personal Vision, Mission, and Values encoded as structural constraints, not aspirational wall art. When an agent makes a recommendation that conflicts with what I actually care about, the system flags it.
+The system has nearly 20 specialized agents. They coordinate with each other and share institutional memory. They're governed by my values — literally, my personal Vision, Mission, and Values encoded as structural constraints, not aspirational wall art. When an agent makes a recommendation that conflicts with what I actually care about, the system flags it.
 
-Every piece of this traces to established research. Trust calibration goes back to [Sheridan and Verplank's work in 1978](https://apps.dtic.mil/sti/citations/ADA057655). The values layer connects to what Anthropic does with [Constitutional AI](https://www.anthropic.com/constitution) — except they do it for one model, and I do it across 19 coordinated agents. The metacognition framework builds on [Flavell's work from 1979](https://psycnet.apa.org/record/1980-09388-001). None of this is made up. But none of it is software engineering either.
+Every piece of this traces to established research. Trust calibration goes back to [Sheridan and Verplank's work in 1978](https://apps.dtic.mil/sti/citations/ADA057655). The values layer connects to what Anthropic does with [Constitutional AI](https://www.anthropic.com/constitution) — except they do it for one model, and I do it across a team of coordinated agents. The metacognition framework builds on [Flavell's work from 1979](https://psycnet.apa.org/record/1980-09388-001). None of this is made up. But none of it is software engineering either.
 
 ---
 
