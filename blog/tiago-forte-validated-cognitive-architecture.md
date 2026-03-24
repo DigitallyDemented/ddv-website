@@ -60,11 +60,9 @@ Information expires. Systems compound.
 
 This is where it gets specific.
 
-My system has an identity loading budget — five components that get assembled before any agent session: the agent's DNA modules, its instruction file, active work from its handoff inbox, its memory file, and relevant bridge channel history.
+My system loads context modularly — each agent gets the identity, instructions, and working memory it needs for the current session. Components can be updated independently. When I update my values, every agent inherits the change on its next session. When a client project shifts, only that project's context file changes. Nothing else breaks.
 
-Each component is modular. Each can be updated independently. When I update my values, every agent inherits the change on its next session. When a client project shifts, only that project's context file changes. Nothing else breaks.
-
-I have a governance skill called /evolve that reviews accumulated signals across sessions, decides what's worth promoting to permanent templates, and manages version control on the templates themselves.
+I have a governance process that reviews patterns across sessions, decides what's worth codifying into permanent templates, and manages version control. The system learns from itself.
 
 This isn't "organize your notes." This is systems engineering for personal context.
 

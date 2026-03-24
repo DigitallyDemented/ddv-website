@@ -38,32 +38,32 @@ If I come in with a specific task, I skip the briefing entirely. The system resp
 
 Nineteen agents sounds excessive until you see how they're organized. They're not nineteen independent assistants. They're structured into functional teams.
 
-| Function | Agents | What They Handle |
+| Function | Key Agent(s) | What They Handle |
 |----------|--------|-----------------|
-| **Executive** | Lennier (Chief of Staff), Kennedy (Revenue Strategy), Housel (Financial Reality), Seneca (Strategic Counsel) | Strategic decisions, coordination, pipeline management |
-| **Client Delivery** | Marcus (Client Communication) | Proposals, project tracking, client-facing communication |
-| **Content** | Pixel (Creative Strategist), Studio (YouTube Optimization), Ogilvy (Brand Messaging) | YouTube, LinkedIn, newsletters, brand voice |
-| **Marketing** | Halbert (Copywriting), Funnel (Architecture), Sequence (Email), Metrics (Analytics), MediaBuyer (Ads) | Direct response, funnels, email sequences, tracking |
-| **Advisory** | Seneca (Mentor Council), Socrates (Intellectual Sparring), Jung (Shadow Work), Housel (Money Mindset) | Decision support, pattern recognition, personal development |
-| **Infrastructure** | Linus (System Architect), Sentinel (Security), Alexander (Template Governance), Rand (SEO) | Technical systems, security, standards, optimization |
+| **Executive** | Lennier (Chief of Staff), Kennedy, Housel, Seneca | Strategic decisions, coordination, pipeline management |
+| **Client Delivery** | Marcus | Proposals, project tracking, client-facing communication |
+| **Content** | Pixel + content specialists | YouTube, LinkedIn, newsletters, brand voice |
+| **Marketing** | Kennedy + marketing specialists | Direct response, funnels, email sequences, tracking |
+| **Advisory** | Seneca, Socrates, Jung | Decision support, pattern recognition, personal development |
+| **Infrastructure** | Linus + infrastructure team | Technical systems, security, standards, optimization |
 
 Most sessions involve 1-3 agents. I'm not running all nineteen simultaneously. That would be chaos. The architecture is designed so each agent knows its lane, knows who to hand off to, and knows what's not its problem.
 
 ## How Agents Actually Coordinate
 
-The coordination happens through a shared-context directory. Every agent has an inbox file. When one agent needs another agent's help, it writes a structured message to that agent's inbox.
+The coordination happens through structured handoff protocols. Every agent has an inbox. When one agent needs another agent's help, it writes a structured message to that agent's inbox.
 
 Here's a real example from my system.
 
-My content agent (Pixel) is processing LinkedIn engagement opportunities. She finds a post about agentic AI security that's relevant to my positioning. She writes to three inboxes:
+My content agent is processing LinkedIn engagement opportunities. It finds a post about agentic AI security that's relevant to my positioning. It routes messages to three different agents:
 
-- **Sentinel's inbox:** "Threat assessment needed — agentic invoice attack vector. Mike Bumpus post references framing invariance."
-- **Ada's inbox:** "Teaching framework opportunity — monotropism video connects to CI Module 3 attention management."
-- **Socrates' inbox:** "Intellectual sparring opportunity — cognitive architecture as competitive edge against framework-first thinkers."
+- **Security agent:** "Threat assessment needed — agentic invoice attack vector."
+- **Course agent:** "Teaching framework opportunity — connects to attention management module."
+- **Advisory agent:** "Intellectual sparring opportunity — cognitive architecture as competitive edge."
 
-Each of those agents picks up the message at their next session. They don't need to know what Pixel was doing. They just need the context that's relevant to their domain.
+Each agent picks up the message at their next session. They don't need to know what the content agent was doing. They just need the context that's relevant to their domain.
 
-This is the part most multi-agent tutorials skip. Building agents is easy. Building the coordination layer — the shared context, the handoff protocol, the inbox system — that's where the actual architecture lives.
+This is the part most multi-agent tutorials skip. Building agents is easy. Building the coordination layer — the handoff protocols, the routing logic, the institutional memory — that's where the actual architecture lives.
 
 ## The Executive Team: How Cross-Domain Decisions Get Made
 
@@ -123,9 +123,9 @@ These aren't theoretical risks. They're things that actually happened, that I lo
 
 Let's talk about money, since nobody else does.
 
-I run this on Claude Code (Anthropic's CLI tool). The agents are structured as project directories with instruction files — no custom code, no API wrappers, no cloud deployment. The infrastructure cost is my Claude subscription plus the time I spend maintaining the system.
+I run this on an AI CLI tool. The agents are structured as project workspaces with persistent instruction documents — no custom code, no API wrappers, no cloud deployment. The infrastructure cost is my Claude subscription plus the time I spend maintaining the system.
 
-The maintenance time is real. Session close checklists. Weekly reviews. Template evolution governance. Memory audits. It's roughly 15-20% of my total AI time. If you're not willing to maintain the system, don't build one this complex. A single well-configured agent with good persistent memory will get you 80% of the value at 20% of the overhead.
+The maintenance time is real. Session close checklists. Weekly reviews. Pattern governance. Memory audits. It's roughly 15-20% of my total AI time. If you're not willing to maintain the system, don't build one this complex. A single well-configured agent with good persistent memory will get you 80% of the value at 20% of the overhead.
 
 ## The Difference Between This and Demo-Ware
 
@@ -147,19 +147,19 @@ But only if you show up on day 47.
 
 ### Do I need to be a developer to build a multi-agent AI system?
 
-No. I'm not a developer. I think programmatically, but I don't write Python or build apps. My agents are instruction files in project directories, not custom code. The architecture is organizational, not technical. You need clarity about roles and responsibilities — the same skill that makes someone good at org design makes them good at agent design.
+No. I'm not a developer. I think programmatically, but I don't write Python or build apps. My agents are persistent instruction documents in structured workspaces, not custom code. The architecture is organizational, not technical. You need clarity about roles and responsibilities — the same skill that makes someone good at org design makes them good at agent design.
 
-### How long did it take to build all 19 agents?
+### How long did it take to build all the agents?
 
 The first six agents were built in a single day. The rest accumulated over about six weeks as needs emerged. But the agents themselves aren't the hard part. The coordination layer — handoff protocols, shared context, executive team governance — took longer to design than the agents took to build.
 
 ### What model do you use?
 
-Claude (Anthropic) via Claude Code, their command-line interface. The agents are project directories with CLAUDE.md instruction files. No wrappers, no API integration, no custom infrastructure. The system is model-dependent in the sense that Claude Code supports the project structure I need. The architecture — roles, handoffs, memory, governance — is model-agnostic.
+I use an AI CLI tool that supports persistent project workspaces and instruction documents. No wrappers, no API integration, no custom infrastructure. The system uses a specific tool's capabilities, but the architecture — roles, handoffs, memory, governance — is model-agnostic. The principles work with any AI CLI that supports persistent context.
 
-### Should I start with 19 agents?
+### Should I start with this many agents?
 
-No. Start with one. Give it persistent memory, clear instructions, and a defined scope. When that agent starts producing work that clearly belongs to a different role, that's when you spin up agent two. I started with a single assistant. It became a Chief of Staff. The rest followed from real needs, not a plan to build nineteen of them.
+No. Start with one. Give it persistent memory, clear instructions, and a defined scope. When that agent starts producing work that clearly belongs to a different role, that's when you spin up agent two. I started with a single assistant. It became a Chief of Staff. The rest followed from real needs, not a master plan.
 
 ### What's the most valuable agent in the system?
 

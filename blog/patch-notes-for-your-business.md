@@ -115,27 +115,27 @@ A real patch notes entry from my system:
 
 That's not glamorous. It's operational hygiene. And it's the reason my system on day 47 is better than my system on day 1.
 
-### 3. Template Evolution (/evolve Governance)
+### 3. Pattern Governance
 
 Templates are how new agents get built and how existing agents get updated. But templates can't be static. They need to evolve as the system learns.
 
-The `/evolve` governance process:
+The governance process:
 
-1. **Gather signals.** Every agent collects "signals" — observed patterns, user corrections, convention discoveries. These accumulate in signal files.
+1. **Track patterns.** The system observes what works — corrections I make, conventions that emerge, approaches that prove reliable across sessions.
 
-2. **Identify candidates.** Filter for promotion candidates using frequency (3+ observations), user corrections (always high-signal), and cross-agent convergence (same signal appearing in multiple agents).
+2. **Identify candidates.** Patterns that repeat become candidates for codification. User corrections are always high-signal. Patterns that appear across multiple agents are the strongest signal.
 
-3. **Present and decide.** Each candidate gets a recommendation: promote to system-wide rule, promote to agent template, or defer. Daniel approves, rejects, or defers each one.
+3. **Present and decide.** Each candidate gets a recommendation: promote to a system-wide rule, promote to a template, or defer. I approve, reject, or defer each one.
 
-4. **Propagate.** Approved signals get written into the appropriate template or system file. The change flows to all agents that share that template.
+4. **Propagate.** Approved patterns get written into the appropriate template or system file. The change flows to all agents that share that template.
 
 This is version control for organizational knowledge. Without it, every agent learns independently and the system fragments. With it, a lesson learned by one agent becomes a rule for all of them.
 
-| Signal Example | Source | Frequency | Outcome |
+| Pattern Example | Source | Frequency | Outcome |
 |---------------|--------|-----------|---------|
-| "Never state day-of-week without verifying with date command" | User correction | 5 occurrences | Promoted → system-wide rule |
+| "Never state day-of-week without verifying" | User correction | 5 occurrences | Promoted → system-wide rule |
 | "Present email drafts in chat before sending" | User correction | 3 occurrences | Promoted → system-wide rule |
-| "Spawn pre-work research before agent handoffs" | Convention | 2 occurrences | Deferred — frequency too low |
+| "Spawn pre-work research before handoffs" | Convention | 2 occurrences | Deferred — frequency too low |
 
 ### 4. Memory Audits (Monthly)
 

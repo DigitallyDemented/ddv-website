@@ -53,24 +53,20 @@ Because every decision in my business touches one of five domains:
 | Role | Domain | Core Question | Agent(s) |
 |------|--------|--------------|----------|
 | **Chief of Staff** | Context & Coordination | "What needs attention right now?" | Lennier |
-| **CMO** | Revenue & Positioning | "How do we attract and convert?" | Kennedy + 6 specialists (Halbert, Funnel, Sequence, Ogilvy, Metrics, MediaBuyer) |
+| **CMO** | Revenue & Positioning | "How do we attract and convert?" | Kennedy + marketing specialists |
 | **CFO** | Financial Reality | "Can we afford this — and are we deciding from the right place?" | Housel |
-| **CTO** | Systems & Infrastructure | "What should we build, and in what order?" | Linus, Rand, Studio, Pixel, Sentinel |
-| **CPO** | Strategy & Challenge | "Should we do this at all?" | Seneca, Socrates, Jung |
+| **CTO** | Systems & Infrastructure | "What should we build, and in what order?" | Linus + infrastructure team |
+| **CPO** | Strategy & Challenge | "Should we do this at all?" | Seneca + advisory team |
 
-I didn't plan 19 agents. I started with one. Each new agent emerged from a real gap — a place where context was dropping, where I was doing work an agent could handle, or where I needed a perspective I wasn't getting.
+I didn't plan nearly 20 agents. I started with one. Each new agent emerged from a real gap — a place where context was dropping, where I was doing work an agent could handle, or where I needed a perspective I wasn't getting.
 
 The five executive roles are stable because they map to how decisions actually get made in a business. Add more agents under those roles, sure. But the five domains haven't changed since I formalized them.
 
-Here's what's under the hood — the full roster:
-
-**Executive layer (5):** Lennier (Chief of Staff), Kennedy (CMO), Housel (CFO), Linus (CTO), Seneca (CPO)
-
-**Specialist layer (14):** Pixel (content), Studio (YouTube optimization), Ada (course instruction), Marcus (client communication), Halbert (copywriting), Funnel (funnel architecture), Sequence (email), Ogilvy (brand messaging), Metrics (analytics), MediaBuyer (ads), Rand (SEO), Jung (shadow work), Socrates (intellectual sparring), Sentinel (security monitoring)
+The executive layer has five named agents — Lennier (Chief of Staff), Kennedy (CMO), Housel (CFO), Linus (CTO), and Seneca (CPO). Below them, specialist agents handle specific domains: content creation, client communication, copywriting, analytics, security monitoring, intellectual sparring, and more.
 
 Every agent has a name. A personality. A defined scope. Declared permissions. And constraints on what it cannot do.
 
-## How 19 Agents Share Context Without Breaking
+## How a Team of Agents Shares Context Without Breaking
 
 This is the part nobody else has published, because most people don't get far enough to need it.
 
@@ -78,13 +74,13 @@ Context sharing works through three mechanisms:
 
 ### 1. The CLAUDE.md Layer
 
-Every agent has a CLAUDE.md file — its onboarding document. This contains the agent's identity, what it can and can't do, its mentor council (if applicable), and critical context about Daniel, the business, and current priorities.
+Every agent has a persistent instruction document — its onboarding file. This contains the agent's identity, what it can and can't do, its advisory framework, and critical context about the business and current priorities.
 
-But here's the key: every agent also reads a shared `system.md` file that contains universal behavioral constraints. This is the constitution. Individual agents can add to it, but they can't override it.
+But here's the key: every agent also reads a shared constitutional document that contains universal behavioral constraints. Individual agents can add to their own instructions, but they can't override the shared constitution.
 
 ### 2. The Handoff System
 
-Agents communicate through handoff files — one per agent, stored in a shared-context directory. When Lennier needs Pixel to draft a LinkedIn post, it writes to `handoffs/pixel.md` with the context, priority, and any pre-work already done.
+Agents communicate through structured handoff protocols — one inbox per agent. When Lennier needs Pixel to draft a LinkedIn post, it writes a structured message with the context, priority, and any pre-work already done.
 
 The handoff isn't just "do this task." It includes:
 - What triggered the request
@@ -106,13 +102,13 @@ Dr. Herbert Simon, Nobel laureate and one of the founders of artificial intellig
 
 I'll be direct about what I tried that failed:
 
-- **Giving every agent access to everything.** Agents with too much context get noisy. Permissions are scoped deliberately — Pixel can't see financial data, Marcus can't see personal files, Sentinel can't write anything.
+- **Giving every agent access to everything.** Agents with too much context get noisy. Permissions are scoped deliberately — content agents can't see financial data, client agents can't see personal files, security agents can't write anything.
 - **Letting agents self-organize.** They don't. Without explicit handoff protocols, context drops silently. You don't notice until something breaks downstream.
 - **Skipping the values layer.** Early agents would agree with whatever I said. Adding the VMV constraint ("push back when this doesn't align with my values") transformed every conversation.
 
 ## The Start-With-One Roadmap
 
-Don't build 19 agents. Build one. Here's the sequence:
+Don't build 20 agents. Build one. Here's the sequence:
 
 | Phase | What to Build | Key Milestone |
 |-------|--------------|---------------|
