@@ -22,6 +22,9 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("cognitive-architecture.html");
   eleventyConfig.addPassthroughCopy("404.html");
 
+  // Redirect: old blog slug → new blog slug
+  eleventyConfig.addPassthroughCopy("blog/psychology-is-the-programming-language");
+
   // Exclude internal docs from the build
   eleventyConfig.ignores.add("skool-optimization-plan.md");
 

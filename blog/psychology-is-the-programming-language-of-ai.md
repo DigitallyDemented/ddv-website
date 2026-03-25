@@ -1,5 +1,5 @@
 ---
-title: "Psychology Is the Programming Language"
+title: "Psychology Is the Programming Language of AI"
 description: "I built a multi-agent AI system using nothing but psychology. 18 concepts, 5 layers, zero software engineering patterns. Here's what that means — and why the people best positioned to build AI architectures might not be engineers."
 date: 2026-03-19
 tags:
