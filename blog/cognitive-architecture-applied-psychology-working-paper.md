@@ -1,7 +1,7 @@
 ---
 title: "Cognitive Architecture as Applied Psychology: A Concept-Driven Approach to Multi-Agent AI Systems"
-description: "DDV Working Paper presenting a multi-agent cognitive architecture whose specification language is psychology, not software engineering. Currently 18 load-bearing concepts across five dependency layers, with empirical grounding and convergent validity from independent practitioners."
-date: 2026-03-18
+description: "DDV Working Paper presenting a multi-agent cognitive architecture whose specification language is psychology, not software engineering. 20 load-bearing concepts across five dependency layers, with empirical grounding, convergent validity, and enterprise convergence evidence from 8 major AI strategy reports."
+date: 2026-03-29
 tags:
   - post
   - ai
@@ -13,9 +13,11 @@ tags:
   - knowledge-infrastructure
   - concept-driven-development
   - behavioral-literacy
+  - enterprise-ai
+  - metacognition
 ---
 
-**DDV Working Paper, March 2026**
+**DDV Working Paper, March 2026 — v3 (Enterprise Evidence Update)**
 
 Daniel Walters
 Digitally Demented Ventures, Birmingham, AL
@@ -24,7 +26,7 @@ Digitally Demented Ventures, Birmingham, AL
 
 ## Abstract
 
-This paper presents a multi-agent cognitive architecture whose entire specification language consists of layered psychological concepts rather than software engineering patterns. Currently eighteen load-bearing concepts across five dependency layers — Foundation, Classification, Design, Architecture, and Maturity — constitute a sufficient specification for a production system of nearly twenty coordinated AI agents. The approach reverses the direction of 40 years of academic cognitive architecture research: rather than building software that models how minds work, this methodology begins with a human mind designing how it interfaces with AI, using psychological concepts as the specification language. The core argument is that behavioral literacy — not engineering literacy — is the binding constraint on coherent AI architecture design. Three empirical findings, convergent evidence from independent practitioners, and daily production use over 300+ sessions provide preliminary validation.
+This paper presents a multi-agent cognitive architecture whose entire specification language consists of layered psychological concepts rather than software engineering patterns. Currently twenty load-bearing concepts across five dependency layers — Foundation, Classification, Design, Architecture, and Maturity — constitute a sufficient specification for a production system of nearly twenty coordinated AI agents. The methodology is not the concepts alone but their dependency structure: each layer requires the layers beneath it, and the interactions between layers produce emergent properties that no single concept generates independently. The approach reverses the direction of 40 years of academic cognitive architecture research: rather than building software that models how minds work, this methodology begins with a human mind designing how it interfaces with AI, using psychological concepts as the specification language. The core argument is that behavioral literacy is the binding constraint on coherent AI architecture design — not a replacement for engineering literacy, but the missing complement that existing structural and technical approaches cannot provide. Three empirical findings, convergent evidence from independent practitioners, enterprise-scale validation from eight major consultancy reports, and daily production use over 300+ sessions provide preliminary validation.
 
 ---
 
@@ -36,7 +38,11 @@ These are necessary layers. But the stack surfaces an open question it does not 
 
 This paper proposes that the missing layer is cognitive architecture — and that its specification language is psychology.
 
-The argument proceeds as follows. When practitioners develop AI systems using concepts rather than code, and the concepts employed are psychological structures — identity, values, metacognition, trust calibration, cognitive sovereignty — then the governing discipline is psychology, not software engineering. This is not a metaphorical claim. It is a structural observation about what kind of knowledge is required to build coherent multi-agent systems, supported by the architecture presented here and by convergent evidence from independent practitioners arriving at identical designs.
+The urgency of this claim has increased since v2 of this paper. Between Q4 2025 and Q1 2026, eight major AI strategy reports from McKinsey, Deloitte, IBM, Accenture, Anthropic, and AWS converged on a single thesis: the human role in AI systems is migrating from executor to orchestrator. McKinsey introduced "above the loop" — humans who set direction and monitor agents rather than executing tasks. Deloitte built an "autonomy ladder" progressing from AI-assisted to AI-autonomous operations. IBM proposed four emerging human roles: Orchestrator, Outcome Governor, Innovation Visionary, and Digital Labor Manager. Accenture offered a clean formulation: "humans set intent and guardrails, agents execute."
+
+All eight reports prescribe structural solutions: governance frameworks, maturity models, role definitions, approval workflows, autonomy tiers. None of them address how the human's cognition, values, and judgment integrate with those structures. The missing layer this paper identifies is precisely the layer the enterprise world has converged on needing but cannot yet specify — because its specification language is psychological, not structural.
+
+The argument proceeds as follows. When practitioners develop AI systems using concepts rather than code, and the concepts employed are psychological structures — identity, values, metacognition, trust calibration, cognitive sovereignty — then the governing discipline is psychology, not software engineering. This is not a metaphorical claim. It is a structural observation about what kind of knowledge is required to build coherent multi-agent systems, supported by the architecture presented here, by convergent evidence from independent practitioners arriving at identical designs, and now by enterprise-scale evidence that structural approaches alone produce no measurable impact.
 
 ## 2. Background and Directional Flip
 
@@ -44,29 +50,31 @@ Academic cognitive architectures — SOAR (Laird, Newell & Rosenbloom, 1983), AC
 
 This methodology reverses the direction. Rather than using computational models to simulate minds, it begins with a practitioner's own psychological self-knowledge — externalized metacognition — as the specification language for a personal cognitive architecture. The same term, opposite direction. Forty years of academic weight in cognitive architecture research, with no prior applications as a personal design practice.
 
-The reversal has a specific origin. The author's late-diagnosed AuDHD (autism and ADHD) created a lifelong necessity to externalize cognitive processes — building external structure to compensate for executive function differences. When large language models reached sufficient capability for dialectic interaction (circa 2024-2025), this pre-existing habit of cognitive externalization became the foundation for a complete multi-agent architecture. The neurodivergent constraints that necessitated the externalization became architectural features: monotropism informed single-domain agent specialization, hyperfocus informed deep-context session design, and the need for external accountability informed the values governance layer. The system was not designed from theory. It was grown from cognitive necessity.
+The reversal has a specific origin. The author's late-diagnosed AuDHD (autism and ADHD) created a lifelong necessity to externalize cognitive processes — building external structure to compensate for executive function differences. When large language models reached sufficient capability for genuine dialectic interaction — not merely generating plausible responses but reasoning, pushing back, and sustaining multi-turn argumentation (circa late 2025, with models crossing from pattern-matching into emergent reasoning behavior) — this pre-existing habit of cognitive externalization became the foundation for a complete multi-agent architecture. The neurodivergent constraints that necessitated the externalization became architectural features: monotropism informed single-domain agent specialization, hyperfocus informed deep-context session design, and the need for external accountability informed the values governance layer. The system was not designed from theory. It was grown from cognitive necessity.
 
 ## 3. The Concept Inventory
 
-Currently eighteen load-bearing concepts across five dependency layers form a sufficient specification language for the architecture. Every specification decision traces to cognitive psychology, organizational psychology, or behavioral science. The engineering substrate (files, agents, handoff protocols) is implementation; the concepts are specification. For comparison, Agile operates on 12 principles, CMMI defines 5 maturity levels, and Lean specifies 5 principles. This is a non-trivial methodology.
+Currently twenty load-bearing concepts across five dependency layers form a sufficient specification language for the architecture. The methodology is not the concept count — it is the dependency structure between layers, where each layer requires the layers beneath it and the interactions between layers produce emergent properties that no individual concept generates. Every specification decision traces to cognitive psychology, organizational psychology, or behavioral science. The engineering substrate (files, agents, handoff protocols) is implementation; the concepts are specification. For comparison, Agile operates on 12 principles, CMMI defines 5 maturity levels, and Lean specifies 5 principles. This is a non-trivial methodology.
 
 The dependency structure presented here represents the logical architecture — what concepts require what. It differs from both the discovery sequence (non-linear, intuitive) and the pedagogical sequence used in the Connected Intelligence teaching implementation, which follows experiential discovery principles. All three orderings are valid representations of the same system.
 
 The concept inventory draws on established research at every layer:
 
-- **Foundation** (7 concepts): The paradigm, threat model, problem, boundary, capability, and disposition that make the architecture necessary. Metacognition (Flavell, 1979) grounds the system's self-reflective capabilities — addressing the finding that AI makes users "smarter but none the wiser" (Fernandes et al., 2023). The Six Irreducibly Human Domains extend Frey and Osborne's (2013) engineering bottleneck analysis into actionable boundaries. Emergent misalignment research (Betley et al., 2026) provides the threat model justifying unified values as structural necessity.
+- **Foundation** (9 concepts): The paradigm, threat model, problem, boundary, capability, and dispositions that make the architecture necessary. Metacognition (Flavell, 1979) grounds the system's self-reflective capabilities — addressing the finding that AI makes users "smarter but none the wiser" (Fernandes et al., 2023). The Six Irreducibly Human Domains extend Frey and Osborne's (2013) engineering bottleneck analysis into actionable boundaries. Emergent misalignment research (Betley et al., 2026) provides the threat model justifying unified values as structural necessity.
 
 - **Classification** (2 concepts): The evaluation language. Task classification adapts OECD task frameworks and Frey and Osborne's bottleneck analysis into a practitioner-accessible Green/Yellow/Red audit. The Three Levers framework (Context, Task, Mode) establishes a decision hierarchy for any AI interaction, with context weighted at 70%+ of outcome quality.
 
 - **Design** (3 concepts): Where practitioners shift from classifying work to designing systems. The Author vs. Curator mindset shift — from consuming AI outputs to designing the lens AI sees through — has no direct academic precedent found. Identity Specification draws on Anthropic's work on model character (Askell et al., 2022-2026) and extends it from single-model alignment to multi-agent orchestration: agents sharing a common values layer but carrying distinct identity specifications. Values governance connects to Meaningful Human Control (Santoni de Sio & Mecacci, 2021) and Constitutional AI, extending the principle from the model training layer to the orchestration layer.
 
-- **Architecture** (5 concepts): The structural elements. Trust calibration adapts Sheridan and Verplank's Levels of Automation (1978) and Parasuraman et al.'s per-function autonomy model (2000) into a four-level practitioner framework. Upstream intake curation — governing what knowledge enters the system before retrieval occurs — addresses a gap in the RAG ecosystem that Zahn and Chana (2026, preprint) independently validated: their research demonstrated that write-time gating achieves 100% accuracy versus 13% for ungated retrieval, and at high distractor ratios, read-time filtering collapses while write-time gating holds. The Minimum Viable Cognitive Architecture is defined by four properties: persistence, coordination, self-measurement, and evolution.
+- **Architecture** (5 concepts): The structural elements. Trust calibration adapts Sheridan and Verplank's Levels of Automation (1978) and Parasuraman et al.'s per-function autonomy model (2000) into a four-level practitioner framework. Upstream intake curation — governing what knowledge enters the system before retrieval occurs — addresses a gap in the RAG ecosystem that Zahn and Chana (2026, preprint) independently validated: their research demonstrated that write-time gating achieves 100% accuracy versus 13% for ungated retrieval, and at high distractor ratios, read-time filtering collapses while write-time gating holds. The architecture layer defines minimum viability through a set of emergent properties — structural requirements that, when absent, cause the system to degrade in predictable ways.
 
-- **Maturity** (1 concept): How the architecture evolves. The Sovereign Systems maturity model (Know, Enforce, Evolve, Direct) draws on IBM's Autonomic Computing framework (2001) and the self-maintaining properties described in autopoietic systems theory (Maturana & Varela, 1972). The "Direct" layer — where the system influences which problems are worth solving — has no equivalent in existing maturity models.
+- **Maturity** (1 concept): How the architecture evolves. The maturity model draws on IBM's Autonomic Computing framework (2001) and the self-maintaining properties described in autopoietic systems theory (Maturana & Varela, 1972). It defines progressive stages of system autonomy, culminating in a layer where the system influences which problems are worth solving — a capability with no equivalent in existing maturity models.
 
 The system includes feedback loops at every layer. Trust levels shift based on experience. Values application surfaces productive tensions that refine the values themselves. Maturity progression restructures the architecture below it. This is why the system compounds rather than merely accumulates.
 
 ## 4. Empirical Grounding
+
+### 4.1 Laboratory and Field Research
 
 Three recent findings provide empirical support for the architectural decisions.
 
@@ -86,7 +94,7 @@ The architecture presented here adds a requirement these frameworks do not speci
 
 ## 6. Convergent Validity
 
-Three independent practitioners worldwide — building on different platforms, from different starting points, with no coordination — converged on architecturally identical systems within the same timeframe. Each independently arrived at all four MVCA properties: persistence, coordination, self-measurement, and evolution. One limitation should be noted: three of the four practitioners (including the author) built on the same underlying platform, which may partially explain the architectural convergence. However, the fourth practitioner built on an entirely different platform and arrived at the same structural properties, suggesting the convergence is driven by the problem domain rather than the tooling alone.
+Three independent practitioners worldwide — building on different platforms, from different starting points, with no coordination — converged on architecturally identical systems within the same timeframe. Each independently arrived at the same set of minimum viability properties — the structural requirements without which a cognitive architecture degrades. One limitation should be noted: three of the four practitioners (including the author) built on the same underlying platform, which may partially explain the architectural convergence. However, the fourth practitioner built on an entirely different platform and arrived at the same structural properties, suggesting the convergence is driven by the problem domain rather than the tooling alone.
 
 This preliminary convergent validity — suggestive rather than conclusive with a sample of four — indicates that cognitive architecture may be a natural attractor for AI-augmented knowledge work, not a design preference. The contribution is documenting what this small cohort is building before the category gets defined by enterprise vendors.
 
