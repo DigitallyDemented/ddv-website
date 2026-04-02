@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>Speaker Notes — CRM Is Lying to You</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html {
+    font-family: 'Inter', -apple-system, sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    background: #1a1a1a;
+    color: #e5e5e5;
+    -webkit-text-size-adjust: 100%;
+  }
+  body { max-width: 720px; margin: 0 auto; padding: 32px 24px 120px; }
+
+  h1 {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #FCD34D;
+    margin-bottom: 4px;
+  }
+  .meta {
+    font-size: 0.85rem;
+    color: #888;
+    margin-bottom: 40px;
+  }
+
+  /* Section beats */
+  .beat {
+    margin-bottom: 40px;
+    padding: 20px 24px;
+    border-left: 4px solid #065F46;
+    background: #222;
+    border-radius: 0 8px 8px 0;
+  }
+  .beat.peak { border-left-color: #FCD34D; }
+  .beat.quiet { border-left-color: #555; }
+
+  .beat-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 12px;
+  }
+  .beat-title {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #FCD34D;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  .beat-time {
+    font-size: 0.8rem;
+    color: #888;
+    font-weight: 500;
+  }
+  .beat-slide {
+    font-size: 0.75rem;
+    color: #065F46;
+    background: rgba(6,95,70,0.2);
+    padding: 2px 8px;
+    border-radius: 4px;
+    margin-bottom: 12px;
+    display: inline-block;
+  }
+
+  /* Content types */
+  .say {
+    color: #fff;
+    font-weight: 500;
+    font-style: italic;
+    margin: 12px 0;
+    padding-left: 16px;
+    border-left: 2px solid #FCD34D;
+  }
+  .say::before {
+    content: '';
+  }
+
+  .do {
+    color: #9CA3AF;
+    font-size: 0.9rem;
+    margin: 8px 0;
+  }
+  .do::before {
+    content: "→ ";
+    color: #065F46;
+    font-weight: 700;
+  }
+
+  .story {
+    background: rgba(6,95,70,0.15);
+    padding: 12px 16px;
+    border-radius: 6px;
+    margin: 12px 0;
+    font-size: 0.9rem;
+  }
+  .story-label {
+    font-weight: 700;
+    color: #065F46;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  .keyline {
+    color: #FCD34D;
+    font-weight: 600;
+    font-size: 1.05rem;
+    margin: 12px 0;
+    padding: 8px 0;
+  }
+
+  ul {
+    margin: 8px 0 8px 20px;
+    font-size: 0.95rem;
+  }
+  li { margin-bottom: 6px; }
+  li em { color: #FCD34D; font-style: normal; font-weight: 600; }
+
+  .divider {
+    border: none;
+    border-top: 1px solid #333;
+    margin: 48px 0;
+  }
+
+  .energy {
+    font-size: 0.8rem;
+    color: #666;
+    margin-top: 8px;
+  }
+
+  /* Questions */
+  .question {
+    margin: 16px 0;
+    padding: 12px 16px;
+    background: rgba(252,211,77,0.1);
+    border-radius: 6px;
+  }
+  .q-num {
+    font-weight: 700;
+    color: #FCD34D;
+    font-size: 1.2rem;
+    margin-right: 8px;
+  }
+  .q-reveal {
+    font-size: 0.85rem;
+    color: #888;
+    margin-top: 4px;
+  }
+</style>
+</head>
+<body>
+
+<h1>Your CRM Is Lying to You</h1>
+<div class="meta">BHAM AI Sales Breakout &bull; April 2, 2026 &bull; 30 min</div>
+
+<!-- OPEN -->
+<div class="beat">
+  <div class="beat-header">
+    <span class="beat-title">Open — Provocation</span>
+    <span class="beat-time">0:00 – 0:03</span>
+  </div>
+  <div class="beat-slide">Slides 1–2</div>
+  <div class="do">No intro. No "thanks for having me." Just start.</div>
+  <div class="say">"How many of you have ever lost a deal you thought you had?"</div>
+  <div class="do">Pause. Let them nod.</div>
+  <div class="say">"Now — how many of you actually know why you lost it? Not what you told your manager. Why you actually lost it."</div>
+  <div class="do">Longer pause.</div>
+  <div class="say">"That gap — between what your CRM says happened and what actually happened — that's what we're talking about today."</div>
+  <div class="energy">Energy: Quiet certainty. Not loud. Not hyped. Room leans in.</div>
+</div>
+
+<!-- EMPATHY -->
+<div class="beat">
+  <div class="beat-header">
+    <span class="beat-title">Empathy Beat</span>
+    <span class="beat-time">0:03 – 0:07</span>
+  </div>
+  <div class="say">"Show of hands — who has a pipeline review coming up this week?"</div>
+  <div class="do">Hands go up.</div>
+  <div class="say">"And when you pull that report — honestly, how confident are you that what you're looking at is actually real?"</div>
+  <div class="do">Uncomfortable laughter = recognition. That's working.</div>
+
+  <div class="story">
+    <div class="story-label">Story 1 — "I've been in your world" (60-90 sec)</div>
+    Apple Store frontline retail → Piper and Leaf → enterprise tech deployments. You've carried quota. You've built pitch decks. You started where they are.
+    <br><br>
+    <strong>Land this:</strong> "I'm not a sales person anymore — I'm the person who's seen what your data looks like on the back end. But I started where you are."
+    <br><br>
+    <strong>Don't:</strong> Name Connect.
+  </div>
+  <div class="energy">Energy: Conversational. Building connection.</div>
+</div>
+
+<!-- ACT 1 -->
+<div class="beat">
+  <div class="beat-header">
+    <span class="beat-title">Act 1 — What CRM Was Built For</span>
+    <span class="beat-time">0:07 – 0:13</span>
+  </div>
+  <div class="beat-slide">Slide 3</div>
+
+  <div class="keyline">CRM was built for managers. You just happen to live in it.</div>
+
+  <ul>
+    <li>CRM = management reporting tool that also happens to be where deals live</li>
+    <li>Every field you fill in that doesn't help you close is there for <em>someone else</em></li>
+    <li>Data entry wasn't designed to benefit you — it was designed to <em>report on you</em></li>
+    <li>Structural conflict: people who generate data are incentivized to game it; people who trust data are one layer removed</li>
+  </ul>
+
+  <div class="say">"What percentage of your CRM notes were written 24+ hours after the conversation they document?"</div>
+  <div class="do">Don't ask for hands — let it land rhetorically.</div>
+  <div class="energy">Energy: Educational but not lecturing. Conversational. Naming what they've felt.</div>
+</div>
+
+<!-- ACT 2 -->
+<div class="beat peak">
+  <div class="beat-header">
+    <span class="beat-title">Act 2 — Where the Lie Lives</span>
+    <span class="beat-time">0:13 – 0:19</span>
+  </div>
+  <div class="beat-slide">Slides 4, 5, 6</div>
+
+  <div class="keyline">Three places the data lies:</div>
+
+  <ul>
+    <li><em>NOTES</em> — Retrospective reconstruction, not documentation. You remember what confirmed your read. CRM notes are your story about a deal, not what happened.</li>
+    <li><em>STAGES</em> — Who decides when a deal moves? You do. Based on? Feeling. Self-reported sentiment dressed up as pipeline metric.</li>
+    <li><em>CONTACTS</em> — CRM has the person who takes your calls. Not the four others who actually decide. Influence map is invisible.</li>
+  </ul>
+
+  <div class="story">
+    <div class="story-label">Story 2 — Iron Tribe Fitness, the anchor (90-120 sec)</div>
+    Franchise fitness company. Rebuilt their system using Infusionsoft. Problem: nobody cared about data <em>quality</em> — just that data <em>existed</em>. "Just get it in the system." GIGO at scale across franchises.
+    <br><br>
+    <strong>Beat:</strong> System designed for throughput, not truth. Layer reporting/AI on top → confident wrong answers.
+    <br><br>
+    <strong>Tone:</strong> Diagnostic, not dramatic. Describing what you observed.
+  </div>
+
+  <div class="say">"Your CRM was designed to track activity. Not truth. There's a massive difference."</div>
+  <div class="say">"A rep marks a deal 'follow up Q2.' The CRM logs an activity. The AI sees active pipeline. The deal has been dead since January. Everyone is nodding at a ghost."</div>
+
+  <div class="energy">Energy: PEAK. Go faster here. Use "lying" deliberately — they're ready for it now.</div>
+</div>
+
+<!-- ACT 3 -->
+<div class="beat">
+  <div class="beat-header">
+    <span class="beat-title">Act 3 — Why AI Makes It Worse</span>
+    <span class="beat-time">0:19 – 0:23</span>
+  </div>
+  <div class="beat-slide">Slides 7, 8, 9</div>
+
+  <div class="do">Most AI tools in sales right now: analyzing CRM data to predict outcomes, writing follow-ups from notes, scoring leads from engagement. All downstream of garbage data.</div>
+
+  <div class="keyline">"AI doesn't interrogate your data. It amplifies it."</div>
+
+  <div class="say">"Your AI doesn't know your deal is at risk. It just knows what you told it. And you told it you were confident."</div>
+  <div class="say">"You can now get a hallucinated forecast in under four seconds instead of four hours. The speed didn't fix the accuracy. It just accelerated the confidence."</div>
+  <div class="say">"This isn't an AI problem. It's a context problem."</div>
+
+  <div class="keyline">"The bottleneck isn't technical anymore. It's contextual range."</div>
+
+  <div class="energy">Energy: Slight valley — serious, not low. Landing the diagnosis. Don't rush out. Let it sit.</div>
+</div>
+
+<!-- AUDIT -->
+<div class="beat peak">
+  <div class="beat-header">
+    <span class="beat-title">Diagnosis Pivot — 3-Question Audit</span>
+    <span class="beat-time">0:23 – 0:26</span>
+  </div>
+  <div class="beat-slide">Slide 10</div>
+
+  <div class="say">"I have a three-question audit I want to run you through right now. You don't need a pen. Just think about your current pipeline — a real deal, one that's in-flight."</div>
+
+  <div class="question">
+    <span class="q-num">1</span> When did you last update the CRM record on this deal? Same day — or later?
+    <div class="q-reveal">Reveals: How close your notes are to ground truth.</div>
+  </div>
+  <div class="question">
+    <span class="q-num">2</span> Can you name three people inside that account who influence this deal — not just the one who takes your calls?
+    <div class="q-reveal">Reveals: Whether you have an influence map or just a contact.</div>
+  </div>
+  <div class="question">
+    <span class="q-num">3</span> What's the thing you know about this deal that you haven't written in CRM yet?
+    <div class="q-reveal">Reveals: The delta between what AI sees and what's actually true.</div>
+  </div>
+
+  <div class="do">Pause after Q3. Hold the silence.</div>
+
+  <div class="say">"That last answer? That's where your deal actually lives. And right now, your AI doesn't have access to it."</div>
+
+  <div class="energy">Energy: Re-peak. Room goes quiet at Q3. That's the talk working. PROTECT THIS SECTION — if running long, cut Reframe, never cut Audit.</div>
+</div>
+
+<!-- REFRAME -->
+<div class="beat">
+  <div class="beat-header">
+    <span class="beat-title">Reframe — Clean Context</span>
+    <span class="beat-time">0:26 – 0:29</span>
+  </div>
+  <div class="beat-slide">Slide 11</div>
+
+  <div class="keyline">When the context is clean, everything changes.</div>
+
+  <div class="say">"What if your AI knew the thing you know? What if every insight you had about a deal was captured in a way that actually shapes how the AI helps you?"</div>
+
+  <div class="story">
+    <div class="story-label">Story 3 — Iron Tribe "Step Two Prospects" (60-90 sec)</div>
+    Three meetings in one day: Forest (morning), Jim (lunch, franchise manager), franchisee (evening). All describing the same thing — step two prospects — without using those words. Three people, three vocabularies, same concept.
+    <br><br>
+    Built the Perfect Customer Lifecycle. Unified the language. When everyone called the same thing the same thing, the data told the truth.
+    <br><br>
+    <strong>Beat:</strong> "Not better software. Better context."
+  </div>
+
+  <div class="do">Keep this short. 2-3 min max. Close needs breathing room.</div>
+  <div class="energy">Energy: Possibility. Don't oversell.</div>
+</div>
+
+<!-- CLOSE -->
+<div class="beat quiet">
+  <div class="beat-header">
+    <span class="beat-title">Close — Implicit Offer</span>
+    <span class="beat-time">0:29 – 0:30</span>
+  </div>
+  <div class="beat-slide">Slide 12</div>
+
+  <div class="say">"I'm not going to sell you anything today. But I will say this: I do one thing — I sit with people for about an hour and find where their data is lying. Not in general. In their specific pipeline, their specific CRM, their specific setup."</div>
+  <div class="do">Pause.</div>
+  <div class="say">"If any of this hit home, shoot me an email — daniel@digitallydemented.com. Subject line 'CRM audit.' I'll tell you exactly where to look."</div>
+
+  <div class="energy">Energy: Quiet confidence. Drop the email, walk off. Don't linger.</div>
+</div>
+
+<hr class="divider">
+
+<div style="font-size: 0.8rem; color: #555; text-align: center;">
+  Don't review this in the 2 hours before. Trust the prep.<br>
+  Find one person to make eye contact with in the first 30 seconds.
+</div>
+
+</body>
+</html>
