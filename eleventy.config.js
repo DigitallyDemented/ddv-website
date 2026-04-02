@@ -21,6 +21,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("card.html");
   eleventyConfig.addPassthroughCopy("cognitive-architecture.html");
   eleventyConfig.addPassthroughCopy("404.html");
+  eleventyConfig.addPassthroughCopy("speaker-notes-crm.html");
 
   // Redirect: old blog slug → new blog slug
   eleventyConfig.addPassthroughCopy("blog/psychology-is-the-programming-language");
