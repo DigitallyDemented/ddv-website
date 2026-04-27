@@ -189,35 +189,76 @@
           <p style="margin-bottom:1.5rem; color: var(--slate-light);">11 pages. A 30-task worksheet you fill in. Three category tables. A reflection page. Zero fluff.</p>
 
           <!-- HubSpot Lead Capture Form: "CI Lead Magnet + Course Enrollment" -->
-          <!-- Uses legacy v2 embed so we can hook onFormSubmitted to trigger PDF download client-side. -->
+          <!-- Form GUID: e9f5b7cf-7798-4c62-ae38-6cd044bb1421 (also embedded on /courses) -->
           <div id="matrix-form-target"></div>
-          <div id="matrix-download-fallback" style="display:none; margin-top:1rem; padding:1rem; background-color: var(--cream, #FAF8F5); border-radius:8px;">
-            <p style="margin:0;"><strong>Thanks!</strong> Your download should start automatically. If it doesn&rsquo;t, <a href="/AI-Opportunity-Matrix.pdf" download>click here to grab the PDF</a>.</p>
+          <div id="matrix-download-card" style="display:none; margin-top:1.5rem; padding:1.5rem; background-color: var(--cream, #FAF8F5); border:2px solid var(--color-accent, #B45309); border-radius:8px; text-align:center;">
+            <h3 style="margin-top:0; margin-bottom:0.75rem;">Your PDF is ready</h3>
+            <p style="margin-bottom:1.25rem;">If your download didn&rsquo;t start automatically, click below.</p>
+            <a href="/AI-Opportunity-Matrix.pdf" download class="btn btn-primary btn-lg" style="display:inline-block;">Download the AI Opportunity Matrix &rarr;</a>
           </div>
           <script charset="utf-8" type="text/javascript" src="//js-na2.hsforms.net/forms/embed/v2.js"></script>
           <script>
-            hbspt.forms.create({
-              region: "na2",
-              portalId: "243773350",
-              formId: "e9f5b7cf-7798-4c62-ae38-6cd044bb1421",
-              target: "#matrix-form-target",
-              onFormSubmitted: function() {
-                // Show fallback message
-                var fallback = document.getElementById('matrix-download-fallback');
-                if (fallback) fallback.style.display = 'block';
-                // Trigger automatic download
-                var link = document.createElement('a');
-                link.href = '/AI-Opportunity-Matrix.pdf';
-                link.download = 'AI-Opportunity-Matrix.pdf';
-                document.body.appendChild(link);
-                link.click();
-                document.body.removeChild(link);
+            (function() {
+              var handled = false;
+              function deliverPDF() {
+                if (handled) return;
+                handled = true;
+                // Show the prominent download card
+                var card = document.getElementById('matrix-download-card');
+                if (card) {
+                  card.style.display = 'block';
+                  // Scroll it into view in case the thank-you message pushed it below the fold
+                  card.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                }
+                // Attempt auto-download (may be blocked by popup blocker — card is the safety net)
+                try {
+                  var link = document.createElement('a');
+                  link.href = '/AI-Opportunity-Matrix.pdf';
+                  link.download = 'AI-Opportunity-Matrix.pdf';
+                  document.body.appendChild(link);
+                  link.click();
+                  document.body.removeChild(link);
+                } catch (e) { /* card link is the reliable path */ }
               }
-            });
+
+              // Layer 1: HubSpot direct callback (works for inline-rendered forms)
+              hbspt.forms.create({
+                region: "na2",
+                portalId: "243773350",
+                formId: "e9f5b7cf-7798-4c62-ae38-6cd044bb1421",
+                target: "#matrix-form-target",
+                onFormSubmitted: deliverPDF
+              });
+
+              // Layer 2: postMessage listener (works for iframe-rendered forms)
+              window.addEventListener('message', function(e) {
+                if (e.data &&
+                    e.data.type === 'hsFormCallback' &&
+                    e.data.eventName === 'onFormSubmitted' &&
+                    e.data.id === 'e9f5b7cf-7798-4c62-ae38-6cd044bb1421') {
+                  deliverPDF();
+                }
+              });
+
+              // Layer 3: MutationObserver on the target div (catches the inline thank-you DOM swap)
+              var target = document.getElementById('matrix-form-target');
+              if (target && window.MutationObserver) {
+                var observer = new MutationObserver(function() {
+                  var text = target.textContent || '';
+                  if (text.indexOf('Form submitted') !== -1 ||
+                      text.indexOf('Thank you') !== -1 ||
+                      text.indexOf('thank you') !== -1) {
+                    deliverPDF();
+                    observer.disconnect();
+                  }
+                });
+                observer.observe(target, { childList: true, subtree: true, characterData: true });
+              }
+            })();
           </script>
 
           <p style="margin-top:1.5rem; font-size:0.85rem; color: var(--slate-light);">
-            Your PDF downloads as soon as you submit. We&rsquo;ll also send the occasional thoughtful note from Daniel. Unsubscribe anytime. We don&rsquo;t share your email.
+            Your PDF appears as soon as you submit, and we&rsquo;ll also email you a backup copy. We&rsquo;ll send the occasional thoughtful note from Daniel. Unsubscribe anytime. We don&rsquo;t share your email.
           </p>
         </div>
       </div>
