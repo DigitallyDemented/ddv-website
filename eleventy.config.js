@@ -22,6 +22,10 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("cognitive-architecture.html");
   eleventyConfig.addPassthroughCopy("404.html");
   eleventyConfig.addPassthroughCopy("speaker-notes-crm.html");
+  eleventyConfig.addPassthroughCopy("matrix.html");
+
+  // Lead magnet PDF (downloadable from /matrix landing page)
+  eleventyConfig.addPassthroughCopy("AI-Opportunity-Matrix.pdf");
 
   // Redirect: old blog slug → new blog slug
   eleventyConfig.addPassthroughCopy("blog/psychology-is-the-programming-language");
