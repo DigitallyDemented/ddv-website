@@ -1,0 +1,440 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<meta name="description" content="Payton Junkin — Birmingham real estate, guided. Houses, neighborhoods, and a quiet hand through the process.">
+<title>v3 · Concierge — Payton Junkin mockup</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ivory:#f7f7f5;
+    --paper:#fff;
+    --navy:#1e3a5f;
+    --night:#36454f;
+    --sky:#64add6;
+    --line:rgba(30,58,95,.12);
+    --muted:rgba(30,58,95,.62);
+    --display:'Inter',system-ui,-apple-system,sans-serif;
+    --body:'Raleway',system-ui,-apple-system,sans-serif;
+  }
+  *,*:before,*:after{box-sizing:border-box}
+  html,body{margin:0;padding:0}
+  body{
+    font-family:var(--body);
+    color:var(--navy);
+    background:var(--ivory);
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+    text-rendering:optimizeLegibility;
+  }
+  a{color:inherit;text-decoration:none}
+  img{display:block;max-width:100%;height:auto}
+  .wrap{max-width:1320px;margin:0 auto;padding:0 32px}
+  .smallcaps{font-family:var(--display);font-weight:500;font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
+
+  /* Top utility bar */
+  .util-bar{background:var(--navy);color:rgba(255,255,255,.82);font-size:.78rem;letter-spacing:.06em}
+  .util-bar .wrap{display:flex;justify-content:space-between;align-items:center;padding-top:10px;padding-bottom:10px;flex-wrap:wrap;gap:8px}
+  .util-bar a{color:#fff}
+  .util-bar a:hover{color:var(--sky)}
+
+  /* Nav */
+  header.site{padding:22px 0;background:var(--paper);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:5}
+  header.site .wrap{display:flex;align-items:center;justify-content:space-between}
+  .mark{display:flex;align-items:center;gap:12px;color:var(--navy)}
+  .mark svg{width:28px;height:34px}
+  .mark .name-block{display:flex;flex-direction:column;line-height:1.05}
+  .mark .name{font-family:var(--display);font-weight:600;letter-spacing:.18em;font-size:.78rem;text-transform:uppercase}
+  .mark .role{font-family:var(--display);font-weight:400;font-size:.62rem;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin-top:2px}
+  nav.primary{display:flex;gap:32px;font-family:var(--display);font-weight:500;font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:var(--navy)}
+  nav.primary a:hover{color:var(--sky)}
+  @media (max-width:760px){nav.primary{display:none}}
+  .header-cta{display:inline-flex;align-items:center;gap:8px;font-family:var(--display);font-weight:500;font-size:.74rem;letter-spacing:.16em;text-transform:uppercase;color:var(--navy);border:1px solid var(--navy);padding:10px 18px;border-radius:2px}
+  .header-cta:hover{background:var(--navy);color:#fff}
+
+  /* Split hero */
+  .hero{display:grid;grid-template-columns:1.2fr 1fr;min-height:84vh;background:var(--paper)}
+  @media (max-width:980px){.hero{grid-template-columns:1fr;min-height:auto}}
+  .hero .photo{background:#222 center/cover no-repeat;min-height:480px}
+  .hero .panel{padding:80px 64px 80px 56px;display:flex;flex-direction:column;justify-content:center}
+  @media (max-width:980px){.hero .panel{padding:64px 32px}}
+  .hero .panel .greeting{margin-bottom:22px}
+  .hero .panel h1{
+    font-family:var(--display);
+    font-weight:300;
+    font-size:clamp(2.2rem,4vw,3.6rem);
+    line-height:1.1;
+    letter-spacing:-.015em;
+    margin:0 0 22px;
+    color:var(--navy);
+  }
+  .hero .panel .intro{font-size:1.05rem;color:var(--night);margin-bottom:42px;max-width:480px;line-height:1.65}
+
+  /* Search panel */
+  .search-panel{border-top:1px solid var(--line);padding-top:32px}
+  .search-panel .smallcaps{margin-bottom:14px;display:block}
+  .tabs{display:flex;gap:0;margin-bottom:14px}
+  .tabs button{font-family:var(--display);font-size:.74rem;letter-spacing:.16em;text-transform:uppercase;background:none;border:0;padding:10px 0;margin-right:24px;cursor:pointer;color:var(--muted);border-bottom:2px solid transparent;font-weight:500}
+  .tabs button.active{color:var(--navy);border-bottom-color:var(--navy)}
+  .search-form{display:flex;align-items:stretch;border:1px solid var(--navy);border-radius:2px;overflow:hidden;max-width:520px}
+  .search-form input{flex:1;font-family:var(--body);font-size:1rem;color:var(--navy);background:#fff;border:0;outline:0;padding:14px 18px}
+  .search-form button{background:var(--navy);color:#fff;border:0;padding:0 26px;font-family:var(--display);font-weight:500;font-size:.74rem;letter-spacing:.18em;text-transform:uppercase;cursor:pointer}
+  .search-form button:hover{background:#152a45}
+  .browse-link{margin-top:22px;font-family:var(--display);font-size:.74rem;letter-spacing:.16em;text-transform:uppercase;display:inline-block;border-bottom:1px solid var(--navy);padding-bottom:2px}
+
+  /* Section heading */
+  .sec{padding:96px 0}
+  .sec .head{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;margin-bottom:48px;flex-wrap:wrap}
+  .sec .head h2{font-family:var(--display);font-weight:300;font-size:clamp(1.8rem,3vw,2.6rem);margin:8px 0 0;letter-spacing:-.01em}
+  .sec .head .link{font-family:var(--display);font-size:.74rem;letter-spacing:.18em;text-transform:uppercase;color:var(--navy);border-bottom:1px solid var(--navy);padding-bottom:2px}
+
+  /* Three column band */
+  .three{display:grid;grid-template-columns:repeat(3,1fr);gap:48px}
+  @media (max-width:900px){.three{grid-template-columns:1fr;gap:48px}}
+  .col h3{font-family:var(--display);font-weight:400;font-size:1.4rem;letter-spacing:-.005em;margin:0 0 24px;padding-bottom:18px;border-bottom:1px solid var(--line)}
+  .col .item{display:grid;grid-template-columns:90px 1fr;gap:18px;padding:18px 0;border-bottom:1px solid var(--line)}
+  .col .item:last-child{border-bottom:0}
+  .col .item .ph{aspect-ratio:1/1;background:#222 center/cover no-repeat}
+  .col .item .info .meta{font-family:var(--display);font-size:.66rem;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin-bottom:4px}
+  .col .item .info h4{font-family:var(--body);font-weight:600;font-size:.98rem;margin:0 0 4px;line-height:1.3;color:var(--navy)}
+  .col .item .info .price{font-family:var(--display);font-weight:500;font-size:.92rem;color:var(--night)}
+  .col .item .info p{font-size:.88rem;color:var(--night);margin:0;line-height:1.55}
+
+  /* Neighborhood band */
+  .hood-band{padding:96px 0;background:var(--paper);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .hood-band .head{margin-bottom:48px}
+  .hoods{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+  @media (max-width:800px){.hoods{grid-template-columns:1fr}}
+  .hood{position:relative;aspect-ratio:5/4;color:#fff;overflow:hidden}
+  .hood .ph{position:absolute;inset:0;background:#222 center/cover no-repeat;transition:transform 1s ease}
+  .hood:hover .ph{transform:scale(1.04)}
+  .hood::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.05) 30%,rgba(0,0,0,.62))}
+  .hood .label{position:absolute;left:0;right:0;bottom:0;padding:36px;z-index:2}
+  .hood .label .smallcaps{color:rgba(255,255,255,.8)}
+  .hood h3{font-family:var(--display);font-weight:300;font-size:clamp(1.6rem,2.6vw,2.2rem);margin:6px 0 8px;letter-spacing:-.01em}
+  .hood p{font-size:.94rem;line-height:1.55;max-width:420px;color:rgba(255,255,255,.92);margin:0}
+
+  /* Testimonials carousel */
+  .testimonials{padding:96px 0;background:var(--ivory)}
+  .testimonials .head{margin-bottom:48px}
+  .t-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:32px}
+  @media (max-width:900px){.t-grid{grid-template-columns:1fr}}
+  .t-card{background:var(--paper);padding:36px 32px;border:1px solid var(--line);border-radius:2px}
+  .t-card .stars{color:var(--sky);font-size:.85rem;letter-spacing:.2em;margin-bottom:18px}
+  .t-card blockquote{margin:0;font-size:1rem;line-height:1.7;color:var(--night);font-style:italic}
+  .t-card cite{display:block;font-style:normal;margin-top:24px;font-family:var(--display);font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;color:var(--muted)}
+
+  /* CTA band */
+  .cta-band{background:var(--navy);color:#fff;padding:96px 0}
+  .cta-band .row{display:flex;justify-content:space-between;align-items:center;gap:32px;flex-wrap:wrap}
+  .cta-band h2{font-family:var(--display);font-weight:300;font-size:clamp(1.8rem,3vw,2.6rem);margin:0;letter-spacing:-.01em;max-width:680px;line-height:1.2}
+  .cta-band p{margin:14px 0 0;color:rgba(255,255,255,.78);max-width:520px;font-size:1rem}
+  .cta-actions{display:flex;gap:18px;flex-wrap:wrap}
+  .btn{font-family:var(--display);font-weight:500;font-size:.78rem;letter-spacing:.18em;text-transform:uppercase;padding:18px 32px;border-radius:2px;display:inline-block;cursor:pointer;border:1px solid #fff}
+  .btn.primary{background:#fff;color:var(--navy)}
+  .btn.primary:hover{background:var(--sky);border-color:var(--sky);color:var(--navy)}
+  .btn.ghost{background:none;color:#fff}
+  .btn.ghost:hover{background:rgba(255,255,255,.1)}
+
+  /* Footer */
+  footer.site{background:var(--paper);padding:80px 0 40px;border-top:1px solid var(--line)}
+  .ig-strip{display:grid;grid-template-columns:repeat(6,1fr);gap:4px;margin-bottom:60px}
+  @media (max-width:800px){.ig-strip{grid-template-columns:repeat(3,1fr)}}
+  .ig-strip .ph{aspect-ratio:1/1;background:#444 center/cover no-repeat}
+  .foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:48px;align-items:start}
+  @media (max-width:900px){.foot-grid{grid-template-columns:1fr 1fr;gap:32px}}
+  @media (max-width:560px){.foot-grid{grid-template-columns:1fr}}
+  .foot-grid h5{font-family:var(--display);font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);margin:0 0 14px;font-weight:500}
+  .foot-grid p,.foot-grid a{font-size:.92rem;display:block;margin-bottom:6px;color:var(--night)}
+  .foot-grid a:hover{color:var(--sky)}
+  .copyright{margin-top:60px;padding-top:24px;border-top:1px solid var(--line);font-size:.78rem;color:var(--muted);display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
+</style>
+</head>
+<body>
+
+<div class="util-bar">
+  <div class="wrap">
+    <span>Birmingham Mountain Realty · Birmingham, Alabama</span>
+    <span><a href="sms:+12054124046">Text 205-412-4046</a> · <a href="https://instagram.com/paytonjunkin">@paytonjunkin</a></span>
+  </div>
+</div>
+
+<header class="site">
+  <div class="wrap">
+    <a href="#" class="mark">
+      <svg viewBox="0 0 24 32" fill="currentColor" aria-hidden="true"><path d="M14 1l1.5 1.5L17 4v1l-1 .5L15.2 6 18 9v6h-1.5v8.5h1.5V25h-1.5v3l-2 2h-2.5l-2-2v-3h-2.5v-2.5h2.5V21H6V12L11 7V4l1-1V1.5L13 1zm-1 5l-1 1v3h2V7l-1-1zM7 13.5v6h6v-6L10 11l-3 2.5zm2 4h2v1.5H9v-1.5z"/></svg>
+      <div class="name-block">
+        <span class="name">Payton Junkin</span>
+        <span class="role">Realtor · Birmingham</span>
+      </div>
+    </a>
+    <nav class="primary">
+      <a href="#search">Search</a>
+      <a href="#listings">Listings</a>
+      <a href="#hoods">Neighborhoods</a>
+      <a href="#love">Houses I Love</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a href="sms:+12054124046" class="header-cta">Text Payton</a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="photo" style="background-image:url('https://picsum.photos/seed/concierge-hero-bham/1500/1200')"></div>
+  <div class="panel" id="search">
+    <span class="smallcaps greeting">Hello, I'm Payton.</span>
+    <h1>A quieter way to find a home in Birmingham.</h1>
+    <p class="intro">Less noise. More fit. I work patiently, with a real opinion, and I'd rather text than email. Tell me what you're looking for — or browse what's on the market right now.</p>
+
+    <div class="search-panel">
+      <span class="smallcaps">Begin your search</span>
+      <div class="tabs">
+        <button class="active" type="button">Buy</button>
+        <button type="button">Sell</button>
+        <button type="button">Lease</button>
+      </div>
+      <form class="search-form" onsubmit="event.preventDefault();">
+        <input type="text" placeholder="Address, neighborhood, or ZIP">
+        <button type="submit">Search</button>
+      </form>
+      <a href="#hoods" class="browse-link">Or browse by neighborhood →</a>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="listings">
+  <div class="wrap">
+    <div class="three">
+
+      <div class="col">
+        <h3>Recent listings</h3>
+        <a href="#" class="item">
+          <div class="ph" style="background-image:url('https://picsum.photos/seed/conc-listing-1/200/200')"></div>
+          <div class="info">
+            <div class="meta">Mountain Brook · 4 bd</div>
+            <h4>2412 Cherry Avenue</h4>
+            <div class="price">$1,275,000</div>
+          </div>
+        </a>
+        <a href="#" class="item">
+          <div class="ph" style="background-image:url('https://picsum.photos/seed/conc-listing-2/200/200')"></div>
+          <div class="info">
+            <div class="meta">Homewood · 3 bd</div>
+            <h4>1908 Hollywood Boulevard</h4>
+            <div class="price">$685,000</div>
+          </div>
+        </a>
+        <a href="#" class="item">
+          <div class="ph" style="background-image:url('https://picsum.photos/seed/conc-listing-3/200/200')"></div>
+          <div class="info">
+            <div class="meta">Downtown · 2 bd</div>
+            <h4>2301 1st Avenue North</h4>
+            <div class="price">$540,000</div>
+          </div>
+        </a>
+        <a href="#" class="item">
+          <div class="ph" style="background-image:url('https://picsum.photos/seed/conc-listing-4/200/200')"></div>
+          <div class="info">
+            <div class="meta">Vestavia · 5 bd</div>
+            <h4>3724 Smyer Road</h4>
+            <div class="price">$925,000</div>
+          </div>
+        </a>
+      </div>
+
+      <div class="col" id="love">
+        <h3>Houses I love</h3>
+        <a href="#" class="item">
+          <div class="ph" style="background-image:url('https://picsum.photos/seed/conc-love-1/200/200')"></div>
+          <div class="info">
+            <div class="meta">Mountain Brook</div>
+            <h4>The Crestline Tudor</h4>
+            <p>Slate roof that's earned its patina. Original windows kept.</p>
+          </div>
+        </a>
+        <a href="#" class="item">
+          <div class="ph" style="background-image:url('https://picsum.photos/seed/conc-love-2/200/200')"></div>
+          <div class="info">
+            <div class="meta">Forest Park</div>
+            <h4>The Forest Park bungalow</h4>
+            <p>Heart pine floors, a porch built for weeknights.</p>
+          </div>
+        </a>
+        <a href="#" class="item">
+          <div class="ph" style="background-image:url('https://picsum.photos/seed/conc-love-3/200/200')"></div>
+          <div class="info">
+            <div class="meta">Downtown</div>
+            <h4>The 2nd Avenue loft</h4>
+            <p>Industrial bones, soft renovation. Makes you cook again.</p>
+          </div>
+        </a>
+        <a href="#" class="item">
+          <div class="ph" style="background-image:url('https://picsum.photos/seed/conc-love-4/200/200')"></div>
+          <div class="info">
+            <div class="meta">Avondale</div>
+            <h4>The Avondale cottage</h4>
+            <p>1920s shotgun, extended carefully. Garden built by someone who knew.</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="col">
+        <h3>From the journal</h3>
+        <a href="#" class="item">
+          <div class="ph" style="background-image:url('https://picsum.photos/seed/conc-journal-1/200/200')"></div>
+          <div class="info">
+            <div class="meta">Neighborhood guide · 6 min</div>
+            <h4>What Mountain Brook is, and isn't.</h4>
+            <p>The school zones get talked about. The block-by-block rhythm doesn't.</p>
+          </div>
+        </a>
+        <a href="#" class="item">
+          <div class="ph" style="background-image:url('https://picsum.photos/seed/conc-journal-2/200/200')"></div>
+          <div class="info">
+            <div class="meta">Buying · 4 min</div>
+            <h4>How I'd buy a Birmingham home in 2026.</h4>
+            <p>Three rules I'd give my own brother if he were calling me.</p>
+          </div>
+        </a>
+        <a href="#" class="item">
+          <div class="ph" style="background-image:url('https://picsum.photos/seed/conc-journal-3/200/200')"></div>
+          <div class="info">
+            <div class="meta">Notes · 3 min</div>
+            <h4>Avondale, five years on.</h4>
+            <p>It's not the same neighborhood it was. Whether that's good depends on you.</p>
+          </div>
+        </a>
+        <a href="#" class="item">
+          <div class="ph" style="background-image:url('https://picsum.photos/seed/conc-journal-4/200/200')"></div>
+          <div class="info">
+            <div class="meta">Selling · 5 min</div>
+            <h4>Don't stage it. Live in it well.</h4>
+            <p>Why I'd rather show your house than a furniture-rental version of it.</p>
+          </div>
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="hood-band" id="hoods">
+  <div class="wrap">
+    <div class="head">
+      <div>
+        <span class="smallcaps">The neighborhoods</span>
+        <h2>Two cities, one Birmingham.</h2>
+      </div>
+      <a href="#" class="link">All neighborhoods →</a>
+    </div>
+  </div>
+  <div class="hoods">
+    <a href="#" class="hood">
+      <div class="ph" style="background-image:url('https://picsum.photos/seed/conc-otm/1400/1100')"></div>
+      <div class="label">
+        <span class="smallcaps">South of 280</span>
+        <h3>Over the Mountain</h3>
+        <p>Top-of-state schools. Hundred-year-old trees. A Saturday morning rhythm that doesn't apologize for itself.</p>
+      </div>
+    </a>
+    <a href="#" class="hood">
+      <div class="ph" style="background-image:url('https://picsum.photos/seed/conc-downtown/1400/1100')"></div>
+      <div class="label">
+        <span class="smallcaps">City core</span>
+        <h3>Downtown Birmingham</h3>
+        <p>Lakeview and Avondale grew into themselves. Forest Park and Highland Park have always been in on the secret.</p>
+      </div>
+    </a>
+  </div>
+</section>
+
+<section class="testimonials">
+  <div class="wrap">
+    <div class="head">
+      <div>
+        <span class="smallcaps">In their words</span>
+        <h2>From recent clients.</h2>
+      </div>
+    </div>
+    <div class="t-grid">
+      <div class="t-card">
+        <div class="stars">★★★★★</div>
+        <blockquote>"Payton didn't sell us a house. He helped us find a neighborhood we'd actually want our kids to grow up in. That's the difference."</blockquote>
+        <cite>— The Andersons · Crestline · 2026</cite>
+      </div>
+      <div class="t-card">
+        <div class="stars">★★★★★</div>
+        <blockquote>"He texted me back at 9 p.m. on a Sunday with three questions about the house I was thinking about. Two of them I hadn't thought to ask. We didn't end up buying that one."</blockquote>
+        <cite>— J. Mitchell · Forest Park · 2026</cite>
+      </div>
+      <div class="t-card">
+        <div class="stars">★★★★★</div>
+        <blockquote>"I've worked with three other Birmingham agents. Payton is the first one who told me a house was wrong for me. He was right. We bought a better one."</blockquote>
+        <cite>— K. & R. Patel · Mountain Brook · 2025</cite>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-band">
+  <div class="wrap">
+    <div class="row">
+      <div>
+        <h2>Tell me what you're looking for.</h2>
+        <p>I'd rather text than email. I'll get back to you the same day, usually faster — and I'll tell you the truth about whether I think it's the right fit.</p>
+      </div>
+      <div class="cta-actions">
+        <a href="sms:+12054124046" class="btn primary">Text 205-412-4046</a>
+        <a href="https://instagram.com/paytonjunkin" class="btn ghost">@paytonjunkin →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site" id="contact">
+  <div class="wrap">
+    <div class="ig-strip" aria-label="Instagram preview">
+      <a href="https://instagram.com/paytonjunkin"><div class="ph" style="background-image:url('https://picsum.photos/seed/conc-ig1/400/400')"></div></a>
+      <a href="https://instagram.com/paytonjunkin"><div class="ph" style="background-image:url('https://picsum.photos/seed/conc-ig2/400/400')"></div></a>
+      <a href="https://instagram.com/paytonjunkin"><div class="ph" style="background-image:url('https://picsum.photos/seed/conc-ig3/400/400')"></div></a>
+      <a href="https://instagram.com/paytonjunkin"><div class="ph" style="background-image:url('https://picsum.photos/seed/conc-ig4/400/400')"></div></a>
+      <a href="https://instagram.com/paytonjunkin"><div class="ph" style="background-image:url('https://picsum.photos/seed/conc-ig5/400/400')"></div></a>
+      <a href="https://instagram.com/paytonjunkin"><div class="ph" style="background-image:url('https://picsum.photos/seed/conc-ig6/400/400')"></div></a>
+    </div>
+    <div class="foot-grid">
+      <div>
+        <h5>Talk to Payton</h5>
+        <p>The fastest way to reach me is a text.</p>
+        <a href="sms:+12054124046">205-412-4046</a>
+        <a href="https://instagram.com/paytonjunkin">Instagram · @paytonjunkin</a>
+      </div>
+      <div>
+        <h5>Search</h5>
+        <a href="#search">Buy</a>
+        <a href="#search">Sell</a>
+        <a href="#search">Lease</a>
+      </div>
+      <div>
+        <h5>Browse</h5>
+        <a href="#hoods">Neighborhoods</a>
+        <a href="#love">Houses I Love</a>
+        <a href="#listings">Recent listings</a>
+      </div>
+      <div>
+        <h5>Office</h5>
+        <p>Birmingham Mountain Realty<br>Birmingham, Alabama</p>
+      </div>
+    </div>
+    <div class="copyright">
+      <span>© 2026 Payton Junkin · Realtor · Birmingham Mountain Realty</span>
+      <span>Equal Housing Opportunity</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

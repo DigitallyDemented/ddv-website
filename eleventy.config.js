@@ -24,6 +24,9 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("speaker-notes-crm.html");
   eleventyConfig.addPassthroughCopy("matrix.html");
 
+  // Client preview directory (noindex'd in HTML; not in sitemap)
+  eleventyConfig.addPassthroughCopy("payton-junkin");
+
   // Redirect: old blog slug → new blog slug
   eleventyConfig.addPassthroughCopy("blog/psychology-is-the-programming-language");
 

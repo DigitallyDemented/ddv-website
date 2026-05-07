@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Payton Junkin — Website mockups (private preview)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ivory:#f7f7f5;
+    --paper:#fff;
+    --navy:#1e3a5f;
+    --night:#36454f;
+    --sky:#64add6;
+    --line:rgba(30,58,95,.12);
+    --muted:rgba(30,58,95,.62);
+    --display:'Inter',system-ui,-apple-system,sans-serif;
+    --body:'Raleway',system-ui,-apple-system,sans-serif;
+  }
+  *,*:before,*:after{box-sizing:border-box}
+  html,body{margin:0;padding:0}
+  body{font-family:var(--body);color:var(--navy);background:var(--ivory);line-height:1.6;-webkit-font-smoothing:antialiased}
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:1180px;margin:0 auto;padding:0 28px}
+  .smallcaps{font-family:var(--display);font-weight:500;font-size:.7rem;letter-spacing:.22em;text-transform:uppercase;color:var(--muted)}
+
+  header{padding:48px 0 32px;border-bottom:1px solid var(--line)}
+  header .badge{display:inline-block;font-family:var(--display);font-size:.66rem;letter-spacing:.22em;text-transform:uppercase;color:var(--sky);background:rgba(100,173,214,.12);padding:6px 12px;border-radius:2px;margin-bottom:18px}
+  header h1{font-family:var(--display);font-weight:300;font-size:clamp(2rem,4vw,3rem);letter-spacing:-.01em;margin:0 0 14px}
+  header p{margin:0;color:var(--night);max-width:680px;font-size:1.05rem}
+
+  .intro{padding:48px 0 24px}
+  .intro p{margin:0 0 16px;max-width:760px;color:var(--night)}
+  .intro p:last-child{margin-bottom:0}
+
+  .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;padding:32px 0 80px}
+  @media (max-width:900px){.grid{grid-template-columns:1fr}}
+  .card{display:block;background:var(--paper);border:1px solid var(--line);border-radius:2px;overflow:hidden;transition:transform .3s ease,box-shadow .3s ease}
+  .card:hover{transform:translateY(-3px);box-shadow:0 18px 50px rgba(30,58,95,.08)}
+  .card .ph{aspect-ratio:5/3;background:#222 center/cover no-repeat}
+  .card .body{padding:28px 26px 30px}
+  .card .label{font-family:var(--display);font-size:.66rem;letter-spacing:.2em;text-transform:uppercase;color:var(--sky);margin-bottom:10px;display:block}
+  .card h2{font-family:var(--display);font-weight:400;font-size:1.5rem;letter-spacing:-.01em;margin:0 0 10px;line-height:1.2}
+  .card .ref{font-family:var(--display);font-style:italic;color:var(--muted);font-size:.85rem;margin-bottom:18px;display:block}
+  .card p{margin:0 0 18px;font-size:.95rem;color:var(--night);line-height:1.6}
+  .card .traits{list-style:none;margin:0 0 22px;padding:0;display:flex;flex-direction:column;gap:6px;font-size:.88rem;color:var(--night)}
+  .card .traits li{padding-left:18px;position:relative}
+  .card .traits li::before{content:"·";position:absolute;left:6px;top:-2px;font-weight:700;color:var(--sky);font-size:1.4rem;line-height:1}
+  .card .open{display:inline-block;font-family:var(--display);font-weight:500;font-size:.74rem;letter-spacing:.18em;text-transform:uppercase;color:var(--navy);border-bottom:1px solid var(--navy);padding-bottom:2px}
+
+  .footer{padding:32px 0 60px;border-top:1px solid var(--line);font-size:.86rem;color:var(--muted)}
+  .footer p{margin:0 0 6px}
+  .footer strong{color:var(--navy);font-weight:600}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <span class="badge">Private preview · For Payton Junkin</span>
+    <h1>Three directions for paytonjunkin.com</h1>
+    <p>Three home page concepts built against the Vibe & Reference Pack and the JC2026 Style Guide. All three follow the same brand law — ivory, navy, light blue, photography-led, no popups, no urgency, mobile-first. They differ in personality, density, and where the search bar lives.</p>
+  </div>
+</header>
+
+<section class="intro">
+  <div class="wrap">
+    <p>The question to answer when comparing them isn't <em>"which is prettier"</em> — all three can be made beautiful. The question is <strong>which one is yours</strong>: which feels like the way you'd talk about Birmingham real estate to someone you respect, on a Tuesday, over coffee.</p>
+    <p>If a section in any of these doesn't feel right, that's good information. Open them on your phone too — mobile is where 60-70% of these will get viewed.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="grid">
+
+      <a href="v1.html" class="card">
+        <div class="ph" style="background-image:url('https://picsum.photos/seed/birmingham-mountain-house/900/540')"></div>
+        <div class="body">
+          <span class="label">Direction one</span>
+          <h2>Search-Forward</h2>
+          <span class="ref">Modern House · Redfin</span>
+          <p>The most utility-first of the three. Hero is full-bleed photography with a dominant search bar. Listings carousel and neighborhood tiles below.</p>
+          <ul class="traits">
+            <li>Search bar dominates above the fold</li>
+            <li>"I'll help you find it"</li>
+            <li>Best for buyer-search-intent traffic</li>
+          </ul>
+          <span class="open">Open mockup →</span>
+        </div>
+      </a>
+
+      <a href="v2.html" class="card">
+        <div class="ph" style="background-image:url('https://picsum.photos/seed/cover-architecture-bham/900/540')"></div>
+        <div class="body">
+          <span class="label">Direction two</span>
+          <h2>Editorial-First</h2>
+          <span class="ref">Aucoot · Kinfolk</span>
+          <p>Magazine-style. A cover photograph and a personal note from you. Neighborhoods told as essays, not tiles. Search demoted to a utility footer.</p>
+          <ul class="traits">
+            <li>Photography + prose, not search</li>
+            <li>"Birmingham, the way I see it"</li>
+            <li>Hardest to copy — needs your voice</li>
+          </ul>
+          <span class="open">Open mockup →</span>
+        </div>
+      </a>
+
+      <a href="v3.html" class="card">
+        <div class="ph" style="background-image:url('https://picsum.photos/seed/concierge-hero-bham/900/540')"></div>
+        <div class="body">
+          <span class="label">Direction three</span>
+          <h2>Concierge</h2>
+          <span class="ref">Engel & Völkers · Corcoran</span>
+          <p>Split hero — photo on the left, welcome panel with search on the right. Below: three balanced columns of recent listings, Houses I Love, and journal entries.</p>
+          <ul class="traits">
+            <li>Most familiar pattern</li>
+            <li>"Hello, I'm Payton — let me guide you"</li>
+            <li>Balanced for buyers, sellers, and browsers</li>
+          </ul>
+          <span class="open">Open mockup →</span>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<div class="footer">
+  <div class="wrap">
+    <p><strong>Built by Daniel Walters · Digitally Demented</strong></p>
+    <p>Private preview — not indexed by search engines. Imagery is placeholder; real photography goes in before launch.</p>
+    <p>Live target: paytonjunkin.com · May 18, 2026.</p>
+  </div>
+</div>
+
+</body>
+</html>
