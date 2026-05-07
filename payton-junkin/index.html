@@ -38,8 +38,11 @@
 
   .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;padding:32px 0 80px}
   @media (max-width:900px){.grid{grid-template-columns:1fr}}
-  .card{display:block;background:var(--paper);border:1px solid var(--line);border-radius:2px;overflow:hidden;transition:transform .3s ease,box-shadow .3s ease}
+  .card{display:block;background:var(--paper);border:1px solid var(--line);border-radius:2px;overflow:hidden;transition:transform .3s ease,box-shadow .3s ease;position:relative}
   .card:hover{transform:translateY(-3px);box-shadow:0 18px 50px rgba(30,58,95,.08)}
+  .card.recommended{border:1px solid var(--sky);box-shadow:0 0 0 1px var(--sky),0 14px 36px rgba(100,173,214,.18)}
+  .card.recommended:hover{box-shadow:0 0 0 1px var(--sky),0 22px 56px rgba(100,173,214,.25)}
+  .card .pick{position:absolute;top:18px;right:18px;background:var(--sky);color:#fff;font-family:var(--display);font-weight:600;font-size:.62rem;letter-spacing:.22em;text-transform:uppercase;padding:6px 12px;border-radius:2px;z-index:2}
   .card .ph{aspect-ratio:5/3;background:#222 center/cover no-repeat}
   .card .body{padding:28px 26px 30px}
   .card .label{font-family:var(--display);font-size:.66rem;letter-spacing:.2em;text-transform:uppercase;color:var(--sky);margin-bottom:10px;display:block}
@@ -54,6 +57,10 @@
   .footer{padding:32px 0 60px;border-top:1px solid var(--line);font-size:.86rem;color:var(--muted)}
   .footer p{margin:0 0 6px}
   .footer strong{color:var(--navy);font-weight:600}
+
+  .reading-note{padding:24px 0 0}
+  .reading-note .box{background:rgba(100,173,214,.08);border-left:2px solid var(--sky);padding:18px 22px;font-size:.95rem;line-height:1.65;color:var(--night);max-width:760px}
+  .reading-note .box strong{font-family:var(--display);font-weight:600;font-size:.66rem;letter-spacing:.22em;text-transform:uppercase;color:var(--sky);display:block;margin-bottom:6px}
 </style>
 </head>
 <body>
@@ -70,6 +77,12 @@
   <div class="wrap">
     <p>The question to answer when comparing them isn't <em>"which is prettier"</em> — all three can be made beautiful. The question is <strong>which one is yours</strong>: which feels like the way you'd talk about Birmingham real estate to someone you respect, on a Tuesday, over coffee.</p>
     <p>If a section in any of these doesn't feel right, that's good information. Open them on your phone too — mobile is where 60-70% of these will get viewed.</p>
+  </div>
+  <div class="wrap reading-note">
+    <div class="box">
+      <strong>Reading note · search sections marked tentative</strong>
+      Each mockup includes a property search bar. The exact behavior of that search depends on what your Lofty plan supports for external integration. We'll lock that in once we know your plan capabilities — so for now, treat the search section in any version as a placeholder for one of three approaches: an embedded Lofty widget, a custom UI built on Lofty's API, or a handoff to your existing Lofty search subdomain.
+    </div>
   </div>
 </section>
 
@@ -109,7 +122,8 @@
         </div>
       </a>
 
-      <a href="v3.html" class="card">
+      <a href="v3.html" class="card recommended">
+        <span class="pick">Our recommendation</span>
         <div class="ph" style="background-image:url('https://picsum.photos/seed/concierge-hero-bham/900/540')"></div>
         <div class="body">
           <span class="label">Direction three</span>
@@ -117,14 +131,24 @@
           <span class="ref">Engel & Völkers · Corcoran</span>
           <p>Split hero — photo on the left, welcome panel with search on the right. Below: three balanced columns of recent listings, Houses I Love, and journal entries.</p>
           <ul class="traits">
-            <li>Most familiar pattern</li>
+            <li>Most familiar pattern — lowest cognitive load</li>
             <li>"Hello, I'm Payton — let me guide you"</li>
             <li>Balanced for buyers, sellers, and browsers</li>
+            <li>Best fit for the Lofty integration realities</li>
           </ul>
           <span class="open">Open mockup →</span>
         </div>
       </a>
 
+    </div>
+  </div>
+</section>
+
+<section style="padding:0 0 80px;">
+  <div class="wrap reading-note">
+    <div class="box">
+      <strong>Why we lean toward Concierge (direction three)</strong>
+      Three reasons. <em>One,</em> it's the most balanced — it serves buyers searching, sellers reading testimonials, and browsers reading the journal, without forcing any one of them through the others' content. <em>Two,</em> the search panel sits inside the hero alongside a personal welcome from you, so the search experience can be a Lofty widget without breaking the editorial promise the rest of the page is making. <em>Three,</em> it's the lowest-risk pattern — the one Payton can grow into over the next six months without re-architecting. That said, we're presenting all three because the right answer is the one <em>you</em> would come home to. If Editorial-First (direction two) feels more like you, that's a stronger answer than the safer one.
     </div>
   </div>
 </section>
