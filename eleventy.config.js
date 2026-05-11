@@ -24,6 +24,9 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("speaker-notes-crm.html");
   eleventyConfig.addPassthroughCopy("matrix.html");
 
+  // Hidden / unlisted pages (noindex'd in HTML; not in sitemap; not linked from nav)
+  eleventyConfig.addPassthroughCopy("photography.html");
+
   // Client preview directory (noindex'd in HTML; not in sitemap)
   eleventyConfig.addPassthroughCopy("payton-junkin");
 

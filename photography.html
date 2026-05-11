@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio — Daniel Walters Photography</title>
+  <meta name="description" content="A private portfolio of selected event, portrait, and brand photography by Daniel Walters.">
+
+  <!-- Hidden from search engines and crawlers -->
+  <meta name="robots" content="noindex, nofollow, noarchive, nosnippet">
+  <meta name="googlebot" content="noindex, nofollow">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/styles.css">
+
+  <style>
+    /* --- Photography portfolio page-specific styles --- */
+    /* Intro section — flex-center so the paragraph sits vertically between
+       the page-header bottom and the gallery top, not flush against the top. */
+    .portfolio-intro-section {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 260px;
+    }
+    .portfolio-intro {
+      max-width: 720px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    .portfolio-intro p {
+      font-size: 1.1rem;
+      line-height: 1.75;
+      color: var(--slate);
+      margin: 0;
+    }
+
+    /* Trim top padding on the gallery section since the intro section already
+       supplies the breathing room above the grid. */
+    .portfolio-gallery-section {
+      padding-top: 0;
+    }
+
+    .portfolio-filter {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      justify-content: center;
+      margin: 2rem auto 3rem;
+    }
+    .filter-chip {
+      font-family: var(--font-heading);
+      font-weight: 600;
+      font-size: 0.78rem;
+      letter-spacing: 1.2px;
+      text-transform: uppercase;
+      padding: 0.5rem 1rem;
+      border: 1.5px solid var(--light-gray);
+      border-radius: var(--radius-pill);
+      color: var(--slate-light);
+      background: var(--white);
+      cursor: pointer;
+      transition: var(--transition);
+      user-select: none;
+    }
+    .filter-chip:hover {
+      border-color: var(--forest);
+      color: var(--forest);
+    }
+    .filter-chip.active {
+      background: var(--forest);
+      color: var(--sandstone);
+      border-color: var(--forest);
+    }
+
+    .portfolio-grid {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      gap: 16px;
+      margin: 0 auto;
+      max-width: var(--max-width);
+    }
+
+    .photo {
+      position: relative;
+      overflow: hidden;
+      border-radius: var(--radius);
+      background: var(--light-gray);
+      box-shadow: var(--shadow-sm);
+      transition: transform var(--transition), box-shadow var(--transition);
+      cursor: zoom-in;
+    }
+    .photo:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-lg);
+    }
+
+    /* Aspect ratio + grid placement variants */
+    .photo.tall    { grid-column: span 4; aspect-ratio: 3 / 4; }
+    .photo.wide    { grid-column: span 8; aspect-ratio: 16 / 9; }
+    .photo.square  { grid-column: span 4; aspect-ratio: 1 / 1; }
+    .photo.portrait { grid-column: span 4; aspect-ratio: 4 / 5; }
+    .photo.landscape { grid-column: span 6; aspect-ratio: 3 / 2; }
+
+    .photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform var(--transition-slow);
+    }
+    .photo:hover img { transform: scale(1.03); }
+
+    /* Placeholder visual — gradient + label */
+    .photo .placeholder {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: rgba(255,255,255,0.92);
+      font-family: var(--font-heading);
+      text-align: center;
+      padding: 1rem;
+    }
+    .photo .placeholder .ph-label {
+      font-size: 0.7rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      opacity: 0.7;
+      margin-bottom: 0.4rem;
+    }
+    .photo .placeholder .ph-title {
+      font-size: 1rem;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+    }
+
+    /* Placeholder gradient variants — DDV palette only */
+    .ph-1 { background: linear-gradient(135deg, #065F46 0%, #0A7B5C 100%); }
+    .ph-2 { background: linear-gradient(135deg, #044D38 0%, #065F46 100%); }
+    .ph-3 { background: linear-gradient(135deg, #374151 0%, #6B7280 100%); }
+    .ph-4 { background: linear-gradient(135deg, #0A7B5C 0%, #FCD34D 140%); }
+    .ph-5 { background: linear-gradient(135deg, #065F46 0%, #374151 100%); }
+    .ph-6 { background: linear-gradient(135deg, #6B7280 0%, #374151 100%); }
+
+    /* Category caption overlay (appears on hover for real photos) */
+    .photo .caption {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 14px 16px;
+      background: linear-gradient(to top, rgba(4,77,56,0.92) 0%, rgba(4,77,56,0) 100%);
+      color: var(--white);
+      font-family: var(--font-heading);
+      font-weight: 600;
+      font-size: 0.85rem;
+      letter-spacing: 0.4px;
+      opacity: 0;
+      transition: opacity var(--transition);
+      pointer-events: none;
+    }
+    .photo .caption .cat {
+      font-size: 0.65rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--sandstone);
+      display: block;
+      margin-bottom: 2px;
+    }
+    .photo:hover .caption { opacity: 1; }
+
+    /* Inquiry block */
+    .inquiry {
+      max-width: 640px;
+      margin: 5rem auto 0;
+      text-align: center;
+      padding: 3rem 2rem;
+      background: var(--cream);
+      border-radius: var(--radius-lg);
+      border: 1px solid var(--light-gray);
+    }
+    .inquiry .eyebrow {
+      font-family: var(--font-heading);
+      font-weight: 700;
+      font-size: 0.72rem;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      color: var(--forest);
+      margin-bottom: 0.6rem;
+    }
+    .inquiry h2 {
+      font-family: var(--font-heading);
+      font-weight: 800;
+      font-size: 1.8rem;
+      color: var(--forest);
+      margin-bottom: 0.8rem;
+    }
+    .inquiry p {
+      color: var(--slate);
+      font-size: 1.02rem;
+      margin-bottom: 1.6rem;
+    }
+    .inquiry a.email-cta {
+      display: inline-block;
+      font-family: var(--font-heading);
+      font-weight: 700;
+      font-size: 1rem;
+      color: var(--forest);
+      text-decoration: none;
+      padding: 0.85rem 1.6rem;
+      border: 2px solid var(--forest);
+      border-radius: var(--radius-pill);
+      transition: var(--transition);
+    }
+    .inquiry a.email-cta:hover {
+      background: var(--forest);
+      color: var(--sandstone);
+    }
+
+    /* Quiet footer for this page — no nav clutter */
+    .portfolio-footer {
+      margin-top: 4rem;
+      padding: 2rem 0;
+      text-align: center;
+      border-top: 1px solid var(--light-gray);
+      color: var(--slate-light);
+      font-size: 0.85rem;
+    }
+    .portfolio-footer .sig {
+      font-family: var(--font-heading);
+      font-weight: 700;
+      color: var(--forest);
+      margin-bottom: 0.4rem;
+    }
+
+    /* Lightbox */
+    .lightbox {
+      position: fixed;
+      inset: 0;
+      background: rgba(4, 77, 56, 0.96);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      z-index: 9999;
+      cursor: zoom-out;
+      padding: 2rem;
+      opacity: 0;
+      transition: opacity 0.2s ease;
+    }
+    .lightbox.open {
+      display: flex;
+      opacity: 1;
+    }
+    .lightbox img {
+      max-width: 95vw;
+      max-height: 92vh;
+      object-fit: contain;
+      box-shadow: 0 30px 80px rgba(0,0,0,0.5);
+      border-radius: 4px;
+      cursor: default;
+    }
+    .lightbox-close {
+      position: absolute;
+      top: 1.2rem;
+      right: 1.5rem;
+      background: transparent;
+      border: none;
+      color: var(--sandstone);
+      font-size: 2rem;
+      font-family: var(--font-heading);
+      font-weight: 300;
+      cursor: pointer;
+      line-height: 1;
+      padding: 0.5rem 0.8rem;
+      border-radius: 50%;
+      transition: var(--transition);
+    }
+    .lightbox-close:hover {
+      background: rgba(255,255,255,0.1);
+    }
+    .lightbox-counter {
+      position: absolute;
+      bottom: 1.5rem;
+      left: 50%;
+      transform: translateX(-50%);
+      color: rgba(255,255,255,0.7);
+      font-family: var(--font-heading);
+      font-size: 0.85rem;
+      letter-spacing: 1.5px;
+    }
+    .lightbox-nav {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: rgba(255,255,255,0.08);
+      border: none;
+      color: var(--sandstone);
+      font-size: 1.6rem;
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: var(--transition);
+    }
+    .lightbox-nav:hover { background: rgba(255,255,255,0.18); }
+    .lightbox-prev { left: 1.5rem; }
+    .lightbox-next { right: 1.5rem; }
+    body.lightbox-open { overflow: hidden; }
+
+    /* Responsive grid collapse */
+    @media (max-width: 900px) {
+      .portfolio-grid { grid-template-columns: repeat(6, 1fr); gap: 12px; }
+      .photo.tall, .photo.portrait, .photo.square { grid-column: span 3; }
+      .photo.wide, .photo.landscape { grid-column: span 6; }
+    }
+    @media (max-width: 560px) {
+      .portfolio-grid { grid-template-columns: 1fr; gap: 12px; }
+      .photo.tall, .photo.portrait, .photo.square,
+      .photo.wide, .photo.landscape { grid-column: span 1; aspect-ratio: 4 / 3; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Minimal page header (no full site nav — this is a hidden, share-only page) -->
+  <section class="page-header" style="padding-top: 4rem;">
+    <div class="container">
+      <span class="section-label">Portfolio</span>
+      <h1>Photography &amp; Event Coverage</h1>
+      <p>Selected work — events, portraits, and brand imagery.</p>
+    </div>
+  </section>
+
+  <!-- Intro (own section so its top + bottom padding center the text between the page-header and the grid) -->
+  <section class="portfolio-intro-section">
+    <div class="container">
+      <div class="portfolio-intro">
+        <p>
+          A working selection of recent photography work — from nonprofit events and brand shoots
+          to portraits and on-location coverage around Birmingham.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section class="portfolio-gallery-section">
+    <div class="container">
+
+      <!-- Category filter chips — hidden until we have enough work in each category to fill them.
+           Remove style="display:none" to bring back when ready. -->
+      <div class="portfolio-filter" aria-label="Filter by category" style="display: none;">
+        <span class="filter-chip active">All</span>
+        <span class="filter-chip">Events</span>
+        <span class="filter-chip">Portraits</span>
+        <span class="filter-chip">Brand</span>
+        <span class="filter-chip">Editorial</span>
+      </div>
+
+      <!-- Portfolio Grid — 18 images, mixed grid spans for visual rhythm -->
+      <div class="portfolio-grid">
+
+        <!-- Row 1: portrait(4) + wide(8) -->
+        <div class="photo portrait"><img src="images/portfolio/portfolio-03.jpg" alt="Portfolio image 03" loading="lazy"></div>
+        <div class="photo wide"><img src="images/portfolio/portfolio-01.jpg" alt="Portfolio image 01" loading="lazy"></div>
+
+        <!-- Row 2: landscape(6) + landscape(6) -->
+        <div class="photo landscape"><img src="images/portfolio/portfolio-04.jpg" alt="Portfolio image 04" loading="lazy"></div>
+        <div class="photo landscape"><img src="images/portfolio/portfolio-05.jpg" alt="Portfolio image 05" loading="lazy"></div>
+
+        <!-- Row 3: square × 3 -->
+        <div class="photo square"><img src="images/portfolio/portfolio-06.jpg" alt="Portfolio image 06" loading="lazy"></div>
+        <div class="photo square"><img src="images/portfolio/portfolio-15.jpg" alt="Portfolio image 15" loading="lazy"></div>
+        <div class="photo square"><img src="images/portfolio/portfolio-07.jpg" alt="Portfolio image 07" loading="lazy"></div>
+
+        <!-- Row 4: wide(8) + portrait(4) -->
+        <div class="photo wide"><img src="images/portfolio/portfolio-02.jpg" alt="Portfolio image 02" loading="lazy"></div>
+        <div class="photo portrait"><img src="images/portfolio/portfolio-08.jpg" alt="Portfolio image 08" loading="lazy"></div>
+
+        <!-- Row 5: landscape × 2 -->
+        <div class="photo landscape"><img src="images/portfolio/portfolio-09.jpg" alt="Portfolio image 09" loading="lazy"></div>
+        <div class="photo landscape"><img src="images/portfolio/portfolio-10.jpg" alt="Portfolio image 10" loading="lazy"></div>
+
+        <!-- Row 6: tall(4) + square(4) + tall(4) -->
+        <div class="photo tall"><img src="images/portfolio/portfolio-11.jpg" alt="Portfolio image 11" loading="lazy"></div>
+        <div class="photo square"><img src="images/portfolio/portfolio-12.jpg" alt="Portfolio image 12" loading="lazy"></div>
+        <div class="photo tall"><img src="images/portfolio/portfolio-13.jpg" alt="Portfolio image 13" loading="lazy"></div>
+
+        <!-- Row 7: landscape × 2 -->
+        <div class="photo landscape"><img src="images/portfolio/portfolio-14.jpg" alt="Portfolio image 14" loading="lazy"></div>
+        <div class="photo landscape"><img src="images/portfolio/portfolio-16.jpg" alt="Portfolio image 16" loading="lazy"></div>
+
+        <!-- Row 8: square(4) + wide(8) -->
+        <div class="photo square"><img src="images/portfolio/portfolio-17.jpg" alt="Portfolio image 17" loading="lazy"></div>
+        <div class="photo wide"><img src="images/portfolio/portfolio-18.jpg" alt="Portfolio image 18" loading="lazy"></div>
+
+      </div><!-- /portfolio-grid -->
+
+      <!-- Inquiry block (no form yet — soft email CTA) -->
+      <div class="inquiry">
+        <div class="eyebrow">Interested in working together?</div>
+        <h2>Let's talk about your shoot.</h2>
+        <p>
+          Available for events, portraits, brand work, and on-location coverage in and around Birmingham.
+          Send a note with what you're planning and I'll come back with a custom quote.
+        </p>
+        <a class="email-cta" href="mailto:support@digitallydemented.com?subject=Photography%20inquiry">support@digitallydemented.com</a>
+      </div>
+
+      <!-- Lightbox overlay -->
+      <div class="lightbox" id="lightbox" aria-hidden="true" role="dialog">
+        <button class="lightbox-close" aria-label="Close">&times;</button>
+        <button class="lightbox-nav lightbox-prev" aria-label="Previous">&#8249;</button>
+        <img src="" alt="" id="lightbox-img">
+        <button class="lightbox-nav lightbox-next" aria-label="Next">&#8250;</button>
+        <div class="lightbox-counter" id="lightbox-counter"></div>
+      </div>
+
+      <script>
+        (function() {
+          const photos = Array.from(document.querySelectorAll('.portfolio-grid .photo img'));
+          const lightbox = document.getElementById('lightbox');
+          const lbImg = document.getElementById('lightbox-img');
+          const counter = document.getElementById('lightbox-counter');
+          const closeBtn = lightbox.querySelector('.lightbox-close');
+          const prevBtn = lightbox.querySelector('.lightbox-prev');
+          const nextBtn = lightbox.querySelector('.lightbox-next');
+          let currentIndex = 0;
+
+          function open(idx) {
+            currentIndex = idx;
+            const img = photos[idx];
+            lbImg.src = img.src;
+            lbImg.alt = img.alt;
+            counter.textContent = (idx + 1) + ' / ' + photos.length;
+            lightbox.classList.add('open');
+            lightbox.setAttribute('aria-hidden', 'false');
+            document.body.classList.add('lightbox-open');
+          }
+          function close() {
+            lightbox.classList.remove('open');
+            lightbox.setAttribute('aria-hidden', 'true');
+            document.body.classList.remove('lightbox-open');
+          }
+          function step(delta) {
+            const n = photos.length;
+            open(((currentIndex + delta) % n + n) % n);
+          }
+
+          photos.forEach((img, i) => img.addEventListener('click', () => open(i)));
+          closeBtn.addEventListener('click', close);
+          prevBtn.addEventListener('click', (e) => { e.stopPropagation(); step(-1); });
+          nextBtn.addEventListener('click', (e) => { e.stopPropagation(); step(1); });
+          lbImg.addEventListener('click', (e) => e.stopPropagation());
+          lightbox.addEventListener('click', close);
+          document.addEventListener('keydown', (e) => {
+            if (!lightbox.classList.contains('open')) return;
+            if (e.key === 'Escape') close();
+            else if (e.key === 'ArrowLeft') step(-1);
+            else if (e.key === 'ArrowRight') step(1);
+          });
+        })();
+      </script>
+
+      <!-- Quiet footer -->
+      <div class="portfolio-footer">
+        <div class="sig">Daniel Walters</div>
+        <div>Digitally Demented Ventures · Birmingham, AL</div>
+      </div>
+
+    </div>
+  </section>
+
+</body>
+</html>
