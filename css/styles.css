@@ -1484,6 +1484,16 @@ section {
   filter: invert(1);
 }
 
+/* Pure-black source logos (e.g. Birmingham AI) — brighten before the global
+   grayscale + 0.5 opacity hits, so they land at the same visual weight as the
+   mid-tone color logos rather than reading as solid dark blocks. */
+.logo-track img.logo-lighten {
+  filter: grayscale(100%) brightness(1.9);
+}
+.logo-track img.logo-lighten:hover {
+  filter: none;
+}
+
 @keyframes scrollLogos {
   0% { transform: translateX(0); }
   100% { transform: translateX(-50%); }
