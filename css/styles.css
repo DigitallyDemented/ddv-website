@@ -1475,6 +1475,15 @@ section {
   opacity: 1;
 }
 
+/* Logos delivered only in white-on-transparent — invert so they read on
+   the cream slider background (e.g. Tellerix). Color is restored on hover. */
+.logo-track img.logo-invert {
+  filter: grayscale(100%) invert(1);
+}
+.logo-track img.logo-invert:hover {
+  filter: invert(1);
+}
+
 @keyframes scrollLogos {
   0% { transform: translateX(0); }
   100% { transform: translateX(-50%); }
